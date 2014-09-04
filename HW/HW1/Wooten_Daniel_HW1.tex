@@ -1,0 +1,16 @@
+\section{Problem 2}
+\subsection{Part A}
+The virtual machine has one processor.
+\subsection{Part B}
+The virtual machine has 994MiB of memory.
+\section{Problem 3}
+1. wget http://www.fec.gov/data/CandidateSummary.do?format=csv
+2. grep "REP" CandidateSummary.do?format=csv >> Republicans.csv
+3. grep "DEM" CandidateSummary.do?format=csv >> Democrats.csv
+4. sed 's/\([^",]\),/\1/g' Republicans.csv > Republicans2.csv
+5. sed 's/\([^",]\),/\1/g' Democrats.csv > Democrats2.csv
+6. sed 's/[$"]//g' Republicans.csv > Republicans3.csv
+7. sed 's/[$"]//g' Democrats.csv > Democrats3.csv
+8. grep "\"S\"" Republicans.csv > RepublicansS3.csv
+9. grep "\"S\"" Democrats.csv > DemocratsS3.csv
+
