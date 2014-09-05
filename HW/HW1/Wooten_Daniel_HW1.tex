@@ -13,4 +13,10 @@ The virtual machine has 994MiB of memory.
 7. sed 's/[$"]//g' Democrats.csv > Democrats3.csv
 8. grep "\"S\"" Republicans.csv > RepublicansS3.csv
 9. grep "\"S\"" Democrats.csv > DemocratsS3.csv
+10. cut -d',' -f 3,5,7,20 RepublcansS3.csv > R4.csv
+11. cut -d',' -f 3,5,7,20 DemocratsS3.csv > D4.csv
+12. sort -g -r --key=4 -t , R4.csv > R5.csv
+13. sort -g -r --key=4 -t , D4.csv > D5.csv
+14. head -5 R5.csv
+15. head -5 D5.csv
 
