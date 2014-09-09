@@ -1,0 +1,31 @@
+\section{Problem 2}
+\subsection{Part A}
+The virtual machine has one processor.
+\subsection{Part B}
+The virtual machine has 994MiB of memory.
+\section{Problem 3}
+\subsection{Part A}
+1. wget http://www.fec.gov/data/CandidateSummary.do?format=csv
+2. grep "REP" CandidateSummary.do?format=csv >> Republicans.csv
+3. grep "DEM" CandidateSummary.do?format=csv >> Democrats.csv
+4. sed 's/\([^",]\),/\1/g' Republicans.csv > Republicans2.csv
+5. sed 's/\([^",]\),/\1/g' Democrats.csv > Democrats2.csv
+6. sed 's/[$"]//g' Republicans.csv > Republicans3.csv
+7. sed 's/[$"]//g' Democrats.csv > Democrats3.csv
+8. grep "\"S\"" Republicans.csv > RepublicansS3.csv
+9. grep "\"S\"" Democrats.csv > DemocratsS3.csv
+10. cut -d',' -f 3,5,7,20 RepublcansS3.csv > R4.csv
+11. cut -d',' -f 3,5,7,20 DemocratsS3.csv > D4.csv
+12. sort -g -r --key=4 -t , R4.csv > R5.csv
+13. sort -g -r --key=4 -t , D4.csv > D5.csv
+14. head -5 R5.csv
+15. head -5 D5.csv
+\subsection{Part B}
+For the desireed shell code, please see below.
+	Shell code
+With respect to the candidates Mitch McConnell and Alison Lundergan
+please refer to Table 1.
+McConnell	Grimes
+Nat 6911	9461
+Cali 324	1497
+
