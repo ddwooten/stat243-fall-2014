@@ -1,0 +1,10 @@
+\section{2}
+\subsection{}
+The j loop goes through j=1 to j=3. At each itteration of the for loop
+we call the function inside of myFuns of j, or myFuns[[j]]. The trick here,
+why each myFuns returns 3, is that the function inside of each myFuns part
+returns i, and seeing as i is not redefined inside of the current for loop,
+R goes looking into the global environment. Here it finds i, and the last value
+that i had, and still has, is 3. As such, each call of myFuns calls a function 
+which returns i and as such, returns 3.
+
