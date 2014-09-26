@@ -7,4 +7,25 @@ returns i, and seeing as i is not redefined inside of the current for loop,
 R goes looking into the global environment. Here it finds i, and the last value
 that i had, and still has, is 3. As such, each call of myFuns calls a function 
 which returns i and as such, returns 3.
+\subsection{}
+The second i loop displays the behavior we "expect". Each itteration of the loop calls the function inside of the ith index of myFuns. This function, the same
+in each index, is asked to return the value of i, so, it goes looking for i. Not
+finding i in itself, it goes up one environment and finds i in the loop that called it.
+Here, it finds the value of i which the loop is using, which progresses through
+1:3. 
+\subsection{}
+For the j loop the answer is obvious. The function in myFuns of j is called
+and it is asked to return i. Considering that it has no value of i in its own self, it goes and looks in its parent environment of funGenerator in which the value of i is the last value of the for loop and is thus, 3. This behavior explains the behavior seen in the global i loop, before R goes and looks in global for a value of i, the function in myFuns of i is asked to look for i in the envionrment of FunGenerator and as such, finds i=3. 
+
+\section{3}
+So, the first "frame" is the global frame and it's environment is the global
+environment. In case of a clean R session and just inputting the given code,
+this "frame" is populated by no objects and ls returns a [0]. The global "frame
+" has frame number 0. The next function, or really the first, that is called
+is the sapply function with frame number 1. The objects that exist are "FUN", 
+"simplify", "USE.NAMES", and "X". The next function that gets called is the
+"ls" function with frame number 2 and is populated with objects "FUN" and "X".
+The last function that is called is sys.frame with frame number 3 and is only
+populated by object "X".
+
 
