@@ -1,0 +1,15 @@
+              <tr>
+                <td class="doctitle">Barack Obama</td>
+                <td align="center" class="docdate">2013-present</td>
+                <td align="center" class="doclist"><a href="http://www.presidency.ucsb.edu/ws/index.php?pid=102826">2013</a></td>
+                <td align="center" class="doclist"><a href="http://www.presidency.ucsb.edu/ws/index.php?pid=104596">2014</a></td>
+                <td align="center" class="doclist"><img src="images/spacer.gif" alt="" width="1" height="1"></td>
+                <td align="center" class="doclist"><img src="images/spacer.gif" alt="" width="1" height="1"></td>
+                <td align="center" class="doclist"><img src="images/spacer.gif" alt="" width="1" height="1"></td>
+                <td align="center" class="doclist">&nbsp;</td>
+                <td align="center" class="doclist">&nbsp;</td>
+                <td align="center" class="doclist">&nbsp;</td>
+                <td align="center" class="doclist">&nbsp;</td>
+                <td align="center" class="doclist">&nbsp;</td>
+              </tr>
+              <tr>

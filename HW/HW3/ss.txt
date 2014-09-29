@@ -1,0 +1,1211 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<meta name="keywords" content="President of the United States, presidency, American Presidency, American President, Public Papers of the Presidents, State of the Union Address, Inaugural Address, Presidents, American Presidents, George W. Bush, Bill Clinton, George Bush, Ronald Reagan, Jimmy Carter, Gerald Ford, Richard Nixon, Lyndon Johnson, John F. Kennedy. John Kennedy, Dwight Eisenhower, Harry Truman, FDR, Franklin Roosevelt, Presidential Elections, Presidential Rhetoric">
+<meta name="description" content="The American Presidency Project contains the most comprehensive collection of resources pertaining to the study of the President of the United States.  Compiled by John Woolley and Gerhard Peters">
+<link href="http://www.presidency.ucsb.edu/styles/main.css" rel="stylesheet" type="text/css">
+<!-- BEGIN Tynt Script -->
+<!-- <script type="text/javascript">
+if(document.location.protocol=='http:'){
+ var Tynt=Tynt||[];Tynt.push('cJ3hqqsgCr4i0xadbi-bpO');
+ (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+</script>-->
+<!-- END Tynt Script --></head>
+<BODY BGCOLOR="#FFFFFF" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
+<TABLE WIDTH="100%" height="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0" bgcolor="#FFFFFF">
+	<tr>
+		<td width="50%" rowspan="3" background="../images/bg.gif" bgcolor="#8497AD">&nbsp;</td>
+		<td width="1" bgcolor="#000000" rowspan="3"><img src="../images/spacer.gif" width="1" height="1"></td>
+        <td><table width="956" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="956" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="29"><img src="http://www.presidency.ucsb.edu/images/b1.gif" width="29" height="29" alt="" /></td>
+        <td width="26"><a href="../index.php"><img src="http://www.presidency.ucsb.edu/images/l1.gif" alt="Home" width="26" height="29" border="0" /></a></td>
+        <td width="35"><img src="http://www.presidency.ucsb.edu/images/b2.gif" width="35" height="29" alt="" /></td>
+        <td width="23"><a href="../index_pppus.php"><img src="http://www.presidency.ucsb.edu/images/l2.gif" alt="Search" width="23" height="29" border="0" /></a></td>
+        <td width="33"><img src="http://www.presidency.ucsb.edu/images/b3.gif" width="33" height="29" alt="" /></td>
+        <td width="24"><a href="#" onclick="window.print()"><img src="http://www.presidency.ucsb.edu/images/headspace2.gif" alt="" width="24" height="29" border="0" /></a></td>
+        <td width="589"><a href="../index.php"><img src="http://www.presidency.ucsb.edu/images/b4.gif" alt="The American Presidency Project" width="589" height="29" border="0" /></a></td>
+        <td width="197"><a href="#" onclick="window.print()"><img src="http://www.presidency.ucsb.edu/images/headspace2.gif" alt="" width="197" height="29" border="0" /></a></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td><a href="../index.php"><img src="http://www.presidency.ucsb.edu/images/designstud2009.jpg" alt="" width="956" height=93 border="0" /></a></td>
+  </tr>
+  <tr>
+    <td><table width="956" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="441"><img src="http://www.presidency.ucsb.edu/images/lates.gif" width=441 height="32" alt="John Woolley and Gerhard Peters" /></td>
+        <td width="39"><a href="../index.php"><img src="http://www.presidency.ucsb.edu/images/m1.gif" alt="Home" width="39" height="32" border="0" /></a></td>
+        <td width="44"><a href="../data.php"><img src="http://www.presidency.ucsb.edu/images/m2.gif" alt="Data" width="44" height="32" border="0" /></a></td>
+        <td width="66"><a href="../index_docs.php"><img src="http://www.presidency.ucsb.edu/images/m3.gif" alt="Documents" width="66" height="32" border="0" /></a></td>
+        <td width="56"><a href="../elections.php"><img src="http://www.presidency.ucsb.edu/images/m4.gif" alt="Elections" width="56" height="32" border="0" /></a></td>
+        <td width="50"><a href="../media.php"><img src="http://www.presidency.ucsb.edu/images/m5.gif" alt="Media" width="50" height="32" border="0" /></a></td>
+        <td width="53"><a href="../libraries.php"><img src="http://www.presidency.ucsb.edu/images/m6.gif" alt="Links" width="53" height="32" border="0" /></a></td>
+        <td width="207"><img src="http://www.presidency.ucsb.edu/images/m0.gif" width=207 height="32" alt="" /></td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+		<td width="1" bgcolor="#000000" rowspan="3"><img src="../images/spacer.gif" width="1" height="1"></td>
+		<td width="50%" rowspan="3" background="../images/bg.gif" bgcolor="#8497AD">&nbsp;</td>
+	</tr>
+	<tr>
+    	<td height="100%" valign="top">
+		<TABLE WIDTH="956" BORDER="0" CELLPADDING="0" CELLSPACING="0" height="100%">
+	<tr>
+		<td width="180" height="100%" valign="top">
+		<table width="180" border="0" cellspacing="0" cellpadding="0">
+  	<tr>
+    	<td><table width="180" border="0" cellspacing="0" cellpadding="1" bgcolor="#8497AD">
+  <tr>
+    <td><table width="180" border="0" align="left" cellpadding="0" cellspacing="0">
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" align="center"><img src="../images/presseal.gif" alt="" /></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#FFFFFF" class="menuhead"><a href="https://www.giveucsb.com/APP.htm"><img src="http://www.presidency.ucsb.edu/images/donate180.jpg" alt="Donate Now" width="160" height="296" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" style="padding-left:5px">Document Archive</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/ws" class="tah11">&#8226;&nbsp;Public Papers of the Presidents</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/sou.php" class="tah11">&#8226;&nbsp;State of the Union<br />
+          Addresses &amp; Messages</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/inaugurals.php" class="tah11">&#8226;&nbsp;Inaugural Addresses</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/satradio.php" class="tah11">&#8226;&nbsp;Weekly  Addresses</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/fireside.php" class="tah11">&#8226;&nbsp;Fireside Chats</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/news_conferences.php" class="tah11">&#8226;&nbsp;News Conferences</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/executive_orders.php" class="tah11">&#8226;&nbsp;Executive Orders</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/proclamations.php" class="tah11">&#8226;&nbsp;Proclamations</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/signingstatements.php" class="tah11">&#8226;&nbsp;Signing Statements</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/press_briefings.php" class="tah11">&#8226;&nbsp;Press Briefings </a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/saps.php" class="tah11">&#8226;&nbsp;Statements of<br />
+          &nbsp;Administration Policy</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/economic_reports.php" class="tah11">&#8226;&nbsp;Economic Report of the President</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/debates.php" class="tah11">&#8226;&nbsp;Debates</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/nomination.php" class="tah11">&#8226;&nbsp;Convention Speeches</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/platforms.php" class="tah11">&#8226;&nbsp;Party Platforms</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/2012_election.php" class="tah11">&#8226;&nbsp;2012 Election Documents </a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/2008_election.php" class="tah11">&#8226;&nbsp;2008 Election Documents </a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/2004_election.php" class="tah11">&#8226;&nbsp;2004 Election Documents </a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/1960_election.php" class="tah11">&#8226;&nbsp;1960 Election Documents </a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/transition2009.php" class="tah11">&#8226;&nbsp;2009 Transition</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/transition2001.php" class="tah11">&#8226;&nbsp;2001 Transition</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" style="padding-left:5px">Data Archive </td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/data.php" class="tah11">Data Index</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" style="padding-left:5px">Media Archive</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/media.php" class="tah11">Audio/Video Index</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" style="padding-left:5px">Elections</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/elections.php" class="tah11">Election Index</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#F7FAFD" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/florida2000.php" class="tah11">Florida 2000</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="#8497AD" class="menuhead" style="padding-left:5px">Links</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF" class="tah11" style="padding-left:5px"><a href="http://www.presidency.ucsb.edu/libraries.php" class="tah11">Presidential Libraries</a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</td>
+  	</tr>
+  	<tr>
+    <td><script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<table width="180" border="0" cellspacing="0" cellpadding="1" bgcolor="#8497AD">
+  <tr>
+    <td valign="top"><table width="180" border="0" cellpadding="0" cellspacing="2" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center" bgcolor="#8497AD"><span class="menuhead">View Public Papers by Month and Year</span></td>
+      </tr>
+      <tr>
+        <td align="center">		<font face="Arial" size="-1" point-size="9" color="#FFFFFF">
+		<form action="http://www.presidency.ucsb.edu/ws/index.php" method="get">
+			<select name="month" size="1">
+				<OPTION value="" selected>Month</OPTION>
+				<OPTION value="01" >January</OPTION>
+			  	<OPTION value="02" >February</option>
+			  	<OPTION value="03" >March</option>
+			  	<OPTION value="04" >April</option>
+			  	<OPTION value="05" >May</option>
+			 	<OPTION value="06" >June</option>
+			  	<OPTION value="07" >July</option>
+			 	<OPTION value="08" >August</option>
+			  	<OPTION value="09" >September</option>
+			 	<OPTION value="10" >October</option>
+			 	<OPTION value="11" >November</option>
+			  	<OPTION value="12" >December</option>
+			</select>			
+		  	<select name="year" size="1">
+<OPTION value="" selected>Year</OPTION>
+<OPTION value="1789">1789</OPTION>			  
+<OPTION value="1790">1790</OPTION>
+<OPTION value="1791">1791</OPTION>
+<OPTION value="1792">1792</OPTION>
+<OPTION value="1793">1793</OPTION>
+<OPTION value="1794">1794</OPTION>
+<OPTION value="1795">1795</OPTION>
+<OPTION value="1796">1796</OPTION>
+<OPTION value="1797">1797</OPTION>
+<OPTION value="1798">1798</OPTION>
+<OPTION value="1799">1799</OPTION>
+<OPTION value="1800">1800</OPTION>
+<OPTION value="1801">1801</OPTION>
+<OPTION value="1802">1802</OPTION>
+<OPTION value="1803">1803</OPTION>
+<OPTION value="1804">1804</OPTION>
+<OPTION value="1805">1805</OPTION>
+<OPTION value="1806">1806</OPTION>
+<OPTION value="1807">1807</OPTION>
+<OPTION value="1808">1808</OPTION>
+<OPTION value="1809">1809</OPTION>
+<OPTION value="1810">1810</OPTION>
+<OPTION value="1811">1811</OPTION>
+<OPTION value="1812">1812</OPTION>
+<OPTION value="1813">1813</OPTION>
+<OPTION value="1814">1814</OPTION>
+<OPTION value="1815">1815</OPTION>
+<OPTION value="1816">1816</OPTION>
+<OPTION value="1817">1817</OPTION>
+<OPTION value="1818">1818</OPTION>
+<OPTION value="1819">1819</OPTION>
+<OPTION value="1820">1820</OPTION>
+<OPTION value="1821">1821</OPTION>
+<OPTION value="1822">1822</OPTION>
+<OPTION value="1823">1823</OPTION>
+<OPTION value="1824">1824</OPTION>
+<OPTION value="1825">1825</OPTION>
+<OPTION value="1826">1826</OPTION>
+<OPTION value="1827">1827</OPTION>
+<OPTION value="1828">1828</OPTION>
+<OPTION value="1829">1829</OPTION>
+<OPTION value="1830">1830</OPTION>
+<OPTION value="1831">1831</OPTION>
+<OPTION value="1832">1832</OPTION>
+<OPTION value="1833">1833</OPTION>
+<OPTION value="1834">1834</OPTION>
+<OPTION value="1835">1835</OPTION>
+<OPTION value="1836">1836</OPTION>
+<OPTION value="1837">1837</OPTION>
+<OPTION value="1838">1838</OPTION>
+<OPTION value="1839">1839</OPTION>
+<OPTION value="1840">1840</OPTION>
+<OPTION value="1841">1841</OPTION>
+<OPTION value="1842">1842</OPTION>
+<OPTION value="1843">1843</OPTION>
+<OPTION value="1844">1844</OPTION>
+<OPTION value="1845">1845</OPTION>
+<OPTION value="1846">1846</OPTION>
+<OPTION value="1847">1847</OPTION>
+<OPTION value="1848">1848</OPTION>
+<OPTION value="1849">1849</OPTION>
+<OPTION value="1850">1850</OPTION>
+<OPTION value="1851">1851</OPTION>
+<OPTION value="1852">1852</OPTION>
+<OPTION value="1853">1853</OPTION>
+<OPTION value="1854">1854</OPTION>
+<OPTION value="1855">1855</OPTION>
+<OPTION value="1856">1856</OPTION>
+<OPTION value="1857">1857</OPTION>
+<OPTION value="1858">1858</OPTION>
+<OPTION value="1859">1859</OPTION>
+<OPTION value="1860">1860</OPTION>
+<OPTION value="1861">1861</OPTION>
+<OPTION value="1862">1862</OPTION>
+<OPTION value="1863">1863</OPTION>
+<OPTION value="1864">1864</OPTION>
+<OPTION value="1865">1865</OPTION>
+<OPTION value="1866">1866</OPTION>
+<OPTION value="1867">1867</OPTION>
+<OPTION value="1868">1868</OPTION>
+<OPTION value="1869">1869</OPTION>
+<OPTION value="1870">1870</OPTION>
+<OPTION value="1871">1871</OPTION>
+<OPTION value="1872">1872</OPTION>
+<OPTION value="1873">1873</OPTION>
+<OPTION value="1874">1874</OPTION>
+<OPTION value="1875">1875</OPTION>
+<OPTION value="1876">1876</OPTION>
+<OPTION value="1877">1877</OPTION>
+<OPTION value="1878">1878</OPTION>
+<OPTION value="1879">1879</OPTION>
+<OPTION value="1880">1880</OPTION>
+<OPTION value="1881">1881</OPTION>
+<OPTION value="1882">1882</OPTION>
+<OPTION value="1883">1883</OPTION>
+<OPTION value="1884">1884</OPTION>
+<OPTION value="1885">1885</OPTION>
+<OPTION value="1886">1886</OPTION>
+<OPTION value="1887">1887</OPTION>
+<OPTION value="1888">1888</OPTION>
+<OPTION value="1889">1889</OPTION>
+<OPTION value="1890">1890</OPTION>
+<OPTION value="1891">1891</OPTION>
+<OPTION value="1892">1892</OPTION>
+<OPTION value="1893">1893</OPTION>
+<OPTION value="1894">1894</OPTION>
+<OPTION value="1895">1895</OPTION>
+<OPTION value="1896">1896</OPTION>
+<OPTION value="1897">1897</OPTION>
+<OPTION value="1898">1898</OPTION>
+<OPTION value="1899">1899</OPTION>
+<OPTION value="1900">1900</OPTION>
+<OPTION value="1901">1901</OPTION>
+<OPTION value="1902">1902</OPTION>
+<OPTION value="1903">1903</OPTION>
+<OPTION value="1904">1904</OPTION>
+<OPTION value="1905">1905</OPTION>
+<OPTION value="1906">1906</OPTION>
+<OPTION value="1907">1907</OPTION>
+<OPTION value="1908">1908</OPTION>
+<OPTION value="1909">1909</OPTION>
+<OPTION value="1910">1910</OPTION>
+<OPTION value="1911">1911</OPTION>
+<OPTION value="1912">1912</OPTION>
+<OPTION value="1913">1913</OPTION>
+<OPTION value="1914">1914</OPTION>
+<OPTION value="1915">1915</OPTION>
+<OPTION value="1916">1916</OPTION>
+<OPTION value="1917">1917</OPTION>
+<OPTION value="1918">1918</OPTION>
+<OPTION value="1919">1919</OPTION>
+<OPTION value="1920">1920</OPTION>
+<OPTION value="1921">1921</OPTION>
+<OPTION value="1922">1922</OPTION>
+<OPTION value="1923">1923</OPTION>
+<OPTION value="1924">1924</OPTION>
+<OPTION value="1925">1925</OPTION>
+<OPTION value="1926">1926</OPTION>
+<OPTION value="1927">1927</OPTION>
+<OPTION value="1928">1928</OPTION>
+<OPTION value="1929" >1929</OPTION>
+<OPTION value="1930" >1930</option>
+<OPTION value="1931" >1931</option>
+<OPTION value="1932" >1932</option>
+<OPTION value="1933" >1933</option>
+<OPTION value="1934" >1934</option>
+<OPTION value="1935" >1935</option>
+<OPTION value="1936" >1936</option>
+<OPTION value="1937" >1937</option>
+<OPTION value="1938" >1938</OPTION>
+<OPTION value="1939" >1939</option>
+<OPTION value="1940" >1940</option>
+<OPTION value="1941" >1941</option>
+<OPTION value="1942" >1942</option>
+<OPTION value="1943" >1943</option>
+<OPTION value="1944" >1944</option>
+<OPTION value="1945" >1945</option>
+<OPTION value="1946" >1946</option>
+<OPTION value="1947" >1947</OPTION>
+<OPTION value="1948" >1948</option>
+<OPTION value="1949" >1949</option>
+<OPTION value="1950" >1950</option>
+<OPTION value="1951" >1951</option>
+<OPTION value="1952" >1952</option>
+<OPTION value="1953" >1953</option>
+<OPTION value="1954" >1954</option>
+<OPTION value="1955" >1955</option>
+<OPTION value="1956" >1956</OPTION>
+<OPTION value="1957" >1957</option>
+<OPTION value="1958" >1958</option>
+<OPTION value="1959" >1959</option>
+<OPTION value="1960" >1960</option>
+<OPTION value="1961" >1961</option>
+<OPTION value="1962" >1962</option>
+<OPTION value="1963" >1963</option>
+<OPTION value="1964" >1964</option>
+<OPTION value="1965" >1965</OPTION>
+<OPTION value="1966" >1966</option>
+<OPTION value="1967" >1967</option>
+<OPTION value="1968" >1968</option>
+<OPTION value="1969" >1969</option>
+<OPTION value="1970" >1970</option>
+<OPTION value="1971" >1971</option>
+<OPTION value="1972" >1972</option>
+<OPTION value="1973" >1973</option>
+<OPTION value="1974" >1974</option>
+<OPTION value="1975" >1975</option>
+<OPTION value="1976" >1976</option>
+<OPTION value="1977" >1977</option>
+<OPTION value="1978" >1978</option>
+<OPTION value="1979" >1979</option>
+<OPTION value="1980" >1980</option>
+<OPTION value="1981" >1981</option>
+<OPTION value="1982" >1982</option>
+<OPTION value="1983" >1983</option>
+<OPTION value="1984" >1984</option>
+<OPTION value="1985" >1985</option>
+<OPTION value="1986" >1986</option>
+<OPTION value="1987" >1987</option>
+<OPTION value="1988" >1988</option>
+<OPTION value="1989" >1989</option>
+<OPTION value="1990" >1990</option>
+<OPTION value="1991" >1991</option>
+<OPTION value="1992" >1992</option>
+<OPTION value="1993" >1993</option>
+<OPTION value="1994" >1994</option>
+<OPTION value="1995" >1995</option>
+<OPTION value="1996" >1996</option>
+<OPTION value="1997" >1997</option>
+<OPTION value="1998" >1998</option>
+<OPTION value="1999" >1999</option>
+<OPTION value="2000" >2000</option>
+<OPTION value="2001" >2001</option>
+<OPTION value="2002" >2002</option>
+<OPTION value="2003" >2003</option>
+<OPTION value="2004" >2004</option>
+<OPTION value="2005" >2005</option>
+<OPTION value="2006" >2006</option>
+<OPTION value="2007" >2007</option>
+<OPTION value="2008" >2008</option>
+<OPTION value="2009" >2009</option>
+<OPTION value="2010" >2010</option>
+<OPTION value="2011" >2011</option>
+<OPTION value="2012" >2012</option>
+<OPTION value="2013" >2013</option>
+<OPTION value="2014" >2014</option>
+		  	</select><br>
+		</font></td>
+      </tr>
+      <tr>
+        <td>
+          <input name="includepress" type="checkbox" id="includepress" value="1" />
+          <font face="Arial, Helvetica, sans-serif" size="-1" point-size="9" color="#000066">INCLUDE documents from the Office of the Press Secretary</font></td>
+      </tr>
+      <tr>
+        <td>
+          <input name="includecampaign" type="checkbox" id="includecampaign" value="1" />
+          <font face="Arial, Helvetica, sans-serif" size="-1" point-size="9" color="#000066">INCLUDE election campaign documents</font></td>
+      </tr>
+      <tr>
+        <td align="center"><font face="Arial" size="-1" point-size="9" color="#FFFFFF">
+          <input type="submit" size="2" value="View PPPUS" />
+        </form></font></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#8497AD"><span class="menuhead">Search the Entire Document Archive</span></td>
+      </tr>
+      <tr>
+        <td align="center"><form action="http://www.presidency.ucsb.edu/ws/index.php" method="post"><font face="Arial, Helvetica, sans-serif" color="#000066" size="-1" point-size="9">Enter keyword:&nbsp;</font><a href="#" onClick="MM_openBrWindow('http://www.presidency.ucsb.edu/searchinfo.php','searchinfo','scrollbars=yes,width=320,height=360')"><img src="http://www.presidency.ucsb.edu/images/icons/help.gif" width="16" height="16" border="0" align="absmiddle"></a><br>
+		<input name="searchterm" type="text" size="15">
+		<br><br><font face="Arial, Helvetica, sans-serif" color="#000066" size="-2" point-size="9">
+		<input type=radio name="bool" value="AND" checked>AND
+		<input type=radio name="bool" value="OR">OR
+		<input type=radio name="bool" value="AND NOT">NOT
+		<input name="searchterm1" type=text size="15">
+		<br>Limit by Year</font>
+		<br><font face="Arial, Helvetica, sans-serif" color="#000066" size="-1" point-size="9">From:
+		<select name="yearstart" size="1">
+<OPTION value="1789" selected>1789</option>
+<OPTION value="1790">1790</OPTION>
+<OPTION value="1791">1791</OPTION>
+<OPTION value="1792">1792</OPTION>
+<OPTION value="1793">1793</OPTION>
+<OPTION value="1794">1794</OPTION>
+<OPTION value="1795">1795</OPTION>
+<OPTION value="1796">1796</OPTION>
+<OPTION value="1797">1797</OPTION>
+<OPTION value="1798">1798</OPTION>
+<OPTION value="1799">1799</OPTION>
+<OPTION value="1800">1800</OPTION>
+<OPTION value="1801">1801</OPTION>
+<OPTION value="1802">1802</OPTION>
+<OPTION value="1803">1803</OPTION>
+<OPTION value="1804">1804</OPTION>
+<OPTION value="1805">1805</OPTION>
+<OPTION value="1806">1806</OPTION>
+<OPTION value="1807">1807</OPTION>
+<OPTION value="1808">1808</OPTION>
+<OPTION value="1809">1809</OPTION>
+<OPTION value="1810">1810</OPTION>
+<OPTION value="1811">1811</OPTION>
+<OPTION value="1812">1812</OPTION>
+<OPTION value="1813">1813</OPTION>
+<OPTION value="1814">1814</OPTION>
+<OPTION value="1815">1815</OPTION>
+<OPTION value="1816">1816</OPTION>
+<OPTION value="1817">1817</OPTION>
+<OPTION value="1818">1818</OPTION>
+<OPTION value="1819">1819</OPTION>
+<OPTION value="1820">1820</OPTION>
+<OPTION value="1821">1821</OPTION>
+<OPTION value="1822">1822</OPTION>
+<OPTION value="1823">1823</OPTION>
+<OPTION value="1824">1824</OPTION>
+<OPTION value="1825">1825</OPTION>
+<OPTION value="1826">1826</OPTION>
+<OPTION value="1827">1827</OPTION>
+<OPTION value="1828">1828</OPTION>
+<OPTION value="1829">1829</OPTION>
+<OPTION value="1830">1830</OPTION>
+<OPTION value="1831">1831</OPTION>
+<OPTION value="1832">1832</OPTION>
+<OPTION value="1833">1833</OPTION>
+<OPTION value="1834">1834</OPTION>
+<OPTION value="1835">1835</OPTION>
+<OPTION value="1836">1836</OPTION>
+<OPTION value="1837">1837</OPTION>
+<OPTION value="1838">1838</OPTION>
+<OPTION value="1839">1839</OPTION>
+<OPTION value="1840">1840</OPTION>
+<OPTION value="1841">1841</OPTION>
+<OPTION value="1842">1842</OPTION>
+<OPTION value="1843">1843</OPTION>
+<OPTION value="1844">1844</OPTION>
+<OPTION value="1845">1845</OPTION>
+<OPTION value="1846">1846</OPTION>
+<OPTION value="1847">1847</OPTION>
+<OPTION value="1848">1848</OPTION>
+<OPTION value="1849">1849</OPTION>
+<OPTION value="1850">1850</OPTION>
+<OPTION value="1851">1851</OPTION>
+<OPTION value="1852">1852</OPTION>
+<OPTION value="1853">1853</OPTION>
+<OPTION value="1854">1854</OPTION>
+<OPTION value="1855">1855</OPTION>
+<OPTION value="1856">1856</OPTION>
+<OPTION value="1857">1857</OPTION>
+<OPTION value="1858">1858</OPTION>
+<OPTION value="1859">1859</OPTION>
+<OPTION value="1860">1860</OPTION>
+<OPTION value="1861">1861</OPTION>
+<OPTION value="1862">1862</OPTION>
+<OPTION value="1863">1863</OPTION>
+<OPTION value="1864">1864</OPTION>
+<OPTION value="1865">1865</OPTION>
+<OPTION value="1866">1866</OPTION>
+<OPTION value="1867">1867</OPTION>
+<OPTION value="1868">1868</OPTION>
+<OPTION value="1869">1869</OPTION>
+<OPTION value="1870">1870</OPTION>
+<OPTION value="1871">1871</OPTION>
+<OPTION value="1872">1872</OPTION>
+<OPTION value="1873">1873</OPTION>
+<OPTION value="1874">1874</OPTION>
+<OPTION value="1875">1875</OPTION>
+<OPTION value="1876">1876</OPTION>
+<OPTION value="1877">1877</OPTION>
+<OPTION value="1878">1878</OPTION>
+<OPTION value="1879">1879</OPTION>
+<OPTION value="1880">1880</OPTION>
+<OPTION value="1881">1881</OPTION>
+<OPTION value="1882">1882</OPTION>
+<OPTION value="1883">1883</OPTION>
+<OPTION value="1884">1884</OPTION>
+<OPTION value="1885">1885</OPTION>
+<OPTION value="1886">1886</OPTION>
+<OPTION value="1887">1887</OPTION>
+<OPTION value="1888">1888</OPTION>
+<OPTION value="1889">1889</OPTION>
+<OPTION value="1890">1890</OPTION>
+<OPTION value="1891">1891</OPTION>
+<OPTION value="1892">1892</OPTION>
+<OPTION value="1893">1893</OPTION>
+<OPTION value="1894">1894</OPTION>
+<OPTION value="1895">1895</OPTION>
+<OPTION value="1896">1896</OPTION>
+<OPTION value="1897">1897</OPTION>
+<OPTION value="1898">1898</OPTION>
+<OPTION value="1899">1899</OPTION>
+<OPTION value="1900">1900</OPTION>
+<OPTION value="1901">1901</OPTION>
+<OPTION value="1902">1902</OPTION>
+<OPTION value="1903">1903</OPTION>
+<OPTION value="1904">1904</OPTION>
+<OPTION value="1905">1905</OPTION>
+<OPTION value="1906">1906</OPTION>
+<OPTION value="1907">1907</OPTION>
+<OPTION value="1908">1908</OPTION>
+<OPTION value="1909">1909</OPTION>
+<OPTION value="1910">1910</OPTION>
+<OPTION value="1911">1911</OPTION>
+<OPTION value="1912">1912</OPTION>
+<OPTION value="1913">1913</OPTION>
+<OPTION value="1914">1914</OPTION>
+<OPTION value="1915">1915</OPTION>
+<OPTION value="1916">1916</OPTION>
+<OPTION value="1917">1917</OPTION>
+<OPTION value="1918">1918</OPTION>
+<OPTION value="1919">1919</OPTION>
+<OPTION value="1920">1920</OPTION>
+<OPTION value="1921">1921</OPTION>
+<OPTION value="1922">1922</OPTION>
+<OPTION value="1923">1923</OPTION>
+<OPTION value="1924">1924</OPTION>
+<OPTION value="1925">1925</OPTION>
+<OPTION value="1926">1926</OPTION>
+<OPTION value="1927">1927</OPTION>
+<OPTION value="1928">1928</OPTION>
+<OPTION value="1929">1929</OPTION>
+<OPTION value="1930">1930</OPTION>
+<OPTION value="1929" >1929</option>
+<OPTION value="1930" >1930</option>
+<OPTION value="1931" >1931</option>
+<OPTION value="1932" >1932</option>
+<OPTION value="1933" >1933</option>
+<OPTION value="1934" >1934</option>
+<OPTION value="1935" >1935</option>
+<OPTION value="1936" >1936</option>
+<OPTION value="1937" >1937</option>
+<OPTION value="1938" >1938</OPTION>
+<OPTION value="1939" >1939</option>
+<OPTION value="1940" >1940</option>
+<OPTION value="1941" >1941</option>
+<OPTION value="1942" >1942</option>
+<OPTION value="1943" >1943</option>
+<OPTION value="1944" >1944</option>
+<OPTION value="1945" >1945</option>
+<OPTION value="1946" >1946</option>
+<OPTION value="1947" >1947</OPTION>
+<OPTION value="1948" >1948</option>
+<OPTION value="1949" >1949</option>
+<OPTION value="1950" >1950</option>
+<OPTION value="1951" >1951</option>
+<OPTION value="1952" >1952</option>
+<OPTION value="1953" >1953</option>
+<OPTION value="1954" >1954</option>
+<OPTION value="1955" >1955</option>
+<OPTION value="1956" >1956</OPTION>
+<OPTION value="1957" >1957</option>
+<OPTION value="1958" >1958</option>
+<OPTION value="1959" >1959</option>
+<OPTION value="1960" >1960</option>
+<OPTION value="1961" >1961</option>
+<OPTION value="1962" >1962</option>
+<OPTION value="1963" >1963</option>
+<OPTION value="1964" >1964</option>
+<OPTION value="1965" >1965</OPTION>
+<OPTION value="1966" >1966</option>
+<OPTION value="1967" >1967</option>
+<OPTION value="1968" >1968</option>
+<OPTION value="1969" >1969</option>
+<OPTION value="1970" >1970</option>
+<OPTION value="1971" >1971</option>
+<OPTION value="1972" >1972</option>
+<OPTION value="1973" >1973</option>
+<OPTION value="1974" >1974</option>
+<OPTION value="1975" >1975</option>
+<OPTION value="1976" >1976</option>
+<OPTION value="1977" >1977</option>
+<OPTION value="1978" >1978</option>
+<OPTION value="1979" >1979</option>
+<OPTION value="1980" >1980</option>
+<OPTION value="1981" >1981</option>
+<OPTION value="1982" >1982</option>
+<OPTION value="1983" >1983</option>
+<OPTION value="1984" >1984</option>
+<OPTION value="1985" >1985</option>
+<OPTION value="1986" >1986</option>
+<OPTION value="1987" >1987</option>
+<OPTION value="1988" >1988</option>
+<OPTION value="1989" >1989</option>
+<OPTION value="1990" >1990</option>
+<OPTION value="1991" >1991</option>
+<OPTION value="1992" >1992</option>
+<OPTION value="1993" >1993</option>
+<OPTION value="1994" >1994</option>
+<OPTION value="1995" >1995</option>
+<OPTION value="1996" >1996</option>
+<OPTION value="1997" >1997</option>
+<OPTION value="1998" >1998</option>
+<OPTION value="1999" >1999</option>
+<OPTION value="2000" >2000</option>
+<OPTION value="2001" >2001</option>
+<OPTION value="2002" >2002</option>
+<OPTION value="2003" >2003</option>
+<OPTION value="2004" >2004</option>
+<OPTION value="2005" >2005</option>
+<OPTION value="2006" >2006</option>
+<OPTION value="2007" >2007</option>
+<OPTION value="2008" >2008</option>
+<OPTION value="2009" >2009</option>
+<OPTION value="2010" >2010</option>
+<OPTION value="2011" >2011</option>
+<OPTION value="2012" >2012</option>
+<OPTION value="2013" >2013</option>
+<OPTION value="2014" >2014</option>
+		 </select>
+		 <br>
+		To &nbsp; &nbsp;:
+		<select name="yearend" size="1">
+<OPTION value="1789">1789</OPTION>
+<OPTION value="1790">1790</OPTION>
+<OPTION value="1791">1791</OPTION>
+<OPTION value="1792">1792</OPTION>
+<OPTION value="1793">1793</OPTION>
+<OPTION value="1794">1794</OPTION>
+<OPTION value="1795">1795</OPTION>
+<OPTION value="1796">1796</OPTION>
+<OPTION value="1797">1797</OPTION>
+<OPTION value="1798">1798</OPTION>
+<OPTION value="1799">1799</OPTION>
+<OPTION value="1800">1800</OPTION>
+<OPTION value="1801">1801</OPTION>
+<OPTION value="1802">1802</OPTION>
+<OPTION value="1803">1803</OPTION>
+<OPTION value="1804">1804</OPTION>
+<OPTION value="1805">1805</OPTION>
+<OPTION value="1806">1806</OPTION>
+<OPTION value="1807">1807</OPTION>
+<OPTION value="1808">1808</OPTION>
+<OPTION value="1809">1809</OPTION>
+<OPTION value="1810">1810</OPTION>
+<OPTION value="1811">1811</OPTION>
+<OPTION value="1812">1812</OPTION>
+<OPTION value="1813">1813</OPTION>
+<OPTION value="1814">1814</OPTION>
+<OPTION value="1815">1815</OPTION>
+<OPTION value="1816">1816</OPTION>
+<OPTION value="1817">1817</OPTION>
+<OPTION value="1818">1818</OPTION>
+<OPTION value="1819">1819</OPTION>
+<OPTION value="1820">1820</OPTION>
+<OPTION value="1821">1821</OPTION>
+<OPTION value="1822">1822</OPTION>
+<OPTION value="1823">1823</OPTION>
+<OPTION value="1824">1824</OPTION>
+<OPTION value="1825">1825</OPTION>
+<OPTION value="1826">1826</OPTION>
+<OPTION value="1827">1827</OPTION>
+<OPTION value="1828">1828</OPTION>
+<OPTION value="1829">1829</OPTION>
+<OPTION value="1830">1830</OPTION>
+<OPTION value="1831">1831</OPTION>
+<OPTION value="1832">1832</OPTION>
+<OPTION value="1833">1833</OPTION>
+<OPTION value="1834">1834</OPTION>
+<OPTION value="1835">1835</OPTION>
+<OPTION value="1836">1836</OPTION>
+<OPTION value="1837">1837</OPTION>
+<OPTION value="1838">1838</OPTION>
+<OPTION value="1839">1839</OPTION>
+<OPTION value="1840">1840</OPTION>
+<OPTION value="1841">1841</OPTION>
+<OPTION value="1842">1842</OPTION>
+<OPTION value="1843">1843</OPTION>
+<OPTION value="1844">1844</OPTION>
+<OPTION value="1845">1845</OPTION>
+<OPTION value="1846">1846</OPTION>
+<OPTION value="1847">1847</OPTION>
+<OPTION value="1848">1848</OPTION>
+<OPTION value="1849">1849</OPTION>
+<OPTION value="1850">1850</OPTION>
+<OPTION value="1851">1851</OPTION>
+<OPTION value="1852">1852</OPTION>
+<OPTION value="1853">1853</OPTION>
+<OPTION value="1854">1854</OPTION>
+<OPTION value="1855">1855</OPTION>
+<OPTION value="1856">1856</OPTION>
+<OPTION value="1857">1857</OPTION>
+<OPTION value="1858">1858</OPTION>
+<OPTION value="1859">1859</OPTION>
+<OPTION value="1860">1860</OPTION>
+<OPTION value="1861">1861</OPTION>
+<OPTION value="1862">1862</OPTION>
+<OPTION value="1863">1863</OPTION>
+<OPTION value="1864">1864</OPTION>
+<OPTION value="1865">1865</OPTION>
+<OPTION value="1866">1866</OPTION>
+<OPTION value="1867">1867</OPTION>
+<OPTION value="1868">1868</OPTION>
+<OPTION value="1869">1869</OPTION>
+<OPTION value="1870">1870</OPTION>
+<OPTION value="1871">1871</OPTION>
+<OPTION value="1872">1872</OPTION>
+<OPTION value="1873">1873</OPTION>
+<OPTION value="1874">1874</OPTION>
+<OPTION value="1875">1875</OPTION>
+<OPTION value="1876">1876</OPTION>
+<OPTION value="1877">1877</OPTION>
+<OPTION value="1878">1878</OPTION>
+<OPTION value="1879">1879</OPTION>
+<OPTION value="1880">1880</OPTION>
+<OPTION value="1881">1881</OPTION>
+<OPTION value="1882">1882</OPTION>
+<OPTION value="1883">1883</OPTION>
+<OPTION value="1884">1884</OPTION>
+<OPTION value="1885">1885</OPTION>
+<OPTION value="1886">1886</OPTION>
+<OPTION value="1887">1887</OPTION>
+<OPTION value="1888">1888</OPTION>
+<OPTION value="1889">1889</OPTION>
+<OPTION value="1890">1890</OPTION>
+<OPTION value="1891">1891</OPTION>
+<OPTION value="1892">1892</OPTION>
+<OPTION value="1893">1893</OPTION>
+<OPTION value="1894">1894</OPTION>
+<OPTION value="1895">1895</OPTION>
+<OPTION value="1896">1896</OPTION>
+<OPTION value="1897">1897</OPTION>
+<OPTION value="1898">1898</OPTION>
+<OPTION value="1899">1899</OPTION>
+<OPTION value="1900">1900</OPTION>
+<OPTION value="1901">1901</OPTION>
+<OPTION value="1902">1902</OPTION>
+<OPTION value="1903">1903</OPTION>
+<OPTION value="1904">1904</OPTION>
+<OPTION value="1905">1905</OPTION>
+<OPTION value="1906">1906</OPTION>
+<OPTION value="1907">1907</OPTION>
+<OPTION value="1908">1908</OPTION>
+<OPTION value="1909">1909</OPTION>
+<OPTION value="1910">1910</OPTION>
+<OPTION value="1911">1911</OPTION>
+<OPTION value="1912">1912</OPTION>
+<OPTION value="1913">1913</OPTION>
+<OPTION value="1914">1914</OPTION>
+<OPTION value="1915">1915</OPTION>
+<OPTION value="1916">1916</OPTION>
+<OPTION value="1917">1917</OPTION>
+<OPTION value="1918">1918</OPTION>
+<OPTION value="1919">1919</OPTION>
+<OPTION value="1920">1920</OPTION>
+<OPTION value="1921">1921</OPTION>
+<OPTION value="1922">1922</OPTION>
+<OPTION value="1923">1923</OPTION>
+<OPTION value="1924">1924</OPTION>
+<OPTION value="1925">1925</OPTION>
+<OPTION value="1926">1926</OPTION>
+<OPTION value="1927">1927</OPTION>
+<OPTION value="1928" >1928</OPTION>
+<OPTION value="1929" >1929</OPTION>
+<OPTION value="1930" >1930</option>
+<OPTION value="1931" >1931</option>
+<OPTION value="1932" >1932</option>
+<OPTION value="1933" >1933</option>
+<OPTION value="1934" >1934</option>
+<OPTION value="1935" >1935</option>
+<OPTION value="1936" >1936</option>
+<OPTION value="1937" >1937</option>
+<OPTION value="1938" >1938</OPTION>
+<OPTION value="1939" >1939</option>
+<OPTION value="1940" >1940</option>
+<OPTION value="1941" >1941</option>
+<OPTION value="1942" >1942</option>
+<OPTION value="1943" >1943</option>
+<OPTION value="1944" >1944</option>
+<OPTION value="1945" >1945</option>
+<OPTION value="1946" >1946</option>
+<OPTION value="1947" >1947</OPTION>
+<OPTION value="1948" >1948</option>
+<OPTION value="1949" >1949</option>
+<OPTION value="1950" >1950</option>
+<OPTION value="1951" >1951</option>
+<OPTION value="1952" >1952</option>
+<OPTION value="1953" >1953</option>
+<OPTION value="1954" >1954</option>
+<OPTION value="1955" >1955</option>
+<OPTION value="1956" >1956</OPTION>
+<OPTION value="1957" >1957</option>
+<OPTION value="1958" >1958</option>
+<OPTION value="1959" >1959</option>
+<OPTION value="1960" >1960</option>
+<OPTION value="1961" >1961</option>
+<OPTION value="1962" >1962</option>
+<OPTION value="1963" >1963</option>
+<OPTION value="1964" >1964</option>
+<OPTION value="1965" >1965</OPTION>
+<OPTION value="1966" >1966</option>
+<OPTION value="1967" >1967</option>
+<OPTION value="1968" >1968</option>
+<OPTION value="1969" >1969</option>
+<OPTION value="1970" >1970</option>
+<OPTION value="1971" >1971</option>
+<OPTION value="1972" >1972</option>
+<OPTION value="1973" >1973</option>
+<OPTION value="1974" >1974</option>
+<OPTION value="1975" >1975</option>
+<OPTION value="1976" >1976</option>
+<OPTION value="1977" >1977</option>
+<OPTION value="1978" >1978</option>
+<OPTION value="1979" >1979</option>
+<OPTION value="1980" >1980</option>
+<OPTION value="1981" >1981</option>
+<OPTION value="1982" >1982</option>
+<OPTION value="1983" >1983</option>
+<OPTION value="1984" >1984</option>
+<OPTION value="1985" >1985</option>
+<OPTION value="1986" >1986</option>
+<OPTION value="1987" >1987</option>
+<OPTION value="1988" >1988</option>
+<OPTION value="1989" >1989</option>
+<OPTION value="1990" >1990</option>
+<OPTION value="1991" >1991</option>
+<OPTION value="1992" >1992</option>
+<OPTION value="1993" >1993</option>
+<OPTION value="1994" >1994</option>
+<OPTION value="1995" >1995</option>
+<OPTION value="1996" >1996</option>
+<OPTION value="1997" >1997</option>
+<OPTION value="1998" >1998</option>
+<OPTION value="1999" >1999</option>
+<OPTION value="2000" >2000</option>
+<OPTION value="2001" >2001</option>
+<OPTION value="2002" >2002</option>
+<OPTION value="2003" >2003</option>
+<OPTION value="2004" >2004</option>
+<OPTION value="2005" >2005</option>
+<option value="2006" >2006</option>
+<option value="2007" >2007</option>
+<option value="2008" >2008</option>
+<option value="2009" >2009</option>
+<option value="2010" >2010</option>
+<option value="2011" >2011</option>
+<option value="2012" >2012</option>
+<option value="2013" >2013</option>
+<option value="2014" selected>2014</option>
+		 </select>
+		</font><br>
+		<font face="Arial, Helvetica, sans-serif" color="#000066" size="-1" point-size="9">Limit results per page<br>
+		    <select name="limit" size="1">
+		      <OPTION value="10">10</OPTION>
+		      <OPTION value="20">20</option>
+		      <OPTION value="30" selected>30</option>
+		      <OPTION value="40">40</option>
+		      <OPTION value="50">50</option>
+		       </select>
+		    <input type="hidden" name="lowerlimit" value="0">
+		    <input type="hidden" name="monthstart" value="01">
+		    <input type="hidden" name="monthend" value="12">
+		    <input type="hidden" name="daystart" value="01">
+		    <input type="hidden" name="dayend" value="31">
+		    <div align="left"><font face="Arial, Helvetica, sans-serif" size="-1" point-size="9" color="#000066"><br>
+		      <input name="includepress" type="checkbox" id="includepress" value="1"><em>INCLUDE</em> documents from the Office of the Press Secretary</font><br>
+              <input name="includecampaign" type="checkbox" id="includecampaign" value="1"><em>INCLUDE </em>election campaign documents</font></div><br>
+		  <input type="submit" value="Search">
+		  </form></td>
+      </tr>
+      <tr>
+        <td align="center" bgcolor="#8497AD"><span class="menuhead">Instructions</span></td>
+      </tr>
+      <tr>
+        <td align="justify"><font face="Arial, Helvetica, sans-serif" color="#000066" size="-1" point-size="9">
+		You can search the Public Papers in two ways:
+		<br><br>
+		<b>1. Search by Keyword and Year</b>
+		<br>
+		You can search by keyword and choose the range of years within your search by filling out the boxes under <font color="#0000FF">Search the Public Papers.</font>
+		<br><br>
+		<B>2. View by Month and/or Year</B>
+		<br>
+		Select the month and/or year you would like information about and press <font color="#0000FF">View Public Papers. Then choose a Public Paper and the page will load for you.</font>
+		<br><br><span class="docfooter">Search Engine provided by the Harry S. Truman Library. Our thanks to <br>Jim Borwick and Dr. Rafee Che Kassim at Project Whistlestop for critical assistance in the implementation of the search function, and to Scott Roley at the Truman Library for facilitating this collaboration.</span></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table></td>
+  	</tr>
+</table>
+	</td>
+		<td height="486" valign="top"><table width="98%"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>      </td>
+          <script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+function setCookie(name, value) {
+  var curCookie = name + "=" + escape(value) + "; expires=Wed, 21-Jul-2086 11:07:25 GMT; path=/; domain=www.presidency.ucsb.edu";
+  document.cookie = curCookie;
+  //self.location.href = self.location.href;
+  window.location.href = window.location.href;
+}
+
+function setFontCookie(name, value) {
+  var curCookie = name + "=" + escape(value) + "; expires=Wed, 21-Jul-2086 11:07:25 GMT; path=/; domain=www.presidency.ucsb.edu";
+  document.cookie = curCookie;
+  //self.location.href = self.location.href;
+  window.location.href = window.location.href;
+}
+
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+	begin = dc.indexOf(prefix);
+	if (begin != 0) return null;
+  } else
+	begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+	end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+if (getCookie('fontsize') == null) {
+	var fontsize = 11;
+} else {
+	var fontsize = getCookie('fontsize');
+}
+function changeFontSize (fontsize) {
+	setFontCookie('fontsize',fontsize);
+}
+document.write('<style type="text/css">');
+document.write('.displaytext {font-size:'+fontsize+'px;font-family: Georgia, "Times New Roman", Times, serif;14px;color: #000;padding: 0px 0 30px 0px;LINE-HEIGHT: 150%;}');
+document.write('<\/style>');
+
+//-->
+</SCRIPT>
+<title>Barack Obama: Address Before a Joint Session of Congress on the State of the Union</title>
+	<meta name="title" content="Barack Obama: Address Before a Joint Session of Congress on the State of the Union - February 12, 2013" /><link rel="image_src" href="http://www.presidency.ucsb.edu/images/44.jpg" /><table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+	  <tr>
+	    <td width="120" valign="top"><img src=http://www.presidency.ucsb.edu/images/44.jpg alt=Barack Obama></td>
+	  <td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+	    <tr><td valign="top"><img src="http://www.presidency.ucsb.edu/images/names/44.gif" alt="Barack Obama"></td>
+	      <td width="100" rowspan="2"><table width="100" border="0" cellspacing="10" cellpadding="0">
+	        <tr>
+	          <td><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://www.facebook.com/pages/The-American-Presidency-Project/103922850052" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div></td>
+	          </tr>
+	        <tr>
+	          <td><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.presidency.ucsb.edu" data-text="Check out this site" data-via="Presidency_Proj" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
+	          </tr>
+	        <tr>
+	          <td><!-- Place this tag where you want the +1 button to render -->
+<g:plusone size="medium" annotation="none"></g:plusone>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script></td>
+	          </tr>
+          </table></td>
+	    </tr>
+	    <tr><td style="padding-left:5px"><span class="paperstitle">90&nbsp;-&nbsp;Address Before a Joint Session of Congress on the State of the Union</span><br><span class="docdate">February 12, 2013</span></td>
+        </tr>
+	  </table></td>
+	  </tr></table>
+	<table width="760" border="0" align="center">
+	<tr>
+	<td width="100%"></td>
+	<tr><td colspan="3"><img src="http://www.presidency.ucsb.edu/images/spacer.gif" width="1" height="5"></td></tr>
+	<tr>
+	<td width=100% colspan="3" align=left valign=top wrap>
+	<div class="tools"><DIV class="toolbox">
+	<table width="120" border="0" cellspacing="0" cellpadding="0">
+    							    	    									<tr><td class=ver10 align=center style=padding:2px;><img src=../images/dcpd.gif alt='Daily Compilation of Presidential Documents'></td></tr><tr><td class=ver10 align=center>Daily Compilation of Presidential Documents</td></tr>  	<tr><td class='ver10' bgcolor='#999999'><img src='../images/spacer.gif' height='1' width='1'></td></tr><tr><td class=ver10 align=center style=padding:2px; bgcolor='#F3F3F3'>Location:<br><img src=../images/flags/DC.jpg><br>District of Columbia<br>Washington</td></tr>				<tr><td class="ver10" bgcolor="#999999"><img src="../images/spacer.gif" height="1" width="1"></td></tr>
+	<tr><td class="ver10" align="center" style="padding-top:2px;">Font Size:</td></tr>
+	<tr><td align="center" style="padding:3px"><SCRIPT language=JavaScript type=text/javascript>
+			document.write('<!-- fontsize=' + fontsize + '-->')
+			if (fontsize == 12) {
+				document.write('<a href="#" onClick="changeFontSize(10); return false;"><img src="http://www.presidency.ucsb.edu/images/text_small.gif" alt="small" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			} else {
+
+				document.write('<a href="#" onClick="changeFontSize(10); return false;"><img src="http://www.presidency.ucsb.edu/images/text_small.gif" alt="small" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			}
+
+			if (fontsize == 15) {
+				document.write('<a href="#" onClick="changeFontSize(12); return false;"><img src="http://www.presidency.ucsb.edu/images/text_medium.gif" alt="medium" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			} else {
+				document.write('<a href="#" onClick="changeFontSize(12); return false;"><img src="http://www.presidency.ucsb.edu/images/text_medium.gif" alt="medium" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			}
+
+			if (fontsize == 17) {
+				document.write('<a href="#" onClick="changeFontSize(14); return false;"><img src="http://www.presidency.ucsb.edu/images/text_large.gif" alt="large" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			} else {
+				document.write('<a href="#" onClick="changeFontSize(14); return false;"><img src="http://www.presidency.ucsb.edu/images/text_large.gif" alt="large" width="16" height="16" hspace="1" vspace="1" border="0" /\><\/a>');
+			}
+
+			if (fontsize == 20) {
+				document.write('<a href="#" onClick="changeFontSize(20); return false;"><img src="http://www.presidency.ucsb.edu/images/text_largest.gif" alt="maximum" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a><\/div>');
+			} else {
+				document.write('<a href="#" onClick="changeFontSize(20); return false;"><img src="http://www.presidency.ucsb.edu/images/text_largest.gif" alt="maximum" width="16" height="16" hspace="1" vspace="1" border="0" \/><\/a>');
+			}
+		</SCRIPT></td></tr>
+	<tr><td class="ver10" bgcolor="#999999"><img src="../images/spacer.gif" height="1" width="1"></td></tr>
+	<tr><td class="ver10" style="padding-left:2px; padding-top:2px;"><a href="print.php?pid=102826"><img src="../images/icons/print.gif" width="44" height="19" alt="Print" border="0"></a></td>
+	</tr>
+	<!--<tr><td class="ver10" style="padding:3px"><img src="http://www.presidency.ucsb.edu/images/icons/copyright.gif" align="absmiddle">&nbsp;<a href="#" class="ver10" onClick="MM_openBrWindow('http://www.presidency.ucsb.edu/permissionreq.php?permid=102826','permissions','scrollbars=yes,resizable=yes,width=500,height=450')">Republish</a></td></tr>-->
+	<tr><td class="ver10" style="padding:3px"><img src="http://www.presidency.ucsb.edu/images/icons/attention.gif" align="absmiddle">&nbsp;<a href="#" class="ver10" onClick="MM_openBrWindow('http://www.presidency.ucsb.edu/typo.php?typoid=102826','typos','scrollbars=yes,resizable=yes,width=500,height=450')">Report Typo</a></td></tr>
+    <tr><td class=ver10 bgcolor=#999999><img src=../images/spacer.gif height=1 width=1></td></tr>
+    <!--<tr><td style="padding:3px"><script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a href="http://www.facebook.com/share.php?u=http://www.presidency.ucsb.edu/ws/index.php?pid=102826" onclick="return fbs_click()" target="_blank" class="ver10"><img src="http://www.presidency.ucsb.edu/images/facebook.jpg" align="absmiddle">Share on Facebook</a></td></tr>
+	<tr><td style="padding:3px"><a href="http://www.google.com/bookmarks/mark?op=add&title=Barack Obama:%20Address Before a Joint Session of Congress on the State of the Union&labels=&annotation=&bkmk=http://www.presidency.ucsb.edu/ws/index.php?pid=102826" class="ver10"><img src="http://www.presidency.ucsb.edu/images/google.jpg" align="absmiddle">Save on Google</a></td></tr>
+	<tr><td style="padding:3px"><a href="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?v=4&noui&jump=close&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'delicious','toolbar=no,width=700,height=400'); return false;" class="ver10"><img src="http://www.presidency.ucsb.edu/images/delicious.jpg" align="absmiddle">Save at del.icio.us</a></td></tr>
+	<tr><td style="padding:3px" class="ver10"><a href="http://digg.com/submit?phase=2&url=http://www.presidency.ucsb.edu/ws/index.php?pid=102826"><img src="http://www.presidency.ucsb.edu/images/digg.gif" align="absmiddle"></a>&nbsp;<a href="http://digg.com/submit?phase=2&url=http://www.presidency.ucsb.edu/ws/index.php?pid=102826" class="ver10">Digg this</a></td></tr>
+	<tr><td style="padding:3px" class="ver10"><a href="http://digg.com/submit?url=http://www.presidency.ucsb.edu/ws/index.php?pid=102826&title=Barack Obama:%20Address Before a Joint Session of Congress on the State of the Union&bodytext=The%20American%20Presidency%20Project" class="ver10"><img src="http://www.presidency.ucsb.edu/images/digg.gif" align="absmiddle"></a>&nbsp;<a href="http://digg.com/submit?url=http://www.presidency.ucsb.edu/ws/index.php?pid=102826&title=Barack Obama:%20Address Before a Joint Session of Congress on the State of the Union&bodytext=The%20American%20Presidency%20Project" class="ver10">Digg this</a></td></tr>-->
+	<tr><td style="padding:3px" class="ver10">
+<!-- AddThis Button BEGIN -->
+<center><div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=gerhard71" class="addthis_button_compact">Share</a>
+<br><br>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_myspace"></a>
+<a class="addthis_button_google"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_favorites"></a>
+</div></center>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=gerhard71"></script>
+<!-- AddThis Button END -->
+
+</td></tr>
+	<tr>
+	  <td align="center" class="ver10" style="padding:3px"><!-- Facebook Badge START --><a href="http://www.facebook.com/pages/The-American-Presidency-Project/103922850052" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="The American Presidency Project">The American Presidency Project</a><br/><a href="http://www.facebook.com/pages/The-American-Presidency-Project/103922850052" target="_TOP" title="The American Presidency Project"><img src="http://badge.facebook.com/badge/103922850052.3508.1246842167.png" width="120" height="213" style="border: 0px;" /></a><br/><a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote Your Page Too</a><!-- Facebook Badge END --></td>
+	  </tr>
+
+
+
+		</table>
+   </div></div><span class="displaytext">Please, everybody, have a seat. Mr. Speaker, Mr. Vice President, Members of Congress, fellow Americans: Fifty-one years ago, John F. Kennedy declared to this Chamber that "the Constitution makes us not rivals for power, but partners for progress." "It is my task," he said, "to report the state of the Union; to improve it is the task of us all." <p>Tonight, thanks to the grit and determination of the American people, there is much progress to report. After a decade of grinding war, our brave men and women in uniform are coming home. After years of grueling recession, our businesses have created over 6 million new jobs. We buy more American cars than we have in 5 years and less foreign oil than we have in 20. Our housing market is healing, our stock market is rebounding, and consumers, patients, and homeowners enjoy stronger protections than ever before. <p>So together, we have cleared away the rubble of crisis, and we can say with renewed confidence that the state of our Union is stronger. <p>But we gather here knowing that there are millions of Americans whose hard work and dedication have not yet been rewarded. Our economy is adding jobs, but too many people still can't find full-time employment. Corporate profits have skyrocketed to alltime highs, but for more than a decade, wages and incomes have barely budged. <p>It is our generation's task, then, to reignite the true engine of America's economic growth: a rising, thriving middle class. <p>It is our unfinished task to restore the basic bargain that built this country: the idea that if you work hard and meet your responsibilities, you can get ahead, no matter where you come from, no matter what you look like or who you love. <p>It is our unfinished task to make sure that this Government works on behalf of the many, and not just the few; that it encourages free enterprise, rewards individual initiative, and opens the doors of opportunity to every child across this great Nation. <p>The American people don't expect government to solve every problem. They don't expect those of us in this Chamber to agree on every issue. But they do expect us to put the Nation's interests before party. They do expect us to forge reasonable compromise where we can. For they know that America moves forward only when we do so together and that the responsibility of improving this Union remains the task of us all. <p>Now, our work must begin by making some basic decisions about our budget, decisions that will have a huge impact on the strength of our recovery. <p>Over the last few years, both parties have worked together to reduce the deficit by more than $2.5 trillion, mostly through spending cuts, but also by raising tax rates on the wealthiest 1 percent of Americans. As a result, we are more than halfway towards the goal of $4 trillion in deficit reduction that economists say we need to stabilize our finances. <p>Now we need to finish the job. And the question is, how? <p>In 2011, Congress passed a law saying that if both parties couldn't agree on a plan to reach our deficit goal, about a trillion dollars' worth of budget cuts would automatically go into effect this year. These sudden, harsh, arbitrary cuts would jeopardize our military readiness. They'd devastate priorities like education and energy and medical research. They would certainly slow our recovery and cost us hundreds of thousands of jobs. And that's why Democrats, Republicans, business leaders, and economists have already said that these cuts&mdash;known here in Washington as the sequester&mdash;are a really bad idea. <p>Now, some in Congress have proposed preventing only the defense cuts by making even bigger cuts to things like education and job training, Medicare, and Social Security benefits. That idea is even worse. <p>Yes, the biggest driver of our long-term debt is the rising cost of health care for an aging population. And those of us who care deeply about programs like Medicare must embrace the need for modest reforms; otherwise, our retirement programs will crowd out the investments we need for our children and jeopardize the promise of a secure retirement for future generations. <p>But we can't ask senior citizens and working families to shoulder the entire burden of deficit reduction while asking nothing more from the wealthiest and the most powerful. We won't grow the middle class simply by shifting the cost of health care or college onto families that are already struggling or by forcing communities to lay off more teachers and more cops and more firefighters. Most Americans&mdash;Democrats, Republicans, and Independents&mdash;understand that we can't just cut our way to prosperity. They know that broad-based economic growth requires a balanced approach to deficit reduction, with spending cuts and revenue and with everybody doing their fair share. And that's the approach I offer tonight. <p>On Medicare, I'm prepared to enact reforms that will achieve the same amount of health care savings by the beginning of the next decade as the reforms proposed by the bipartisan Simpson-Bowles Commission. <p>Already, the Affordable Care Act is helping to slow the growth of health care costs. And the reforms I'm proposing go even further. We'll reduce taxpayer subsidies to prescription drug companies and ask more from the wealthiest seniors. We'll bring down costs by changing the way our Government pays for Medicare, because our medical bills shouldn't be based on the number of tests ordered or days spent in the hospital; they should be based on the quality of care that our seniors receive. And I am open to additional reforms from both parties, so long as they don't violate the guarantee of a secure retirement. Our Government shouldn't make promises we cannot keep, but we must keep the promises we've already made. <p>To hit the rest of our deficit reduction target, we should do what leaders in both parties have already suggested and save hundreds of billions of dollars by getting rid of tax loopholes and deductions for the well-off and the well-connected. After all, why would we choose to make deeper cuts to education and Medicare just to protect special interest tax breaks? How is that fair? Why is it that deficit reduction is a big emergency justifying making cuts in Social Security benefits, but not closing some loopholes? How does that promote growth? <p>Now is our best chance for bipartisan, comprehensive tax reform that encourages job creation and helps bring down the deficit. We can get this done. The American people deserve a Tax Code that helps small businesses spend less time filling out complicated forms and more time expanding and hiring; a Tax Code that ensures billionaires with high-powered accountants can't work the system and pay a lower rate than their hard-working secretaries; a Tax Code that lowers incentives to move jobs overseas and lowers tax rates for businesses and manufacturers that are creating jobs right here in the United States of America. That's what tax reform can deliver. That's what we can do together. <p>I realize that tax reform and entitlement reform will not be easy. The politics will be hard for both sides. None of us will get a hundred percent of what we want. But the alternative will cost us jobs, hurt our economy, visit hardship on millions of hard-working Americans. So let's set party interests aside and work to pass a budget that replaces reckless cuts with smart savings and wise investments in our future. And let's do it without the brinksmanship that stresses consumers and scares off investors. The greatest nation on Earth cannot keep conducting its business by drifting from one manufactured crisis to the next. We can't do it. <p>Let's agree right here, right now to keep the people's Government open and pay our bills on time and always uphold the full faith and credit of the United States of America. The American people have worked too hard, for too long, rebuilding from one crisis to see their elected officials cause another. <p>Now, most of us agree that a plan to reduce the deficit must be part of our agenda. But let's be clear: Deficit reduction alone is not an economic plan. A growing economy that creates good, middle class jobs, that must be the north star that guides our efforts. Every day, we should ask ourselves three questions as a nation: How do we attract more jobs to our shores? How do we equip our people with the skills they need to get those jobs? And how do we make sure that hard work leads to a decent living? <p>Now, a year and a half ago, I put forward an American Jobs Act that independent economists said would create more than 1 million new jobs. And I thank the last Congress for passing some of that agenda. I urge this Congress to pass the rest. But tonight I'll lay out additional proposals that are fully paid for and fully consistent with the budget framework both parties agreed to just 18 months ago. Let me repeat: Nothing I'm proposing tonight should increase our deficit by a single dime. It is not a bigger Government we need, but a smarter Government that sets priorities and invests in broad-based growth. That's what we should be looking for. <p>Our first priority is making America a magnet for new jobs and manufacturing. After shedding jobs for more than 10 years, our manufacturers have added about 500,000 jobs over the past 3. Caterpillar is bringing jobs back from Japan. Ford is bringing jobs back from Mexico. And this year, Apple will start making Macs in America again. <p>There are things we can do right now to accelerate this trend. Last year, we created our first manufacturing innovation institute in Youngstown, Ohio. A once-shuttered warehouse is now a state-of-the-art lab where new workers are mastering the 3-D printing that has the potential to revolutionize the way we make almost everything. There's no reason this can't happen in other towns. <p>So tonight I'm announcing the launch of three more of these manufacturing hubs, where businesses will partner with the Department of Defense and Energy to turn regions left behind by globalization into global centers of high-tech jobs. And I ask this Congress to help create a network of 15 of these hubs and guarantee that the next revolution in manufacturing is made right here in America. We can get that done. <p>Now, if we want to make the best products, we also have to invest in the best ideas. Every dollar we invested to map the human genome returned $140 to our economy&mdash;every dollar. Today, our scientists are mapping the human brain to unlock the answers to Alzheimer's. They're developing drugs to regenerate damaged organs, devising new materials to make batteries 10 times more powerful. Now is not the time to gut these job-creating investments in science and innovation, now is the time to reach a level of research and development not seen since the height of the space race. We need to make those investments. <p>Today, no area holds more promise than our investments in American energy. After years of talking about it, we're finally poised to control our own energy future. We produce more oil at home than we have in 15 years. We have doubled the distance our cars will go on a gallon of gas and the amount of renewable energy we generate from sources like wind and solar, with tens of thousands of good American jobs to show for it. We produce more natural gas than ever before, and nearly everyone's energy bill is lower because of it. And over the last 4 years, our emissions of the dangerous carbon pollution that threatens our planet have actually fallen. <p>But for the sake of our children and our future, we must do more to combat climate change. Now, it's true that no single event makes a trend. But the fact is, the 12 hottest years on record have all come in the last 15. Heat waves, droughts, wildfires, floods&mdash;all are now more frequent and more intense. We can choose to believe that Superstorm Sandy and the most severe drought in decades and the worst wildfires some States have ever seen were all just a freak coincidence. Or we can choose to believe in the overwhelming judgment of science and act before it's too late. <p>Now, the good news is we can make meaningful progress on this issue while driving strong economic growth. I urge this Congress to get together, pursue a bipartisan, market-based solution to climate change, like the one John McCain and Joe Lieberman worked on together a few years ago. But if Congress won't act soon to protect future generations, I will. I will direct my Cabinet to come up with executive actions we can take, now and in the future, to reduce pollution, prepare our communities for the consequences of climate change, and speed the transition to more sustainable sources of energy. <p>And 4 years ago, other countries dominated the clean energy market and the jobs that came with it. And we've begun to change that. Last year, wind energy added nearly half of all new power capacity in America. So let's generate even more. Solar energy gets cheaper by the year; let's drive down costs even further. As long as countries like China keep going all in on clean energy, so must we. <p>Now, in the meantime, the natural gas boom has led to cleaner power and greater energy independence. We need to encourage that. And that's why my administration will keep cutting redtape and speeding up new oil and gas permits. That's got to be part of an all-of-the-above plan. But I also want to work with this Congress to encourage the research and technology that helps natural gas burn even cleaner and protects our air and our water. <p>In fact, much of our new-found energy is drawn from lands and waters that we, the public, own together. So tonight I propose we use some of our oil and gas revenues to fund an energy security trust that will drive new research and technology to shift our cars and trucks off oil for good. If a nonpartisan coalition of CEOs and retired generals and admirals can get behind this idea, then so can we. Let's take their advice and free our families and businesses from the painful spikes in gas prices we've put up with for far too long. <p>I'm also issuing a new goal for America: Let's cut in half the energy wasted by our homes and businesses over the next 20 years. We'll work with the States to do it. Those States with the best ideas to create jobs and lower energy bills by constructing more efficient buildings will receive Federal support to help make that happen. <p>America's energy sector is just one part of an aging infrastructure badly in need of repair. Ask any CEO where they'd rather locate and hire, a country with deteriorating roads and bridges or one with high-speed rail and Internet, high-tech schools, self-healing power grids. The CEO of Siemens America&mdash;a company that brought hundreds of new jobs to North Carolina&mdash;said that if we upgrade our infrastructure, they'll bring even more jobs. And that's the attitude of a lot of companies all around the world. And I know you want these job-creating projects in your district. I've seen all those ribbon-cuttings. [<i>Laughter</i>] <p>So tonight I propose a Fix-It-First program to put people to work as soon as possible on our most urgent repairs, like the nearly 70,000 structurally deficient bridges across the country. And to make sure taxpayers don't shoulder the whole burden, I'm also proposing a partnership to rebuild America that attracts private capital to upgrade what our businesses need most: modern ports to move our goods, modern pipelines to withstand a storm, modern schools worthy of our children. Let's prove there's no better place to do business than here in the United States of America, and let's start right away. We can get this done.<B> <p></B>And part of our rebuilding effort must also involve our housing sector. The good news is, our housing market is finally healing from the collapse of 2007. Home prices are rising at the fastest pace in 6 years. Home purchases are up nearly 50 percent, and construction is expanding again. <p>But even with mortgage rates near a 50-year low, too many families with solid credit who want to buy a home are being rejected. Too many families who never missed a payment and want to refinance are being told no. That's holding our entire economy back. We need to fix it. <p>Right now there's a bill in this Congress that would give every responsible homeowner in America the chance to save $3,000 a year by refinancing at today's rates. Democrats and Republicans have supported it before, so what are we waiting for? Take a vote and send me that bill. Why are&mdash;why would we be against that? Why would that be a partisan issue, helping folks refinance? Right now overlapping regulations keep responsible young families from buying their first home. What's holding us back? Let's streamline the process and help our economy grow. <p>These initiatives in manufacturing, energy, infrastructure, housing, all these things will help entrepreneurs and small-business owners expand and create new jobs. But none of it will matter unless we also equip our citizens with the skills and training to fill those jobs. <p>And that has to start at the earliest possible age. Study after study shows that the sooner a child begins learning, the better he or she does down the road. But today, fewer than 3 in 10 4-year-olds are enrolled in a high-quality preschool program. Most middle class parents can't afford a few hundred bucks a week for a private preschool. And for poor kids who need help the most, this lack of access to preschool education can shadow them for the rest of their lives. So tonight I propose working with States to make high-quality preschool available to every single child in America. That's something we should be able to do. <p>Every dollar we invest in high-quality early childhood education can save more than 7 dollars later on: by boosting graduation rates, reducing teen pregnancy, even reducing violent crime. In States that make it a priority to educate our youngest children, like Georgia or Oklahoma, studies show students grow up more likely to read and do math at grade level, graduate high school, hold a job, form more stable families of their own. We know this works. So let's do what works and make sure none of our children start the race of life already behind. Let's give our kids that chance. <p>Let's also make sure that a high school diploma puts our kids on a path to a good job. Right now countries like Germany focus on graduating their high school students with the equivalent of a technical degree from one of our community colleges. So those German kids, they're ready for a job when they graduate high school. They've been trained for the jobs that are there. Now at schools like P-TECH in Brooklyn, a collaboration between New York Public Schools and City University of New York and IBM, students will graduate with a high school diploma and an associate's degree in computers or engineering. We need to give every American student opportunities like this. <p>And 4 years ago, we started Race to the Top, a competition that convinced almost every State to develop smarter curricula and higher standards, all for about 1 percent of what we spend on education each year. Tonight I'm announcing a new challenge to redesign America's high schools so they better equip graduates for the demands of a high-tech economy. And we'll reward schools that develop new partnerships with colleges and employers and create classes that focus on science, technology, engineering, and math: the skills today's employers are looking for to fill the jobs that are there right now and will be there in the future. <p>Now, even with better high schools, most young people will need some higher education. It's a simple fact: The more education you've got, the more likely you are to have a good job and work your way into the middle class. But today, skyrocketing costs price too many young people out of a higher education or saddle them with unsustainable debt. <p>Through tax credits, grants, and better loans, we've made college more affordable for millions of students and families over the last few years. But taxpayers can't keep on subsidizing higher and higher and higher costs for higher education. Colleges must do their part to keep costs down, and it's our job to make sure that they do. <p>So tonight I ask Congress to change the Higher Education Act so that affordability and value are included in determining which colleges receive certain types of Federal aid. And tomorrow my administration will release a new college scorecard that parents and students can use to compare schools based on a simple criterion: where you can get the most bang for your educational buck. <p>Now, to grow our middle class, our citizens have to have access to the education and training that today's jobs require. But we also have to make sure that America remains a place where everyone who's willing to work&mdash;everybody who's willing to work hard&mdash;has the chance to get ahead. <p>Our economy is stronger when we harness the talents and ingenuity of striving, hopeful immigrants. And right now leaders from the business, labor, law enforcement, faith communities, they all agree that the time has come to pass comprehensive immigration reform. Now is the time to do it. Now is the time to get it done. [<i>Applause</i>] Now is the time to get it done. <p>Real reform means stronger border security, and we can build on the progress my administration has already made: putting more boots on the southern border than at any time in our history and reducing illegal crossings to their lowest levels in 40 years. <p>Real reform means establishing a responsible pathway to earned citizenship, a path that includes passing a background check, paying taxes and a meaningful penalty, learning English, and going to the back of the line behind the folks trying to come here legally. <p>And real reform means fixing the legal immigration system to cut waiting periods and attract the highly skilled entrepreneurs and engineers that will help create jobs and grow our economy. <p>In other words, we know what needs to be done. And as we speak, bipartisan groups in both Chambers are working diligently to draft a bill, and I applaud their efforts. So let's get this done. Send me a comprehensive immigration reform bill in the next few months, and I will sign it right away. And America will be better for it. Let's get it done. [<i>Applause</i>] Let's get it done. <p>But we can't stop there. We know our economy is stronger when our wives, our mothers, our daughters can live their lives free from discrimination in the workplace and free from the fear of domestic violence. Today the Senate passed the "Violence Against Women's Act" that Joe Biden originally wrote almost 20 years ago. And I now urge the House to do the same. Good job, Joe. And I ask this Congress to declare that women should earn a living equal to their efforts, and finally pass the "Paycheck Fairness Act" this year. <p>We know our economy is stronger when we reward an honest day's work with honest wages. But today, a full-time worker making the minimum wage earns $14,500 a year. Even with the tax relief we put in place, a family with two kids that earns the minimum wage still lives below the poverty line. That's wrong. That's why, since the last time this Congress raised the minimum wage, 19 States have chosen to bump theirs even higher. <p>Tonight let's declare that in the wealthiest nation on Earth, no one who works full-time should have to live in poverty and raise the Federal minimum wage to $9 an hour. We should be able to get that done. <p>This single step would raise the incomes of millions of working families. It could mean the difference between groceries or the food bank, rent or eviction, scraping by or finally getting ahead. For businesses across the country, it would mean customers with more money in their pockets. And a whole lot of folks out there would probably need less help from government. In fact, working folks shouldn't have to wait year after year for the minimum wage to go up while CEO pay has never been higher. So here's an idea that Governor Romney and I actually agreed on last year: Let's tie the minimum wage to the cost of living so that it finally becomes a wage you can live on. <p>Tonight let's also recognize that there are communities in this country where no matter how hard you work, it is virtually impossible to get ahead: factory towns decimated from years of plants packing up; inescapable pockets of poverty, urban and rural, where young adults are still fighting for their first job. America is not a place where the chance of birth or circumstance should decide our destiny. And that's why we need to build new ladders of opportunity into the middle class for all who are willing to climb them. <p>Let's offer incentives to companies that hire Americans who've got what it takes to fill that job opening, but have been out of work so long that no one will give them a chance anymore. Let's put people back to work rebuilding vacant homes in rundown neighborhoods. And this year, my administration will begin to partner with 20 of the hardest hit towns in America to get these communities back on their feet. Now, we'll work with local leaders to target resources at public safety and education and housing. <p>We'll give new tax credits to businesses that hire and invest. And we'll work to strengthen families by removing the financial deterrents to marriage for low-income couples and do more to encourage fatherhood, because what makes you a man isn't the ability to conceive a child, it's having the courage to raise one. And we want to encourage that. We want to help that. <p>Stronger families. Stronger communities. A stronger America. It is this kind of prosperity&mdash;broad, shared, built on a thriving middle class&mdash;that has always been the source of our progress at home. It's also the foundation of our power and influence throughout the world. <p>Tonight we stand united in saluting the troops and civilians who sacrifice every day to protect us. Because of them, we can say with confidence that America will complete its mission in Afghanistan and achieve our objective of defeating the core of Al Qaida. <p>Already, we have brought home 33,000 of our brave service men and women. This spring, our forces will move into a support role, while Afghan security forces take the lead. Tonight I can announce that over the next year, another 34,000 American troops will come home from Afghanistan. This drawdown will continue, and by the end of next year, our war in Afghanistan will be over. <p>Beyond 2014, America's commitment to a unified and sovereign Afghanistan will endure, but the nature of our commitment will change. We're negotiating an agreement with the Afghan Government that focuses on two missions: training and equipping Afghan forces so that the country does not again slip into chaos and counterterrorism efforts that allow us to pursue the remnants of Al Qaida and their affiliates. <p>Today, the organization that attacked us on 9/11 is a shadow of its former self. It's true, different Al Qaida affiliates and extremist groups have emerged, from the Arabian Peninsula to Africa. The threat these groups pose is evolving. But to meet this threat, we don't need to send tens of thousands of our sons and daughters abroad or occupy other nations. Instead, we'll need to help countries like Yemen and Libya and Somalia provide for their own security and help allies who take the fight to terrorists, as we have in Mali. And where necessary, through a range of capabilities, we will continue to take direct action against those terrorists who pose the gravest threat to Americans. <p>Now, as we do, we must enlist our values in the fight. That's why my administration has worked tirelessly to forge a durable legal and policy framework to guide our counterterrorism efforts. Throughout, we have kept Congress fully informed of our efforts. I recognize that in our democracy, no one should just take my word for it that we're doing things the right way. So, in the months ahead, I will continue to engage Congress to ensure not only that our targeting, detention, and prosecution of terrorists remains consistent with our laws and system of checks and balances, but that our efforts are even more transparent to the American people and to the world. <p>Of course, our challenges don't end with Al Qaida. America will continue to lead the effort to prevent the spread of the world's most dangerous weapons. The regime in North Korea must know they will only achieve security and prosperity by meeting their international obligations. Provocations of the sort we saw last night will only further isolate them, as we stand by our allies, strengthen our own missile defense, and lead the world in taking firm action in response to these threats. <p>Likewise, the leaders of Iran must recognize that now is the time for a diplomatic solution, because a coalition stands united in demanding that they meet their obligations, and we will do what is necessary to prevent them from getting a nuclear weapon. <p>At the same time, we'll engage Russia to seek further reductions in our nuclear arsenals and continue leading the global effort to secure nuclear materials that could fall into the wrong hands, because our ability to influence others depends on our willingness to lead and meet our obligations. <p>America must also face the rapidly growing threat from cyber attacks. Now, we know hackers steal people's identities and infiltrate private e-mails. We know foreign countries and companies swipe our corporate secrets. Now our enemies are also seeking the ability to sabotage our power grid, our financial institutions, our air traffic control systems. We cannot look back years from now and wonder why we did nothing in the face of real threats to our security and our economy. <p>And that's why, earlier today, I signed a new Executive order that will strengthen our cyber defenses by increasing information sharing and developing standards to protect our national security, our jobs, and our privacy. <p>But now Congress must act as well, by passing legislation to give our Government a greater capacity to secure our networks and deter attacks. This is something we should be able to get done on a bipartisan basis. <p>Now, even as we protect our people, we should remember that today's world presents not just dangers, not just threats, it presents opportunities. To boost American exports, support American jobs and level the playing field in the growing markets of Asia, we intend to complete negotiations on a Trans-Pacific Partnership. And tonight I'm announcing that we will launch talks on a comprehensive transatlantic trade and investment partnership with the European Union, because trade that is fair and free across the Atlantic supports millions of good-paying American jobs. <p>We also know that progress in the most impoverished parts of our world enriches us all, not only because it creates new markets, more stable order in certain regions of the world, but also because it's the right thing to do. In many places, people live on little more than a dollar a day. So the United States will join with our allies to eradicate such extreme poverty in the next two decades by connecting more people to the global economy, by empowering women, by giving our young and brightest minds new opportunities to serve and helping communities to feed and power and educate themselves, by saving the world's children from preventable deaths, and by realizing the promise of an AIDS-free generation, which is within our reach. <p>You see, America must remain a beacon to all who seek freedom during this period of historic change. I saw the power of hope last year in Rangoon, in Burma, when Aung San Suu Kyi welcomed an American President into the home where she had been imprisoned for years; when thousands of Burmese lined the streets, waving American flags, including a man who said: "There is justice and law in the United States. I want our country to be like that." <p>In defense of freedom, we'll remain the anchor of strong alliances from the Americas to Africa, from Europe to Asia. In the Middle East, we will stand with citizens as they demand their universal rights and support stable transitions to democracy. <p>We know the process will be messy, and we cannot presume to dictate the course of change in countries like Egypt, but we can and will insist on respect for the fundamental rights of all people. We'll keep the pressure on a Syrian regime that has murdered its own people and support opposition leaders that respect the rights of every Syrian. And we will stand steadfast with Israel in pursuit of security and a lasting peace. <p>These are the messages I'll deliver when I travel to the Middle East next month. And all this work depends on the courage and sacrifice of those who serve in dangerous places at great personal risk: our diplomats, our intelligence officers, and the men and women of the United States Armed Forces. As long as I'm Commander in Chief, we will do whatever we must to protect those who serve their country abroad, and we will maintain the best military the world has ever known. <p>We'll invest in new capabilities, even as we reduce waste and wartime spending. We will ensure equal treatment for all servicemembers and equal benefits for their families, gay and straight. We will draw upon the courage and skills of our sisters and daughters and moms, because women have proven under fire that they are ready for combat. <p>We will keep faith with our veterans, investing in world-class care&mdash;including mental health care&mdash;for our wounded warriors, supporting our military families, giving our veterans the benefits and education and job opportunities that they have earned. And I want to thank my wife Michelle and Dr. Jill Biden for their continued dedication to serving our military families as well as they have served us. Thank you, honey. Thank you, Jill. <p>Defending our freedom, though, is not just the job of our military alone. We must all do our part to make sure our God-given rights are protected here at home. That includes one of the most fundamental rights of a democracy: the right to vote. Now, when any American, no matter where they live or what their party, are denied that right because they can't afford to wait for 5 or 6 or 7 hours just to cast their ballot, we are betraying our ideals. <p>So tonight I'm announcing a nonpartisan commission to improve the voting experience in America. And it definitely needs improvement. I'm asking two long-time experts in the field&mdash;who, by the way, recently served as the top attorneys for my campaign and for Governor Romney's campaign&mdash;to lead it. We can fix this, and we will. The American people demand it, and so does our democracy. <p>Of course, what I've said tonight matters little if we don't come together to protect our most precious resource: our children. It has been 2 months since Newtown. I know this is not the first time this country has debated how to reduce gun violence. But this time is different. Overwhelming majorities of Americans&mdash;Americans who believe in the Second Amendment&mdash;have come together around commonsense reform, like background checks that will make it harder for criminals to get their hands on a gun. Senators of both parties are working together on tough new laws to prevent anyone from buying guns for resale to criminals. Police chiefs are asking our help to get weapons of war and massive ammunition magazines off our streets, because these police chiefs, they're tired of seeing their guys and gals being outgunned. <p>Each of these proposals deserves a vote in Congress. Now, if you want to vote no, that's your choice. But these proposals deserve a vote. Because in the 2 months since Newtown, more than a thousand birthdays, graduations, anniversaries have been stolen from our lives by a bullet from a gun&mdash;more than a thousand. <p>One of those we lost was a young girl named Hadiya Pendleton. She was 15 years old. She loved Fig Newtons and lip gloss. She was a majorette. She was so good to her friends, they all thought they were her best friend. Just 3 weeks ago, she was here, in Washington, with her classmates, performing for her country at my Inauguration. And a week later, she was shot and killed in a Chicago park after school, just a mile away from my house. <p>Hadiya's parents, Nate and Cleo, are in this Chamber tonight, along with more than two dozen Americans whose lives have been torn apart by gun violence. They deserve a vote. They deserve a vote. [<i>Applause</i>] They deserve a vote. Gabby Giffords deserves a vote. The families of Newtown deserve a vote. The families of Aurora deserve a vote. The families of Oak Creek and Tucson and Blacksburg, and the countless other communities ripped open by gun violence, they deserve a simple vote. They deserve a simple vote. <p>Our actions will not prevent every senseless act of violence in this country. In fact, no laws, no initiatives, no administrative acts will perfectly solve all the challenges I've outlined tonight. But we were never sent here to be perfect. We were sent here to make what difference we can, to secure this Nation, expand opportunity, uphold our ideals through the hard, often frustrating, but absolutely necessary work of self-government. <p>We were sent here to look out for our fellow Americans the same way they look out for one another, every single day, usually without fanfare, all across this country. We should follow their example. <p>We should follow the example of a New York City nurse named Menchu Sanchez. When Hurricane Sandy plunged her hospital into darkness, she wasn't thinking about how her own home was faring. Her mind was on the 20 precious newborns in her care and the rescue plan she devised that kept them all safe. <p>We should follow the example of a North Miami woman named Desiline Victor. When Desiline arrived at her polling place, she was told the wait to vote might be 6 hours. And as time ticked by, her concern was not with her tired body or aching feet, but whether folks like her would get to have their say. And hour after hour, a throng of people stayed in line to support her, because Desiline is 102 years old. And they erupted in cheers when she finally put on a sticker that read, "I voted." [<i>Applause</i>] There's Desiline. <p>We should follow the example of a police officer named Brian Murphy. When a gunman opened fire on a Sikh temple in Wisconsin and Brian was the first to arrive&mdash;and he did not consider his own safety. He fought back until help arrived and ordered his fellow officers to protect the safety of the Americans worshiping inside, even as he lay bleeding from 12 bullet wounds. And when asked how he did that, Brian said, "That's just the way we're made." <p>That's just the way we're made. We may do different jobs and wear different uniforms and hold different views than the person beside us. But as Americans, we all share the same proud title: We are citizens. It's a word that doesn't just describe our nationality or legal status. It describes the way we're made. It describes what we believe. It captures the enduring idea that this country only works when we accept certain obligations to one another and to future generations; that our rights are wrapped up in the rights of others; and that well into our third century as a nation, it remains the task of us all, as citizens of these United States, to be the authors of the next great chapter of our American story. <p>Thank you. God bless you, and God bless these United States of America.</span><hr noshade="noshade" size="1"><span class="displaynotes"><i>NOTE: The President spoke at 9:15 p.m. in the House Chamber of the U.S. Capitol. In his remarks, he referred to Erskine B. Bowles and Alan K. Simpson, Cochairs, National Commission on Fiscal Responsibility and Reform; former Sen. Joseph I. Lieberman; Eric A. Spiegel, president and chief executive officer, Siemens Corporation; W. Mitt Romney, 2012 Republican Presidential nominee; Member of Parliament and Leader of the National League for Democracy Party Aung San Suu Kyi of Burma; Jill T. Biden, wife of Vice President Joe Biden; former White House Counsel Robert Bauer and Benjamin L. Ginsberg, partner, Patton Boggs LLP, in their capacity as Cochairs of the Presidential Commission on Election Administration; former Rep. Gabrielle D. Giffords; Menchu de Luna Sanchez, registered nurse, New York University Langone Medical Center; and Lt. Brian Murphy, Oak Creek Police Department in Oak Creek, WI. He also referred to H.R. 11.</i></span><hr noshade="noshade" size="1">
+	<span class="ver10"><strong>Citation:&nbsp;</strong></span><span class="ver10">Barack Obama: </span><span class="ver10">"Address Before a Joint Session of Congress on the State of the Union," February 12, 2013. </span><span class="ver10">Online by Gerhard Peters and John T. Woolley, <i>The American Presidency Project</i>. http://www.presidency.ucsb.edu/ws/?pid=102826.</span>	
+	</tr>
+	</table>
+<script language="javascript" type="text/javascript">
+/**************************/
+var pageName = 'Address Before a Joint Session of Congress on the State of the Union';
+var pagePresident = '44';
+var pagePID = '102826';
+/**************************/
+var qs='?pnm='+escape(pageName)+'&ref='+escape(document.referrer)+'&statspres='+escape(pagePresident)+'&statsdoc='+escape(pagePID)+'&lang=';
+if(navigator.systemLanguage!=undefined){qs+=escape(navigator.systemLanguage);}
+else{qs+=escape(navigator.language);};qs+='&brw='+escape(navigator.userAgent);
+qs+='&ver='+escape(navigator.appVersion)+'&plat='+escape(navigator.platform);
+if(navigator.appVersion.substring(0,1)>=4){qs+='&clr='+escape(screen.colorDepth);
+qs+='&scrw='+escape(screen.width)+'&scrh='+escape(screen.height);
+qs+='&jav='+escape(navigator.javaEnabled());};
+document.write('<img src=\"../dwstats/send.php'+qs+'\" width=\"0\" height=\"0\">');
+                </script>
+                <noscript>
+                <img src="../dwstats/send.php?nojs=1&pnm=index_docs.php" width="0" height="0">
+                </noscript>
+</TABLE>
+	  </TD>
+	</TR>
+	<TR>
+		<TD>
+<table width="956" border="0" cellpadding="0" cellspacing="0" background="http://www.presidency.ucsb.edu/images/bgdown.gif">
+  <tr>
+    <td width="956" height="25" align="center">
+			<a href="../index.php" class="tah11" style="color:000000;font-weight:bold">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<script>
+<!--
+function escramble(){
+ var a,b,c,d,e,f,g,h,i
+ a='<a href=\"mai'
+ b='director'
+ c='\" class=tah11 style=color:000000;font-weight:bold>'
+ a+='lto:'
+ b+='@'
+ e='</a>'
+ f='Contact'
+ b+='americanpresidency.org'
+ g='<img src=\"'
+ h=''
+ i='\" alt="e-mail" border="0">'
+
+ if (f) d=f
+ else if (h) d=g+h+i
+ else d=b
+
+ document.write(a+b+c+d+e)
+}
+
+escramble()
+//-->
+</script>	  </td>
+  </tr>
+	<tr>
+	  <td width="956" height="32" align="center" valign="top">
+			<div style="padding-top:7;color:000000" class="tah11">
+&copy; 1999-2014 - Gerhard Peters - The American Presidency Project</div></td>
+	</tr>
+</table>
+<table width="956" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><a href="http://www2.clustrmaps.com/counter/maps.php?url=http://www.presidency.ucsb.edu" id="clustrMapsLink"><img src="http://www2.clustrmaps.com/counter/index2.php?url=http://www.presidency.ucsb.edu" alt="Locations of visitors to this page" name="clustrMapsImg" border="0" id="clustrMapsImg" style="border:1px solid;" title="Locations of visitors to this page" onerror="this.onError=null; this.src='http://clustrmaps.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com'" /></a></td>
+  </tr>
+</table><script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2243865-1";
+urchinTracker();
+</script>		</TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>
