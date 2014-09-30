@@ -135,8 +135,10 @@ unpack <- function(speech_path)
 #This is our string without the search criteria in it
 	cleaned_string <- substr(uncleaned_string,27,
 		nchar(uncleaned_string)-7)
+#This will deal with encoding issues
+	ideal_string <- iconv(cleaned_string,'','ASCII','???')
 #Here we assign the cleaned string to the dynamic variable
-	return(cleaned_string)
+	return(ideal_string)
 }
 #Because I desire to work with R's ridiculous data
 #structures as little as possible, we create an
@@ -193,12 +195,36 @@ emotion_count <- function(string_path,speech_index)
 		ignore.case('\\[.*?app.*?\\]'))
 #Return the value as a vector
 	output <- c(speech_index,laugh_count,applause_count)
-	return(output)
+	return(output) 
 }
 
-#This for loop will go through our speech_links and
-#initiate function calls and variable assignments to our
-#liking
+word_vectorize <- function(string_path,speech_index)
+{
+#First we will strip the \n s that are still hanging around
+	clean_string <- str_replace_all(string_path,
+		'\\n','')
+#This regex word count simply counts the number of non-word
+#characters which should approximately equal the number of words
+#as punctuation and spaces are non-word characters. It will
+#double count hyphenated words but lets not be picky.
+	word_number <- str_count(clean_string,'\\W+')
+#Here, to make our life easier, we directly write out of this
+#function to the parent environement. While this does defeat
+#some of the point of functions, it prevents our simple
+#character vector from becoming complicated
+	word_counts[speech_index] <<- word_number	
+#Here we create a vector to hold our words, of approp length
+	long_vec <- vector('character',word_number)
+#This str_extract here will pull out all the words followed
+#by a space or punctuation. The fault here is that the
+#punctuation will be included with the word, but we can't
+#be perfect
+	word_vector <- unlist(str_extract_all(clean_string,
+		'[[:alpha:]]*? |[[:alpha:]]*?[[:punct:]]'))
+#Here we return our word_vector
+	return(word_vector)
+}
+ 
 #This is a blank list where we will store the unaltered speeches
 unaltered_speeches <- vector('list',count)
 #This is a data frame  where we will store the speech data
@@ -207,9 +233,19 @@ listed_data <- data.frame(matrix(ncol=3,nrow=count))
 hreadable <- vector('list',count)
 #This data frame will store the emotion counts for each speech
 emotion_store <- data.frame(matrix(ncol=3,nrow=count))
+#This vector  will store the word_counts for each speech
+word_counts <- vector('numeric',count)
+#This list will store our incredibly long character vectors
+#Its indexing will be ahead of all others by 1 as the only good
+#way I can find to attach vectors of unknown length to a list is
+#to append them.
+word_vectors <- list(0)
 #This is an indexing variable
 speech_number <-1 
 
+#This for loop will go through our speech_links and
+#initiate function calls and variable assignments to our
+#liking
 for(i in 1:length(speech_links))
 {
 #This if statement causes us to execute only if we have a
@@ -228,6 +264,9 @@ for(i in 1:length(speech_links))
 			the_speech)
 		emotion_store[speech_number,] <- emotion_count(
 			the_speech,speech_number)
+		word_vectors[[length(word_vectors)
+			+1]] <- word_vectorize(the_speech,
+			speech_number)
 		speech_number <- speech_number + 1
 		if(debug==1)
 		{
@@ -236,6 +275,9 @@ for(i in 1:length(speech_links))
 				],listed_data[speech_number-1,3
 				])
 			write(dfrow)
+			cep()
+			write(word_counts[speech_number-1])
+			cep()
 			write(unaltered_speeches[speech_number
 				-1])
 			cep()
@@ -253,7 +295,11 @@ for(i in 1:length(speech_links))
 		}
 	}
 }
-
+if(debug==1)
+{
+	write(word_vectors[2])
+	cep()
+}
 	
 #These lines simply tell us that we have finished
 cat("END EXECUTION\n")
