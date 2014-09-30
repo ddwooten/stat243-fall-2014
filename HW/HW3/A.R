@@ -142,7 +142,7 @@ unpack <- function(speech_path)
 #structures as little as possible, we create an
 #additional function to retrieve the name and year
 #of each speech
-get_data <- function(speech_path,speech_number)
+get_data <- function(speech_path,speech_index)
 {
 #Get the file (this is a repeat of above but oh well)
 	file <- readLines(speech_path)
@@ -159,7 +159,7 @@ get_data <- function(speech_path,speech_number)
 #Clean year
 	year <- substr(uc_year,4,nchar(uc_year))
 #Cat into a vector
-	output <- c(speech_number,name,year)
+	output <- c(speech_index,name,year)
 #return vector
 	return(output)
 }
@@ -178,16 +178,16 @@ readable <- function(string_path)
 #preference really) the readable function, counts 
 # the emotion tags
 
-emotion_count <- function(string_path)
+emotion_count <- function(string_path,speech_index)
 {
 #This one counts the laughs
 	laugh_count <- str_count(string_path,
-		ignore.case('\\[laughter\\]'))
+		ignore.case('\\[.*?ter.*?\\]'))
 #This one couts the applause
 	applause_count <- str_count(string_path,
-		ignore.case('\\[applause\\]'))
+		ignore.case('\\[.*?appse.*?\\]'))
 #Return the value as a vector
-	output <- c(laugh_count,applause_count)
+	output <- c(speech_index,laugh_count,applause_count)
 	return(output)
 }
 
@@ -209,10 +209,16 @@ emotion_strp <- function(string_path)
 #This for loop will go through our speech_links and
 #initiate function calls and variable assignments to our
 #liking
-#This is a blank list where we will store the speeches
+#This is a blank list where we will store the unaltered speeches
 unaltered_speeches <- vector('list',count)
 #This is a data frame  where we will store the speech data
 listed_data <- data.frame(matrix(ncol=3,nrow=count))
+#This list will store the "human readable" speeches
+hreadable <- vector('list',count)
+#This list will store the emotionless speeches
+emotionless <- vector('list',count)
+#This data frame will store the emotion counts for each speech
+emotion_store <- data.frame(matrix(ncol=3,nrow=count))
 #This is an indexing variable
 speech_number <-1 
 
@@ -228,6 +234,14 @@ for(i in 1:length(speech_links))
 			trimmed_path)
 		listed_data[speech_number,] <- get_data(
 			trimmed_path,speech_number)
+		the_speech <- unlist(unaltered_speeches[
+			speech_number])
+		hreadable[speech_number] <- readable(
+			the_speech)
+		emotionless[speech_number] <- emotion_strp(
+			the_speech)
+		emotion_store[speech_number,] <- emotion_count(
+			the_speech,speech_number)
 		speech_number <- speech_number + 1
 		if(debug==1)
 		{
@@ -239,6 +253,19 @@ for(i in 1:length(speech_links))
 			write(unaltered_speeches[speech_number
 				-1])
 			cep()
+			write('The emotion counts are')
+			dcounts <-c(emotion_store[speech_number-1
+				,1],emotion_store[speech_number
+				-1,2],emotion_store[speech_number
+				-1,3])
+			write(dcounts)
+			cep()
+			write('The emotion stripped speech')
+			cep()
+			write(emotionless[speech_number-1])
+			cep()
+			write('The human readable speech')
+			cep()	
 		}
 	}
 }
