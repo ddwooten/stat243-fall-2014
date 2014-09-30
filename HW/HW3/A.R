@@ -264,7 +264,7 @@ find_index <- function(query,type,df)
 
 #This function will return a data frame of the occurances in 
 #a speech that we desire to know
-define_is <- function(string_path)
+phrase_counter <- function(string_path)
 {
 #This, and the following lines, extract what we desire
 	I_count <- str_count(string_path,'\\bI\\b')
@@ -280,6 +280,8 @@ define_is <- function(string_path)
 		' (Democrat|Democratic)[ [[:punct:]]]')
 	Republican_count <- str_count(string_path,
 		' Republican[ [[:punct:]]]')
+	freedom_count <- str_count(string_path,ignore.case(
+		' (free|freedom)[ [[:punct:]]]'))
 	war_count <- str_count(string_path, ignore.case(
 		' war[ [[:punct:]]'))
 	God_count <- str_count(string_path,ignore.case(
@@ -291,7 +293,8 @@ define_is <- function(string_path)
 #This will cat all of these to a vector for output
 	output <- c(I_count,we_count,American_count,
 			democracy_count,Republic_count,
-			Democractic_count,Republican_count,
+			Democratic_count,Republican_count,
+			freedom_count,
 			war_count,God_count,Godbless_count,
 			Christian_count)
 	return(output)
@@ -321,7 +324,7 @@ sentence_counts <- vector('numeric',count)
 sentence_vectors <- list(0)
 #This dataframe, like the frame above it, will hold our occurance
 #data frames
-rhetoric_list <- data.frame(matrix(ncol=12,nrow=count)
+rhetoric_list <- data.frame(matrix(ncol=12,nrow=count))
 #This gives our data.frame columns names
 colnames(rhetoric_list) <- c("I","we","America{,n}","democra{cy,tic}","republic","Democrat{,ic}","Republican","free{,dom}","war","God","God Bless","{Jesus,Chris,Christian}")
 #This is an indexing variable
@@ -354,6 +357,8 @@ for(i in 1:length(speech_links))
 		sentence_vectors[[length(sentence_vectors)
 			+1]] <- sentence_vectorize(human_speech,
 			speech_number)
+		rhetoric_list[speech_number,] <- phrase_counter(
+			human_speech)
 		speech_number <- speech_number + 1
 		if(debug==1)
 		{
@@ -384,7 +389,11 @@ for(i in 1:length(speech_links))
 			write("Sentence count")
 			write(length(sentence_vectors[[
 				speech_number]][[1]]))
-			cep()	
+			cep()
+			write("The occurance of key phrases is")
+			write.table(rhetoric_list[
+				speech_number-1,],file=
+				'output.txt')	
 			write(hreadable[speech_number-1])
 			cep()
 		}
