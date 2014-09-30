@@ -393,7 +393,8 @@ for(i in 1:length(speech_links))
 			write("The occurance of key phrases is")
 			write.table(rhetoric_list[
 				speech_number-1,],file=
-				'output.txt')	
+				'test.txt')	
+			cep()
 			write(hreadable[speech_number-1])
 			cep()
 		}
@@ -405,6 +406,7 @@ if(debug==1)
 #	cat(unlist(sentence_vectors[[2]]))
 	yr <- find_index("2014",3,listed_data)
 	cat(yr)
+	cat('\n')
 	cep()
 }
 	
