@@ -224,6 +224,27 @@ word_vectorize <- function(string_path,speech_index)
 #Here we return our word_vector
 	return(word_vector)
 }
+
+sentence_vectorize <- function(string_path,speech_index)
+{
+#First we will strip the \n s that are still hanging around
+	clean_string <- str_replace_all(string_path,
+		'\\n','')
+#This pattern (which I'm quite proud of) extracts sentences
+	sent_pat <- '[[:upper:]][[:alpha:]]*?( |\\.|,|;|:|-).*?([[:lower:]][\\.\\?!])'
+	sentence_number <- str_count(clean_string,sent_pat)
+#Here, to make our life easier, we directly write out of this
+#function to the parent environement. While this does defeat
+#some of the point of functions, it prevents our simple
+#character vector from becoming complicated
+	sentence_counts[speech_index] <<- sentence_number	
+#Here we create a vector to hold our sentences, of approp length
+	long_vec <- vector('character',sentence_number)
+#This str_extract here will pull out all the sentences
+	sent_vector <- str_extract_all(clean_string,sent_pat)
+#Here we return our word_vector
+	return(sent_vector)
+}
  
 #This is a blank list where we will store the unaltered speeches
 unaltered_speeches <- vector('list',count)
@@ -240,6 +261,11 @@ word_counts <- vector('numeric',count)
 #way I can find to attach vectors of unknown length to a list is
 #to append them.
 word_vectors <- list(0)
+#This vector will store our sentence counts
+sentence_counts <- vector('numeric',count)
+#This list will store, in a similar fashion to the above,
+#our setence vectors
+sentence_vectors <- list(0)
 #This is an indexing variable
 speech_number <-1 
 
@@ -301,7 +327,7 @@ for(i in 1:length(speech_links))
 }
 if(debug==1)
 {
-	cat(unlist(word_vectors[[2]]))
+#	cat(unlist(word_vectors[[2]]))
 	cep()
 }
 	
