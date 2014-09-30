@@ -220,7 +220,7 @@ word_vectorize <- function(string_path,speech_index)
 #punctuation will be included with the word, but we can't
 #be perfect
 	word_vector <- str_extract_all(clean_string,
-		'[[:alpha:]]*? |[[:alpha:]]*?[[:punct:]]')
+		'[[:alpha:]]*? |[[:alpha:]]*?[.\\?!]')
 #Here we return our word_vector
 	return(word_vector)
 }
