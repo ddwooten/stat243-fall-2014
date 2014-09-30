@@ -219,8 +219,8 @@ word_vectorize <- function(string_path,speech_index)
 #by a space or punctuation. The fault here is that the
 #punctuation will be included with the word, but we can't
 #be perfect
-	word_vector <- unlist(str_extract_all(clean_string,
-		'[[:alpha:]]*? |[[:alpha:]]*?[[:punct:]]'))
+	word_vector <- str_extract_all(clean_string,
+		'[[:alpha:]]*? |[[:alpha:]]*?[[:punct:]]')
 #Here we return our word_vector
 	return(word_vector)
 }
@@ -260,12 +260,12 @@ for(i in 1:length(speech_links))
 			trimmed_path,speech_number)
 		the_speech <- unlist(unaltered_speeches[
 			speech_number])
-		hreadable[speech_number] <- readable(
-			the_speech)
+		human_speech <- readable(the_speech)
+		hreadable[speech_number] <- human_speech 
 		emotion_store[speech_number,] <- emotion_count(
 			the_speech,speech_number)
 		word_vectors[[length(word_vectors)
-			+1]] <- word_vectorize(the_speech,
+			+1]] <- word_vectorize(human_speech,
 			speech_number)
 		speech_number <- speech_number + 1
 		if(debug==1)
@@ -275,8 +275,6 @@ for(i in 1:length(speech_links))
 				],listed_data[speech_number-1,3
 				])
 			write(dfrow)
-			cep()
-			write(word_counts[speech_number-1])
 			cep()
 			write(unaltered_speeches[speech_number
 				-1])
@@ -289,6 +287,12 @@ for(i in 1:length(speech_links))
 			write(dcounts)
 			cep()
 			write('The human readable speech')
+			cep()
+			write('Word count')
+			write(word_counts[speech_number-1])
+			write('Length word vector')
+			write(length(word_vectors[[
+				speech_number]][[1]]))
 			cep()	
 			write(hreadable[speech_number-1])
 			cep()
@@ -297,7 +301,7 @@ for(i in 1:length(speech_links))
 }
 if(debug==1)
 {
-	write(word_vectors[2])
+	cat(unlist(word_vectors[[2]]))
 	cep()
 }
 	
