@@ -170,8 +170,13 @@ get_data <- function(speech_path,speech_index)
 readable <- function(string_path)
 {
 #This will replace all the html <p>s with \n's
-	new_1 <- str_replace_all(string_path,'<p>','\\n')
-	return(new_1)
+	new_1 <- str_replace_all(string_path,'<p>','\n')
+#This will remove all emotion tags
+	new_2 <- str_replace_all(new_1,'\\[.*?\\]','')
+#This will remove all html tags
+	new_3 <- str_replace_all(new_2,'<.*?>','')
+#This will return our value
+	return(new_3)
 }
 
 #This function (which should be called before, by
@@ -182,28 +187,13 @@ emotion_count <- function(string_path,speech_index)
 {
 #This one counts the laughs
 	laugh_count <- str_count(string_path,
-		ignore.case('\\[.*?ter.*?\\]'))
+		ignore.case('\\[.*?aug.*?\\]'))
 #This one couts the applause
 	applause_count <- str_count(string_path,
-		ignore.case('\\[.*?appse.*?\\]'))
+		ignore.case('\\[.*?app.*?\\]'))
 #Return the value as a vector
 	output <- c(speech_index,laugh_count,applause_count)
 	return(output)
-}
-
-#This function strips the emotion tags
-emotion_strp <- function(string_path)
-{
-#This one stips the laughter tags (how sad)
-	new_1 <- str_replace_all(string_path,
-		ignore.case('\\[laughter\\]'),
-		'')
-#This one strips the applause tags (how boring!)
-	new_2 <- str_replace_all(string_path,
-		ignore.case('\\[applause\\]'),
-		'')
-#Here we return our string
-	return(new_2)
 }
 
 #This for loop will go through our speech_links and
@@ -215,8 +205,6 @@ unaltered_speeches <- vector('list',count)
 listed_data <- data.frame(matrix(ncol=3,nrow=count))
 #This list will store the "human readable" speeches
 hreadable <- vector('list',count)
-#This list will store the emotionless speeches
-emotionless <- vector('list',count)
 #This data frame will store the emotion counts for each speech
 emotion_store <- data.frame(matrix(ncol=3,nrow=count))
 #This is an indexing variable
@@ -238,8 +226,6 @@ for(i in 1:length(speech_links))
 			speech_number])
 		hreadable[speech_number] <- readable(
 			the_speech)
-		emotionless[speech_number] <- emotion_strp(
-			the_speech)
 		emotion_store[speech_number,] <- emotion_count(
 			the_speech,speech_number)
 		speech_number <- speech_number + 1
@@ -254,18 +240,16 @@ for(i in 1:length(speech_links))
 				-1])
 			cep()
 			write('The emotion counts are')
-			dcounts <-c(emotion_store[speech_number-1
-				,1],emotion_store[speech_number
-				-1,2],emotion_store[speech_number
+			dcounts <-c('Laughter',emotion_store[
+				speech_number-1,2],'Applause',
+				emotion_store[speech_number
 				-1,3])
 			write(dcounts)
 			cep()
-			write('The emotion stripped speech')
-			cep()
-			write(emotionless[speech_number-1])
-			cep()
 			write('The human readable speech')
 			cep()	
+			write(hreadable[speech_number-1])
+			cep()
 		}
 	}
 }
