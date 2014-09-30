@@ -161,7 +161,7 @@ get_data <- function(speech_path,speech_index)
 #Clean year
 	year <- substr(uc_year,4,nchar(uc_year))
 #Cat into a vector
-	output <- c(speech_index,name,year)
+	output <- c(as.character(speech_index),name,year)
 #return vector
 	return(output)
 }
@@ -245,6 +245,59 @@ sentence_vectorize <- function(string_path,speech_index)
 #Here we return our word_vector
 	return(sent_vector)
 }
+
+#This function will allow us to search the speech data to find
+#the index by which we may reference that speech in the various
+#data structures
+find_index <- function(query,type,df)
+{
+	for(i in 1:count)
+	{
+		if(identical(df[i,type],query))
+		{
+			output <- as.numeric(df[i,1])
+			break
+		}
+	}
+	return(output)	
+}
+
+#This function will return a data frame of the occurances in 
+#a speech that we desire to know
+define_is <- function(string_path)
+{
+#This, and the following lines, extract what we desire
+	I_count <- str_count(string_path,'\\bI\\b')
+	we_count <- str_count(string_path,ignore.case(
+		' (we)[ [[:punct:]]]'))
+	American_count <- str_count(string_path,ignore.case(
+		' (america|american)[ [[:punct:]]]'))
+	democracy_count <- str_count(string_path,
+		' (democracy|democratic)[ [[:punct:]]]')
+	Republic_count <- str_count(string_path,ignore.case(
+		' republic[ [[:punct:]]]'))
+	Democratic_count <- str_count(string_path,
+		' (Democrat|Democratic)[ [[:punct:]]]')
+	Republican_count <- str_count(string_path,
+		' Republican[ [[:punct:]]]')
+	war_count <- str_count(string_path, ignore.case(
+		' war[ [[:punct:]]'))
+	God_count <- str_count(string_path,ignore.case(
+		' god[ [[:punct:]]^( b)]'))
+	Godbless_count <- str_count(string_path,ignore.case(
+		' god bless[ [[:punct:]]]'))
+	Christian_count <- str_count(string_path,ignore.case(
+		' (Jesus|Christ|Christian)[ [[:punct:]]]'))
+#This will cat all of these to a vector for output
+	output <- c(I_count,we_count,American_count,
+			democracy_count,Republic_count,
+			Democractic_count,Republican_count,
+			war_count,God_count,Godbless_count,
+			Christian_count)
+	return(output)
+}
+	
+		
  
 #This is a blank list where we will store the unaltered speeches
 unaltered_speeches <- vector('list',count)
@@ -266,6 +319,11 @@ sentence_counts <- vector('numeric',count)
 #This list will store, in a similar fashion to the above,
 #our setence vectors
 sentence_vectors <- list(0)
+#This dataframe, like the frame above it, will hold our occurance
+#data frames
+rhetoric_list <- data.frame(matrix(ncol=12,nrow=count)
+#This gives our data.frame columns names
+colnames(rhetoric_list) <- c("I","we","America{,n}","democra{cy,tic}","republic","Democrat{,ic}","Republican","free{,dom}","war","God","God Bless","{Jesus,Chris,Christian}")
 #This is an indexing variable
 speech_number <-1 
 
@@ -335,7 +393,9 @@ for(i in 1:length(speech_links))
 if(debug==1)
 {
 #	cat(unlist(word_vectors[[2]]))
-	cat(unlist(sentence_vectors[[2]]))
+#	cat(unlist(sentence_vectors[[2]]))
+	yr <- find_index("2014",3,listed_data)
+	cat(yr)
 	cep()
 }
 	
