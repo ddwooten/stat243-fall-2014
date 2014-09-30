@@ -293,6 +293,9 @@ for(i in 1:length(speech_links))
 		word_vectors[[length(word_vectors)
 			+1]] <- word_vectorize(human_speech,
 			speech_number)
+		sentence_vectors[[length(sentence_vectors)
+			+1]] <- sentence_vectorize(human_speech,
+			speech_number)
 		speech_number <- speech_number + 1
 		if(debug==1)
 		{
@@ -319,6 +322,10 @@ for(i in 1:length(speech_links))
 			write('Length word vector')
 			write(length(word_vectors[[
 				speech_number]][[1]]))
+			cep()
+			write("Sentence count")
+			write(length(sentence_vectors[[
+				speech_number]][[1]]))
 			cep()	
 			write(hreadable[speech_number-1])
 			cep()
@@ -328,6 +335,7 @@ for(i in 1:length(speech_links))
 if(debug==1)
 {
 #	cat(unlist(word_vectors[[2]]))
+	cat(unlist(sentence_vectors[[2]]))
 	cep()
 }
 	
