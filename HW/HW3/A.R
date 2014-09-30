@@ -11,6 +11,29 @@
 cat("*************************************************\n")
 cat("BEGIN EXECUTION\n") 
 
+#********************************************************
+#This line provides us the ability to capture output,
+#very useful for development
+debug <- 1
+if(debug == 1)
+{
+	system('rm -f output.txt')
+	system('touch output.txt')
+	Rout <- file('output.txt','w')
+}
+#This function will simplify our life
+write <- function(x)
+{
+	y<-as.character(x)
+	writeLines(y,Rout,sep="\n")
+}
+#This function just makes for prettier output
+cep <- function()
+{
+	writeLines('*********************************************************',Rout,sep='\n')
+}
+#********************************************************
+
 #This line loads the required libraries and packages that
 # we want to use
 library(XML)
@@ -24,7 +47,7 @@ library(stringr)
 #The first part of this code will not use functions as the 
 #retrieval of the webpage, well, it doesn't make sense
 #to "vectorize" that.
-home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
+home_page <- readLines('st.txt')
 
 #This is where we store the pattern to search for the links
 #to the president's speeches. This could be a more elegant
@@ -34,6 +57,12 @@ home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
 link_pattern <- '"http://www\\.presidency\\.ucsb\\.edu/ws/index\\.php\\?pid=[[:digit:]]{1,6}"'
 #Here we store our speech search pattern
 speech_pattern <-'<span class="displaytext">.*?</span>'
+#Here we store out citation search pattern
+cit_pattern <- '<strong>Citation:'
+#Here we store our name pattern
+name_pattern <- 'Citation:&nbsp;</strong></span><span class="ver10">.*?:'
+#Here we store our year pattern
+year_pattern <- '[[:digit:]], [[:digit:]]{4,4}'
 
 #Here we employ stringr to extract from the html
 #the lines in which our pattern is found. It also returns
@@ -69,17 +98,152 @@ count = 0
 
 for(i in 1:length(speech_links))
 {
-	if(!is.na(speech_links[i])) count = count + 1
+	if(!is.na(speech_links[i]))
+	{
+		count = count + 1
+		if(debug==1)
+		{
+			if(count==1)
+			{
+				cep()
+				write('The speech links are					')
+			}
+			write(speech_links[i])
+		}
+	}
 }
-
-cat(count)
-cat("\n")
+if(debug==1)
+{
+	cep()
+	write("The number of speeches found is")
+	write(count)
+	cep()
+}
 
 #Here we create a function to "unpack" our speech links"
 
-unpack <- function(speech_link,speech_number){
-	speech_page <- readLines(speech_link)
-		
+unpack <- function(speech_path)
+{
+#This stores the html given by the link we will supply later
+	speech_page <- readLines(speech_path)
+#This uses our speech search pattern to pull out the speech
+#This grabs the line where the speech lives
+	line_number <- grep(speech_pattern,speech_page)
+#This is the string with our search criteria in it
+	uncleaned_string <- str_extract(speech_page[line_number],
+		speech_pattern)
+#This is our string without the search criteria in it
+	cleaned_string <- substr(uncleaned_string,27,
+		nchar(uncleaned_string)-7)
+#Here we assign the cleaned string to the dynamic variable
+	return(cleaned_string)
+}
+#Because I desire to work with R's ridiculous data
+#structures as little as possible, we create an
+#additional function to retrieve the name and year
+#of each speech
+get_data <- function(speech_path,speech_number)
+{
+#Get the file (this is a repeat of above but oh well)
+	file <- readLines(speech_path)
+#Get line of citation
+	cit_line <- grep(cit_pattern,file)
+#Get uncleaned string of name
+	uc_name <- str_extract(file[cit_line],
+		name_pattern)
+#Get uncleaned year
+	uc_year <- str_extract(file[cit_line],
+		year_pattern)
+#Clean name
+	name <- substr(uc_name,52,nchar(uc_name)-1)
+#Clean year
+	year <- substr(uc_year,4,nchar(uc_year))
+#Cat into a vector
+	output <- c(speech_number,name,year)
+#return vector
+	return(output)
+}
+
+#Here we create a function to make the text "human"
+#readable
+
+readable <- function(string_path)
+{
+#This will replace all the html <p>s with \n's
+	new_1 <- str_replace_all(string_path,'<p>','\\n')
+	return(new_1)
+}
+
+#This function (which should be called before, by
+#preference really) the readable function, counts 
+# the emotion tags
+
+emotion_count <- function(string_path)
+{
+#This one counts the laughs
+	laugh_count <- str_count(string_path,
+		ignore.case('\\[laughter\\]'))
+#This one couts the applause
+	applause_count <- str_count(string_path,
+		ignore.case('\\[applause\\]'))
+#Return the value as a vector
+	output <- c(laugh_count,applause_count)
+	return(output)
+}
+
+#This function strips the emotion tags
+emotion_strp <- function(string_path)
+{
+#This one stips the laughter tags (how sad)
+	new_1 <- str_replace_all(string_path,
+		ignore.case('\\[laughter\\]'),
+		'')
+#This one strips the applause tags (how boring!)
+	new_2 <- str_replace_all(string_path,
+		ignore.case('\\[applause\\]'),
+		'')
+#Here we return our string
+	return(new_2)
+}
+
+#This for loop will go through our speech_links and
+#initiate function calls and variable assignments to our
+#liking
+#This is a blank list where we will store the speeches
+unaltered_speeches <- vector('list',count)
+#This is a data frame  where we will store the speech data
+listed_data <- data.frame(matrix(ncol=3,nrow=count))
+#This is an indexing variable
+speech_number <-1 
+
+for(i in 1:length(speech_links))
+{
+#This if statement causes us to execute only if we have a
+#valid speech link
+	if(!is.na(speech_links[i]))
+	{
+		trimmed_path = substr(speech_links[i],2,
+			nchar(speech_links[i])-1)
+		unaltered_speeches[speech_number]<-unpack(
+			trimmed_path)
+		listed_data[speech_number,] <- get_data(
+			trimmed_path,speech_number)
+		speech_number <- speech_number + 1
+		if(debug==1)
+		{
+			dfrow <- c(listed_data[speech_number-1,1
+				],listed_data[speech_number-1,2
+				],listed_data[speech_number-1,3
+				])
+			write(dfrow)
+			write(unaltered_speeches[speech_number
+				-1])
+			cep()
+		}
+	}
+}
+
+	
 #These lines simply tell us that we have finished
 cat("END EXECUTION\n")
 cat("*************************************************\n")
