@@ -32,6 +32,28 @@ The occurance of key phrases is
 *********************************************************
 I count
 44
+We count
+143
+American count
+45
+Democracy count
+4
+Republic count
+0
+Democrat count
+0
+Republican count
+0
+Freedom count
+8
+War count
+3
+God count
+3
+God Bless count
+2
+Christianity count
+0
 *********************************************************
 Please, everybody, have a seat. Mr. Speaker, Mr. Vice President, Members of Congress, fellow Americans: Fifty-one years ago, John F. Kennedy declared to this Chamber that "the Constitution makes us not rivals for power, but partners for progress." "It is my task," he said, "to report the state of the Union; to improve it is the task of us all." 
 Tonight, thanks to the grit and determination of the American people, there is much progress to report. After a decade of grinding war, our brave men and women in uniform are coming home. After years of grueling recession, our businesses have created over 6 million new jobs. We buy more American cars than we have in 5 years and less foreign oil than we have in 20. Our housing market is healing, our stock market is rebounding, and consumers, patients, and homeowners enjoy stronger protections than ever before. 
@@ -153,6 +175,28 @@ The occurance of key phrases is
 *********************************************************
 I count
 67
+We count
+120
+American count
+60
+Democracy count
+4
+Republic count
+0
+Democrat count
+0
+Republican count
+1
+Freedom count
+5
+War count
+7
+God count
+1
+God Bless count
+1
+Christianity count
+0
 *********************************************************
 The President. Mr. Speaker, Mr. Vice President, Members of Congress, my fellow Americans: Today in America, a teacher spent extra time with a student who needed it and did her part to lift America's graduation rate to its highest levels in more than three decades. An entrepreneur flipped on the lights in her tech startup and did her part to add to the more than 8 million new jobs our businesses have created over the past 4 years. An autoworker fine-tuned some of the best, most fuel-efficient cars in the world and did his part to help America wean itself off foreign oil. 
 A farmer prepared for the spring after the strongest 5-year stretch of farm exports in our history. A rural doctor gave a young child the first prescription to treat asthma that his mother could afford. A man took the bus home from the graveyard shift, bone-tired, but dreaming big dreams for his son. And in tight-knit communities all across America, fathers and mothers will tuck in their kids, put an arm around their spouse, remember fallen comrades, and give thanks for being home from a war that after 12 long years is finally coming to an end. 
