@@ -450,6 +450,16 @@ df9 <- vector('numeric',count)
 df10 <- vector('numeric',count)
 df11 <- vector('numeric',count)
 df12 <- vector('numeric',count)
+#We now manually define the vectors indexing
+#the speeches by party
+dem <- c(1,2,3,4,5,6,15,16,17,18,19,20,21,
+22,35,36,37,38,39,40,41,53,54,55,56,57,58,
+59,60,61,72,73,74,75,76,77,78,79,80,81,82,
+83,84,85,86,87,88,89,90,91,92)
+rep <- c(7,8,9,10,11,12,13,14,23,24,25,26,
+27,28,29,30,31,32,33,34,42,43,44,45,46,47,
+48,49,50,51,52,62,63,64,65,66,67,68,69,70,
+71)
 #This for loop is going to, with brute force
 #create some numeric vectors that we need for
 #plotting
@@ -519,7 +529,78 @@ plot(year_vec,df11,xlab='Year',ylab='Occurance of "God Bless"',
 	main='Occurance of "God Bless" per Address')
 plot(year_vec,df12,xlab='Year',ylab='Occurance of Christian Themes',
 	main='Occurance of Christian Themes per Address')
-
+plot(year_vec[dem],laugh_vec[dem],xlab='Year',ylab='Laughter Count',
+	main='Laugh Count per Democratic Address')
+plot(year_vec[dem],applause_vec[dem],xlab='Year',ylab='Applause Count',
+	main='Applause Count per Democratic Address')
+plot(year_vec[dem],word_counts[dem],xlab='Year',ylab='Word Count',
+	main='Words per Democratic Address')
+plot(year_vec[dem],sentence_counts[dem],xlab='Year',ylab='Sentence Count',
+	main='Sentences per Democractic Address')
+plot(year_vec[dem],avg_word[dem],xlab='Year',ylab='Average Word Length',
+	main='Average Word Length per Democratic Address')
+plot(year_vec[dem],avg_sent[dem],xlab='Year',ylab='Aveage Sentence Length'
+	,main='Average Sentence Length per Democractic Address')
+plot(year_vec[dem],df1[dem],xlab='Year',ylab='Occurance of "I"',
+	main='Occurance of "I" per Democractic Address')
+plot(year_vec[dem],df2[dem],xlab='Year',ylab='Occurance of "we"',
+	main='Occurance of "we" per Democratic Address')
+plot(year_vec[dem],df3[dem],xlab='Year',ylab='Occurance of "America{,n}"',
+	main='Occurance of "America{,n}" per Democratic Address')
+plot(year_vec[dem],df4[dem],xlab='Year',ylab='Occurance of "democra{cy,tic}"',
+	main='Occurance of "democra{cy,tic}" per Democratic Address')
+plot(year_vec[dem],df5[dem],xlab='Year',ylab='Occurance of "republic"',
+	main='Occurance of "republic" per Democractic Address')
+plot(year_vec[dem],df6[dem],xlab='Year',ylab='Occurance of "Democrat{,ic}"',
+	main='Occurance of "Democrat{,ic}" per Democratic Address')
+plot(year_vec[dem],df7[dem],xlab='Year',ylab='Occurance of "Republican"',
+	main='Occurance of "Republican" per Democratic Address')
+plot(year_vec[dem],df8[dem],xlab='Year',ylab='Occurance of "free{,dom}"',
+	main='Occurance of "free{,dom}" per Democratic Address')
+plot(year_vec[dem],df9[dem],xlab='Year',ylab='Occurance of "war"',
+	main='Occurance of "war" per Democractic Address')
+plot(year_vec[dem],df10[dem],xlab='Year',ylab='Occurance of "God"',
+	main='Occurance of "God" per Democratic Address')
+plot(year_vec[dem],df11[dem],xlab='Year',ylab='Occurance of "God Bless"',
+	main='Occurance of "God Bless" per Democractic Address')
+plot(year_vec[dem],df12[dem],xlab='Year',ylab='Occurance of Christian Themes',
+	main='Occurance of Christian Themes per Democratic Address')
+plot(year_vec[rep],laugh_vec[rep],xlab='Year',ylab='Laughter Count',
+	main='Laugh Count per Republican Address')
+plot(year_vec[rep],applause_vec[rep],xlab='Year',ylab='Applause Count',
+	main='Applause Count per Republican Address')
+plot(year_vec[rep],word_counts[rep],xlab='Year',ylab='Word Count',
+	main='Words per Republican Address')
+plot(year_vec[rep],sentence_counts[rep],xlab='Year',ylab='Sentence Count',
+	main='Sentences per Republican Address')
+plot(year_vec[rep],avg_word[rep],xlab='Year',ylab='Average Word Length',
+	main='Average Word Length per Republican Address')
+plot(year_vec[rep],avg_sent[rep],xlab='Year',ylab='Aveage Sentence Length'
+	,main='Average Sentence Length per Republican Address')
+plot(year_vec[rep],df1[rep],xlab='Year',ylab='Occurance of "I"',
+	main='Occurance of "I" per Republican Address')
+plot(year_vec[rep],df2[rep],xlab='Year',ylab='Occurance of "we"',
+	main='Occurance of "we" per Republican Address')
+plot(year_vec[rep],df3[rep],xlab='Year',ylab='Occurance of "America{,n}"',
+	main='Occurance of "America{,n}" per Republican Address')
+plot(year_vec[rep],df4[rep],xlab='Year',ylab='Occurance of "democra{cy,tic}"',
+	main='Occurance of "democra{cy,tic}" per Republican Address')
+plot(year_vec[rep],df5[rep],xlab='Year',ylab='Occurance of "republic"',
+	main='Occurance of "republic" per Republican Address')
+plot(year_vec[rep],df6[rep],xlab='Year',ylab='Occurance of "Democrat{,ic}"',
+	main='Occurance of "Democrat{,ic}" per Republican Address')
+plot(year_vec[rep],df7[rep],xlab='Year',ylab='Occurance of "Republican"',
+	main='Occurance of "Republican" per Republican Address')
+plot(year_vec[rep],df8[rep],xlab='Year',ylab='Occurance of "free{,dom}"',
+	main='Occurance of "free{,dom}" per Republican Address')
+plot(year_vec[rep],df9[rep],xlab='Year',ylab='Occurance of "war"',
+	main='Occurance of "war" per Republican Address')
+plot(year_vec[rep],df10[rep],xlab='Year',ylab='Occurance of "God"',
+	main='Occurance of "God" per Republican Address')
+plot(year_vec[rep],df11[rep],xlab='Year',ylab='Occurance of "God Bless"',
+	main='Occurance of "God Bless" per Republican Address')
+plot(year_vec[rep],df12[rep],xlab='Year',ylab='Occurance of Christian Themes',
+	main='Occurance of Christian Themes per Republican Address')
 dev.off()
 if(debug==1)
 {
