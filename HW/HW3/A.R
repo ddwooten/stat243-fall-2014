@@ -17,9 +17,12 @@ cat("BEGIN EXECUTION\n")
 debug <- 1 
 if(debug == 1)
 {
-	system('rm -f output.txt')
-	system('touch output.txt')
-	Rout <- file('output.txt','w')
+	system('rm -f output.dat')
+	system('touch output.dat')
+	system('rm -f error.out')
+	system('touch error.out')
+	sink('error.out', append=TRUE)
+	Rout <- file('output.dat','w')
 }
 #This function will simplify our life
 write <- function(x)
