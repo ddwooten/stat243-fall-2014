@@ -14,7 +14,7 @@ cat("BEGIN EXECUTION\n")
 #********************************************************
 #This line provides us the ability to capture output,
 #very useful for development
-debug <- 1
+debug <- 1 
 if(debug == 1)
 {
 	system('rm -f output.txt')
@@ -47,7 +47,8 @@ library(stringr)
 #The first part of this code will not use functions as the 
 #retrieval of the webpage, well, it doesn't make sense
 #to "vectorize" that.
-home_page <- readLines('st.txt')
+#home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
+home_page <- readLines('test.txt')
 
 #This is where we store the pattern to search for the links
 #to the president's speeches. This could be a more elegant
@@ -125,7 +126,7 @@ if(debug==1)
 unpack <- function(speech_path)
 {
 #This stores the html given by the link we will supply later
-	speech_page <- readLines(speech_path)
+	speech_page <- iconv(readLines(speech_path),'','ASCII','???')
 #This uses our speech search pattern to pull out the speech
 #This grabs the line where the speech lives
 	line_number <- grep(speech_pattern,speech_page)
@@ -136,9 +137,8 @@ unpack <- function(speech_path)
 	cleaned_string <- substr(uncleaned_string,27,
 		nchar(uncleaned_string)-7)
 #This will deal with encoding issues
-	ideal_string <- iconv(cleaned_string,'','ASCII','???')
 #Here we assign the cleaned string to the dynamic variable
-	return(ideal_string)
+	return(cleaned_string)
 }
 #Because I desire to work with R's ridiculous data
 #structures as little as possible, we create an
@@ -336,11 +336,15 @@ speech_number <-1
 for(i in 1:length(speech_links))
 {
 #This if statement causes us to execute only if we have a
-#valid speech link
+#valid speech link. All that is performed are various
+#function calls to populate the data structures asked
+#for
 	if(!is.na(speech_links[i]))
 	{
 		trimmed_path = substr(speech_links[i],2,
 			nchar(speech_links[i])-1)
+		write(trimmed_path)
+		cep()
 		unaltered_speeches[speech_number]<-unpack(
 			trimmed_path)
 		listed_data[speech_number,] <- get_data(
@@ -367,6 +371,8 @@ for(i in 1:length(speech_links))
 				],listed_data[speech_number-1,3
 				])
 			write(dfrow)
+			cep()
+			write(trimmed_path)
 			cep()
 			write(unaltered_speeches[speech_number
 				-1])

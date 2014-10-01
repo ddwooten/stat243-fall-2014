@@ -1,2 +1,1 @@
-"I" "we" "America{,n}" "democra{cy,tic}" "republic" "Democrat{,ic}" "Republican" "free{,dom}" "war" "God" "God Bless" "{Jesus,Chris,Christian}"
-"2" 67 120 60 4 0 0 1 5 7 1 1 0
+<td align="center" class="doclist"><a href="http://www.presidency.ucsb.edu/ws/index.php?pid=38069">2013</a><\td>
