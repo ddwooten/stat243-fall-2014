@@ -1,2 +1,2 @@
 "I" "we" "America{,n}" "democra{cy,tic}" "republic" "Democrat{,ic}" "Republican" "free{,dom}" "war" "God" "God Bless" "{Jesus,Chris,Christian}"
-"2" 69 0 0 0 0 0 0 0 7 0 0 0
+"2" 67 120 60 4 0 0 1 5 7 1 1 0

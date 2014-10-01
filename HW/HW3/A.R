@@ -267,29 +267,29 @@ find_index <- function(query,type,df)
 phrase_counter <- function(string_path)
 {
 #This, and the following lines, extract what we desire
-	I_count <- str_count(string_path,'\\bI\\b')
+	I_count <- str_count(string_path,' I[ [:punct:]]')
 	we_count <- str_count(string_path,ignore.case(
-		' (we)[ [[:punct:]]]'))
+		' (we)[ [:punct:]]'))
 	American_count <- str_count(string_path,ignore.case(
-		' (america|american)[ [[:punct:]]]'))
+		' (america|american)[ [:punct:]]'))
 	democracy_count <- str_count(string_path,
-		' (democracy|democratic)[ [[:punct:]]]')
+		' (democracy|democratic)[ [:punct:]]')
 	Republic_count <- str_count(string_path,ignore.case(
-		' republic[ [[:punct:]]]'))
+		' republic[ [:punct:]]'))
 	Democratic_count <- str_count(string_path,
-		' (Democrat|Democratic)[ [[:punct:]]]')
+		' (Democrat|Democratic)[ [:punct:]]')
 	Republican_count <- str_count(string_path,
-		' Republican[ [[:punct:]]]')
+		' Republican[ [:punct:]]')
 	freedom_count <- str_count(string_path,ignore.case(
-		' (free|freedom)[ [[:punct:]]]'))
+		' (free|freedom)[ [:punct:]]'))
 	war_count <- str_count(string_path, ignore.case(
-		' war[ [[:punct:]]'))
+		' war[ [:punct:]]'))
 	God_count <- str_count(string_path,ignore.case(
-		' god[ [[:punct:]]^( b)]'))
+		' god[ [:punct:]^( b)]'))
 	Godbless_count <- str_count(string_path,ignore.case(
-		' god bless[ [[:punct:]]]'))
+		' god bless[ [:punct:]]'))
 	Christian_count <- str_count(string_path,ignore.case(
-		' (Jesus|Christ|Christian)[ [[:punct:]]]'))
+		' (Jesus|Christ|Christian)[ [:punct:]]'))
 #This will cat all of these to a vector for output
 	output <- c(I_count,we_count,American_count,
 			democracy_count,Republic_count,
@@ -326,7 +326,7 @@ sentence_vectors <- list(0)
 #data frames
 rhetoric_list <- data.frame(matrix(ncol=12,nrow=count))
 #This gives our data.frame columns names
-colnames(rhetoric_list) <- c("I","we","America{,n}","democra{cy,tic}","republic","Democrat{,ic}","Republican","free{,dom}","war","God","God Bless","{Jesus,Chris,Christian}")
+colnames(rhetoric_list) <- c("I","we","America{,n}","democra{cy,tic}","republic","Democrat{,ic}","Republican","free{,dom}","war","God","God Bless","{Jesus,Christ,Christian}")
 #This is an indexing variable
 speech_number <-1 
 
@@ -391,9 +391,16 @@ for(i in 1:length(speech_links))
 				speech_number]][[1]]))
 			cep()
 			write("The occurance of key phrases is")
-			write.table(rhetoric_list[
-				speech_number-1,],file=
-				'test.txt')	
+			cep()
+			write("I count")
+			write(rhetoric_list[speech_number-1,1]) 	
+			write("We count")
+			write(rhetoric_list[speech_number-1,2]) 	
+			write("American count")
+			write(rhetoric_list[speech_number-1,2]) 
+			write("Democracy count")	
+			write(rhetoric_list[speech_number-1,2]) 	
+			write("
 			cep()
 			write(hreadable[speech_number-1])
 			cep()
