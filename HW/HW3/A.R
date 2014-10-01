@@ -14,7 +14,7 @@ cat("BEGIN EXECUTION\n")
 #********************************************************
 #This line provides us the ability to capture output,
 #very useful for development
-debug <- 1 
+debug <- 0 
 if(debug == 1)
 {
 	system('rm -f output.dat')
@@ -22,15 +22,19 @@ if(debug == 1)
 	Rout <- file('output.dat','w')
 }
 #This function will simplify our life
+if(debug == 1)
+{
 write <- function(x)
 {
 	y<-as.character(x)
 	writeLines(y,Rout,sep="\n")
 }
+
 #This function just makes for prettier output
 cep <- function()
 {
 	writeLines('*********************************************************',Rout,sep='\n')
+}
 }
 #********************************************************
 
@@ -39,18 +43,10 @@ cep <- function()
 library(XML)
 library(stringr)
 
-#This line uses scrapeR's retreival function to store
-#the websites html file in an R object
-#orginal_html <- scrape(url='www.presidency.ucb.edu/sou.php#axzz265cEKp1a'+
-#,) 
-
 #The first part of this code will not use functions as the 
 #retrieval of the webpage, well, it doesn't make sense
 #to "vectorize" that.
-#home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
-#This line is to allow for easy switching to special
-#input for debugging purposes.
-home_page <- readLines('modern.txt')
+home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
 
 #This is where we store the pattern to search for the links
 #to the president's speeches. This could be a more elegant
@@ -71,27 +67,6 @@ year_pattern <- '[[:digit:]], [[:digit:]]{4,4}'
 #the lines in which our pattern is found. It also returns
 #the pattern.
 speech_links <- str_extract(home_page, link_pattern)
-
-#********************************************************
-#Here we use two for loops, as well as two pattern matches
-#to go through speech_links and check for duplicates
-#essentially deleting them should we find them
-
-#for(i in 1:length(speech_links))
-#{
-#	speech_id <- str_extract(speech_links[i],
-#		'[[:digit:]]{1,6}')
-#	for(j in (i+1):length(speech_links))
-#	{
-#		search_id <- str_extract(speech_links[j],
-#			'[[:digit:]]{1,6}')
-#		if(identical(speech_id,search_id))
-#		{
-#			speech_links[j] = 'NA'
-#		}
-#	}
-#}
-#*******************************************************
 
 #Here we use a for loop to count up the number of speech
 #links. This will be handy. We use a dummy counter variable
@@ -345,8 +320,6 @@ for(i in 1:length(speech_links))
 	{
 		trimmed_path = substr(speech_links[i],2,
 			nchar(speech_links[i])-1)
-		write(trimmed_path)
-		cep()
 		unaltered_speeches[speech_number]<-unpack(
 			trimmed_path)
 		listed_data[speech_number,] <- get_data(
@@ -366,6 +339,7 @@ for(i in 1:length(speech_links))
 		rhetoric_list[speech_number,] <- phrase_counter(
 			human_speech)
 		speech_number <- speech_number + 1
+#This is all for debugging purposes
 		if(debug==1)
 		{
 			dfrow <- c(listed_data[speech_number-1,1
@@ -602,15 +576,6 @@ plot(year_vec[rep],df11[rep],xlab='Year',ylab='Occurance of "God Bless"',
 plot(year_vec[rep],df12[rep],xlab='Year',ylab='Occurance of Christian Themes',
 	main='Occurance of Christian Themes per Republican Address')
 dev.off()
-if(debug==1)
-{
-#	cat(unlist(word_vectors[[2]]))
-#	cat(unlist(sentence_vectors[[2]]))
-#	yr <- find_index("2014",3,listed_data)
-#	cat(yr)
-	cat('\n')
-	cep()
-}
 	
 #These lines simply tell us that we have finished
 cat("END EXECUTION\n")
