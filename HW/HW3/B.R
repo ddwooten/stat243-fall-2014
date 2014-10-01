@@ -19,6 +19,9 @@ if(debug == 1)
 {
 	system('rm -f output.dat')
 	system('touch output.dat')
+	system('rm -f error.out')
+	system('touch error.out')
+	sink('error.out', append=TRUE)
 	Rout <- file('output.dat','w')
 }
 #This function will simplify our life
@@ -436,6 +439,8 @@ for(i in 1:length(speech_links))
 year_vec <- vector('numeric',count)
 laugh_vec <- vector('numeric',count)
 applause_vec <- vector('numeric',count)
+number_words <- vector('numeric',count)
+number_sent <- vector('numeric',count)
 avg_word <- vector('numeric',count)
 avg_sent <- vector('numeric',count)
 df1 <- vector('numeric',count)
@@ -461,6 +466,11 @@ for(i in 1:count)
 		emotion_store[i,2])
 	applause_vec[i] <- as.numeric(
 		emotion_store[i,3])
+	number_words[i] <- length(
+		word_vectors[[i]])
+	number_sent[i] <- length(
+		sentence_vectors[[
+		i]])
 	avg_word[i] <- mean(nchar(
 		word_vectors[[i]]))
 	avg_sent[i] <- mean(nchar(
@@ -480,47 +490,6 @@ for(i in 1:count)
 	df12[i] <- rhetoric_list[i,12]
 }
 
-#Here we direct R to make a pdf in
-#which we will store our plots
-pdf('ps3plots.pdf')
-plot(year_vec,laugh_vec,xlab='Year',ylab='Laughter Count',
-	main='Laugh Count per Address')
-plot(year_vec,applause_vec,xlab='Year',ylab='Applause Count',
-	main='Applause Count per Address')
-plot(year_vec,word_counts,xlab='Year',ylab='Word Count',
-	main='Words per Address')
-plot(year_vec,sentence_counts,xlab='Year',ylab='Sentence Count',
-	main='Sentences per Address')
-plot(year_vec,avg_word,xlab='Year',ylab='Average Word Length',
-	main='Average Word Length per Address')
-plot(year_vec,avg_sent,xlab='Year',ylab='Aveage Sentence Length'
-	,main='Average Sentence Length per Address')
-plot(year_vec,df1,xlab='Year',ylab='Occurance of "I"',
-	main='Occurance of "I" per Address')
-plot(year_vec,df2,xlab='Year',ylab='Occurance of "we"',
-	main='Occurance of "we" per Address')
-plot(year_vec,df3,xlab='Year',ylab='Occurance of "America{,n}"',
-	main='Occurance of "America{,n}" per Address')
-plot(year_vec,df4,xlab='Year',ylab='Occurance of "democra{cy,tic}"',
-	main='Occurance of "democra{cy,tic}" per Address')
-plot(year_vec,df5,xlab='Year',ylab='Occurance of "republic"',
-	main='Occurance of "republic" per Address')
-plot(year_vec,df6,xlab='Year',ylab='Occurance of "Democrat{,ic}"',
-	main='Occurance of "Democrat{,ic}" per Address')
-plot(year_vec,df7,xlab='Year',ylab='Occurance of "Republican"',
-	main='Occurance of "Republican" per Address')
-plot(year_vec,df8,xlab='Year',ylab='Occurance of "free{,dom}"',
-	main='Occurance of "free{,dom}" per Address')
-plot(year_vec,df9,xlab='Year',ylab='Occurance of "war"',
-	main='Occurance of "war" per Address')
-plot(year_vec,df10,xlab='Year',ylab='Occurance of "God"',
-	main='Occurance of "God" per Address')
-plot(year_vec,df11,xlab='Year',ylab='Occurance of "God Bless"',
-	main='Occurance of "God Bless" per Address')
-plot(year_vec,df12,xlab='Year',ylab='Occurance of Christian Themes',
-	main='Occurance of Christian Themes per Address')
-
-dev.off()
 if(debug==1)
 {
 #	cat(unlist(word_vectors[[2]]))
