@@ -47,8 +47,10 @@ library(stringr)
 #The first part of this code will not use functions as the 
 #retrieval of the webpage, well, it doesn't make sense
 #to "vectorize" that.
-#home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
-home_page <- readLines('test.txt')
+home_page <- readLines('http://www.presidency.ucsb.edu/sou.php#axzz265cEKp1a')
+#This line is to allow for easy switching to special
+#input for debugging purposes.
+#home_page <- readLines('test.txt')
 
 #This is where we store the pattern to search for the links
 #to the president's speeches. This could be a more elegant
@@ -126,6 +128,7 @@ if(debug==1)
 unpack <- function(speech_path)
 {
 #This stores the html given by the link we will supply later
+#This will deal with encoding issues
 	speech_page <- iconv(readLines(speech_path),'','ASCII','???')
 #This uses our speech search pattern to pull out the speech
 #This grabs the line where the speech lives
@@ -136,7 +139,6 @@ unpack <- function(speech_path)
 #This is our string without the search criteria in it
 	cleaned_string <- substr(uncleaned_string,27,
 		nchar(uncleaned_string)-7)
-#This will deal with encoding issues
 #Here we assign the cleaned string to the dynamic variable
 	return(cleaned_string)
 }
@@ -147,7 +149,7 @@ unpack <- function(speech_path)
 get_data <- function(speech_path,speech_index)
 {
 #Get the file (this is a repeat of above but oh well)
-	file <- readLines(speech_path)
+	file <- iconv(readLines(speech_path),'','ASCII','???')
 #Get line of citation
 	cit_line <- grep(cit_pattern,file)
 #Get uncleaned string of name
@@ -432,8 +434,8 @@ if(debug==1)
 {
 #	cat(unlist(word_vectors[[2]]))
 #	cat(unlist(sentence_vectors[[2]]))
-	yr <- find_index("2014",3,listed_data)
-	cat(yr)
+#	yr <- find_index("2014",3,listed_data)
+#	cat(yr)
 	cat('\n')
 	cep()
 }
