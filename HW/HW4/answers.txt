@@ -1,0 +1,15 @@
+Problem 1
+The key here to understanding the output of this function is understanding
+the '=' operator and the '{' operator. The '=' operator behaves as we expect
+it to, it assigns the value on the right to the varible on the left. The
+interesting part is the '{', which returns the last expression evaluated. This
+means that that assignment of 1 into y ( y <- 1 ) was evaluated, so y got its
+value of 1, but 2 was the last argument evaluated and as such, is what was
+given as the right-side argument to the '=' operator, giving x a value of 2. 
+The next trick is why ' y = 0 ' in the function arguments did not overwrite the
+assignment of 1 into y from the x bracket operation. The answer here is lazy
+evaluation. In the body of the function when R goes to evaluate ' x + y ' there
+is no need for it to actualy evaluate the ' y = 0 ' argument because y has
+already been given a value, and so lazy evaluation saves the day, giving us
+a value of 3 for the output ( x + y = 2 + 1 ).
+
