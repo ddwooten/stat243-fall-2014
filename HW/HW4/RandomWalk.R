@@ -39,11 +39,24 @@ Priase_Be_To_The_RNG = function(n,WholeWalk=NULL)
 #Check if WholeWalk was given
 	if(is.null(WholeWalk))
 	{
+#If whole walk was not give, set default vale of no walk
+#output
 		WholeWalk=0
 	}
+#If wholewalk was given, check for correct value. If not,
+# fail.
 	else
 	{
-		if(Whole
+		if(WholeWalk != 0 | WholeWalk != 1)
+		{
+			cat('ERROR!!: Input to select
+				output of entire
+				walk must be of form
+				0 (no walk) or
+				1 (whole walk)')
+			return()
+		}
+	}
 #These are the possible x steps we can take
 	xsteps <- c(-1,1,0,0)
 #These are the possible y steps we can take
