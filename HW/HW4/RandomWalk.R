@@ -13,8 +13,37 @@ cep()
 cat('BEGIN EXECUTION \n')
 
 #Initialize the random walk function
-Priase_Be_To_The_RNG = function(n,WholeWalk)
+Priase_Be_To_The_RNG = function(n,WholeWalk=NULL)
 {
+#Try to cast inpput as integer
+	N <- try(as.integer(n))
+#If input can be cast as integer proceed
+	if(!class(N) == 'try-error')
+	{
+#Check to make sure N is actually an integer
+		if(!is.integer(N) | n <= 0 | is.na(N) )
+		{
+#If N is not an integer, bork and exit with message
+			cat('ERROR!!: First argument n must
+				be of type positive and 
+				non-zero integer')
+			return()
+		}
+	}
+	else
+	{
+		cat('ERROR!!: Step-number input could
+			not be case as integer.')
+		return()
+	}
+#Check if WholeWalk was given
+	if(is.null(WholeWalk))
+	{
+		WholeWalk=0
+	}
+	else
+	{
+		if(Whole
 #These are the possible x steps we can take
 	xsteps <- c(-1,1,0,0)
 #These are the possible y steps we can take
