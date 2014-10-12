@@ -12,4 +12,24 @@ evaluation. In the body of the function when R goes to evaluate ' x + y ' there
 is no need for it to actualy evaluate the ' y = 0 ' argument because y has
 already been given a value, and so lazy evaluation saves the day, giving us
 a value of 3 for the output ( x + y = 2 + 1 ).
-
+Problem 2
+kdjkfdkdk
+Problem 3
+First off, I apologize but I'm using R version 3.0.2. I attempted to update my
+version but Trusty Thar ran into issues as it could not find a public key for
+the various cran mirrors I tried. As such, you're suck with what I 've got.
+We note from the output of the below code that after modifying one value
+in the fist column of the dataframe df1 a copy of all three columns was
+made. What is interesting to note is that no copy was made of the dataframe
+metadata such as the column names or the name of the dataframe itself. Another
+interesting point to note is that simply asking for a .Internal(inspect()) of a
+column in the dataframe seems to make a copy of the column as well, see the
+very last memory output of the below code and compare it to the first.
+Problem 3b.
+We note that, similar to the above (noting the code and output below) that
+when we modifiy just one value of one vector in the list, all the elements of
+the list are copied. However, differently from above, and this is strange (
+in that it is different), when we assess the memory location of one element
+in the list, it does not change, it resembles the last reported
+location for that element.
+Problem 4.

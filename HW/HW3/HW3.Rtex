@@ -1,0 +1,19 @@
+\documentclass{article}
+%% begin.rcode setup, include=FALSE
+% library(knitr)
+% opts_chunk$set(fig.path='figure/latex-', cache.path='cache/latex-')
+%% end.rcode
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\title{HW2 \\ {\small \date{\today}}}
+\author{Daniel Wooten}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+I feel obliged to write something, to submit somekind of Rtex file. Well, here it is. Knitr had trouble formatting and fitting the lines of my R script (known as A.R and which can be found in the git repo along with a printout in my hardcopy submission), so I didn't want to use knitr. Additionally, it seemed silly to force LaTeX to concatenate this Rtex file and the pdfs of the graphs, so they too have been submitted both in hard copy and via git as their own file (ps3plots.pdf). I hope this is satisfactory.
+
+\section{The Graphs}
+I feel obliged to say something about the graphs. In general we see the longest words, sentences, and speeches at the turn of the 20th century with a nominal level seen over all other times. Recently we have seen a large uptick in the useage of the terms "we" and "american".
+\end{document}
