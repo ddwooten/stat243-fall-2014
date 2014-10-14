@@ -24,23 +24,18 @@ oneUpdate <- function(A, n, K, theta.old, thresh = 0.1) {
   Theta.old <- theta.old %*% t(theta.old)
   L.old <- ll(Theta.old, A)
   q <- array(0, dim = c(n, n, K))
-  
-  for (i in 1:n) {
-    for (j in 1:n) {
-      for (z in 1:K) {
-        if (theta.old[i, z]*theta.old[j, z] == 0){
-          q[i, j, z] <- 0
-        } else {
-          q[i, j, z] <- theta.old[i, z]*theta.old[j, z] /
-            Theta.old[i, j]
-        }
-      }
-    }
-  }
+#We move this statment up here so we can condense the two z loops
   theta.new <- theta.old
-  for (z in 1:K) {
-    theta.new[,z] <- rowSums(A*q[,,z])/sqrt(sum(A*q[,,z]))
-  }
+#We need these two statements to elimate two of the loops and
+# vectorize using outer 
+	i <- c(1:n)
+	j <- c(1:n) 
+      for (z in 1:K) 
+	{
+		q[,,z] <- outer(theta.old[i,z],theta.old[j,z])/Theta.old
+#Additionally we move the other z loop inside
+    		theta.new[,z] <- rowSums(A*q[,,z])/sqrt(sum(A*q[,,z]))
+	}
   Theta.new <- theta.new %*% t(theta.new)
   L.new <- ll(Theta.new, A)
       converge.check <- abs(L.new - L.old) < thresh
