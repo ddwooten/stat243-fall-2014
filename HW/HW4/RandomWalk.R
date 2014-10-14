@@ -13,10 +13,10 @@ cep()
 cat('BEGIN EXECUTION \n')
 
 #Collect the function arguments
-#cat('Enter the number of steps: \n')
-#num <- readLines(file("stdin"),1)
-#cat('Enter 1 for whole walk or 0 for just the end position\n')
-#YesWalk <- readLines(file('stdin'),1)
+cat('Enter the number of steps: \n')
+num <- readLines(file("stdin"),1)
+cat('Enter 1 for whole walk or 0 for just the end position\n')
+YesWalk <- readLines(file('stdin'),1)
 
 #Initialize the random walk function
 Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
@@ -24,6 +24,7 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 #Try to cast inpput as integer
 	n <- try(as.integer(N))
 #If input can be cast as integer proceed
+	{
 	if(!class(n) == 'try-error')
 	{
 #Check to make sure N is actually an integer
@@ -33,18 +34,20 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 			cat('ERROR!!: First argument n must
 				be of type positive and 
 				non-zero integer\n')
-			exit_code <- '# steps not integer'
+			exit_code <- '# steps not positive integer'
 			return(exit_code)
 		}
 	}
 	else
 	{
 		cat('ERROR!!: Step-number input could
-			not be case as integer.\n')
+			not be cast as integer.\n')
 		exit_code <- 'Step input unable to cast as integer'
 		return(exit_code)
 	}
+	}
 #Check if WholeWalk was given
+	{
 	if(is.null(WholeWalk))
 	{
 #If whole walk was not give, set default vale of no walk
@@ -69,6 +72,7 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 			return(exit_code)
 		}
 	}
+	}
 #These are the possible x steps we can take
 	xsteps <- c(-1,1,0,0)
 #These are the possible y steps we can take
@@ -81,18 +85,19 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 	sy <- 0
 #These next two lines will create vectors of the new
 # x and y position at each step
-	posx <- c(0,cumsum(shifted_xsteps))
-	posy <- c(0,cumsum(shifted_ysteps))
+	posx <- c(0,cumsum(xsteps[steps]))
+	posy <- c(0,cumsum(ysteps[steps]))
 #Shift the steps taken by their start value
 	shifted_xsteps <- posx + sx
 	shifted_ysteps <- posy + sy
 #This if statement will handle the two cases
 #whole walk, or just the final position
+	{
 	if(WholeWalk == 1)
 	{
-		walk_map <- matrix(ncol = 2, nrow = n + 1 )
-		walk_map[,1] <- shifted_xsteps 
-		walk_map[,2] <- shifted_ysteps 
+		walk_map <- matrix(ncol = n + 1, nrow = 2 )
+		walk_map[1,] <- shifted_xsteps 
+		walk_map[2,] <- shifted_ysteps 
 	}
 	else
 	{
@@ -100,14 +105,16 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 		walk_map[1] <- shifted_xsteps[n+1]
 		walk_map[2] <- shifted_ysteps[n+1]
 	}
+	}
 	return(walk_map)
 }
 
-RND_Walk <- Praise_Be_To_The_RNG(10,1)
+RND_Walk <- Praise_Be_To_The_RNG(num,YesWalk)
 
 cep()
 cat('The result\n')
 cep()
+{
 if(is.matrix(RND_Walk))
 {
 	cat('X steps: ')
@@ -120,9 +127,12 @@ if(is.matrix(RND_Walk))
 }
 else
 {
+
 	cat('Final position (x,y): ')
 	cat(RND_Walk)
+	cat('\n')
 	cep()
+}
 }
 cat('\n')
 cep()
