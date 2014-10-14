@@ -59,18 +59,31 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL)
 	else
 	{
 # Convert WholeWalk to integer just to be sure it passes check
-		WholeWalk = as.integer(WholeWalk)
+		WholeWalk <- try(as.integer(WholeWalk))
 #If WholeWalk is not needed input, error and bork
-		if(WholeWalk != 0 & WholeWalk != 1)
 		{
-			cat('ERROR!!: Input to select
-				output of entire
-				walk must be of form
-				0 (no walk) or
-				1 (whole walk)\n')
-			exit_code <- 'Walk select not 0 or 1 or blank'
+		if(!class(WholeWalk) == 'try-error')
+		{	
+			if(WholeWalk != 0 & WholeWalk != 1)
+			{
+				cat('ERROR!!: Input to select
+					output of entire
+					walk must be of form
+					0 (no walk) or
+					1 (whole walk)\n')
+				exit_code <- 'Walk select not 0 or 1 or blank'
+				return(exit_code)
+			}
+		}
+		else
+		{
+			cat('ERROR!!: Input for walk-output form
+				could not be cast as a 0 or 1 
+				integer (required form)')
+			exit_code <- 'Walk select could not be cast as 0 or 1'
 			return(exit_code)
 		}
+		}	
 	}
 	}
 #These are the possible x steps we can take
@@ -129,7 +142,9 @@ else
 {
 
 	cat('Final position (x,y): ')
-	cat(RND_Walk)
+	cat(RND_Walk[1])
+	cat(',')
+	cat(RND_Walk[2])
 	cat('\n')
 	cep()
 }
