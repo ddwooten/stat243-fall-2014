@@ -127,7 +127,7 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL,SX=NULL,SY=NULL)
 }
 
 #Construct a walk class
-Take_A_Walk <- function(step_number = NA, details = NA)
+rw <- function(step_number = NA, details = NA)
 {
 	obj <- list(Num_Steps = step_number, Praise_Be_To_The_RNG(step_number,
 		details))
@@ -135,21 +135,114 @@ Take_A_Walk <- function(step_number = NA, details = NA)
 	return(obj)
 }
 
+#Create the print method for rw
+print.walk <- function(object){
+
+#This if statement is necessary to handle the dual nature
+# of the function output, namely, a matrix or a vector
+#, to extract the proper final position
+	{
+	if(is.matrix(object[[2]]))
+	{
+		final_pos_x <- object[[2]][1,object[[1]]+1]
+		final_pos_y <- object[[2]][2,object[[1]]+1]
+	}
+	else
+	{
+		final_pos_x <- object[[2]][1]
+		final_pos_y <- object[[2]][2]
+	}
+	}
+#Create the output string
+	out_string <- paste("The number of steps taken was ",
+			object[[1]]," and the final position is (",
+			final_pos_x, ",",final_pos_y,')\n',sep='')
+#Return the output string
+	return(with(object, cat(out_string)))
+}
+
+#Create the plot method
+plot.walk <- function(object) 
+{	
+	{
+# again, check output of function for full matrix. If so, plot it, duh
+	if(is.matrix(object[[2]]))
+	{
+		pdf('ps4p6plot.pdf')
+		plot(0,type="n",xlab="Dim 1",ylab="Dim 2",
+			main="Random Walk in Dim 1 and Dim 2",
+			xlim=range(object[[2]][1,]),
+			ylim=range(object[[2]][2,]))
+		segments(head(object[[2]][1,],-1),head(object[[2]][2,],-1),
+			tail(object[[2]][1,],-1),tail(object[[2]][2,],
+			-1),col='blue')
+		dev.off()
+	}
+		else
+# If not a matrix, you only got final pos, bork
+		{
+			cat('ERROR!!: Object of type, class = walk
+				, was not called with option to
+				produce full walk, only final 
+				position\n')
+			exit_code <- "Object called without full
+					path requested\n"
+			return(exit_code)
+		}
+	}
+}	
+
+#Add functionality to the [ operator for our object
+`[.walk` <- function(object,incr)
+{
+#Again, check for proper function output
+	{
+	if(is.matrix(object[[2]]))
+	{
+#Pull the incr step desired
+		x_pos <- object[[2]][1,incr]
+		y_pos <- object[[2]][2,incr]
+		pos <- c(x_pos,y_pos)
+		return(pos)
+	}
+		else
+# If not a matrix, you only got final pos, bork
+		{
+			cat('ERROR!!: Object of type, class = walk
+				, was not called with option to
+				produce full walk, only final 
+				position\n')
+			exit_code <- "Object called without full
+					path requested\n"
+			return(exit_code)
+		}
+	}
+}
 #Call the object
-RND_Walk <- Take_A_Walk(10,1)
+RND_Walk <- rw(10,1)
+
+cep()
+print(RND_Walk)
+cep()
+cat('Calling plot method\n')
+plot(RND_Walk)
+cep()
+cat('Calling the [ operator for the 2nd step')
+cat(RND_Walk[2])
+cep()
 
 # Print the result based on the output
 cep()
 cat('The result\n')
 cep()
 {
-if(is.matrix(RND_Walk))
+if(is.matrix(RND_Walk[[2]]))
 {
 	cat('X steps: ')
-	cat(RND_Walk[1,])
+	cat(RND_Walk[[2]][1,])
 	cat('\n')
 	cat('Y steps: ')
-	cat(RND_Walk[2,])
+	cat(RND_Walk[[2]][2,])
 	cat('\n')
 	cep()
 }
@@ -157,9 +250,9 @@ else
 {
 
 	cat('Final position (x,y): ')
-	cat(RND_Walk[[1]])
+	cat(RND_Walk[[1]][1])
 	cat(',')
-	cat(RND_Walk[[2]])
+	cat(RND_Walk[[1]][2])
 	cat('\n')
 	cep()
 }
