@@ -13,11 +13,12 @@ cep()
 cat('BEGIN EXECUTION \n')
 
 #Collect the function arguments
-cat('Enter the number of steps: \n')
-num <- readLines(file("stdin"),1)
-cat('Enter 1 for whole walk or 0 for just the end position\n')
-YesWalk <- readLines(file('stdin'),1)
+#cat('Enter the number of steps: \n')
+#num <- readLines(file("stdin"),1)
+#cat('Enter 1 for whole walk or 0 for just the end position\n')
+#YesWalk <- readLines(file('stdin'),1)
 
+	
 #Initialize the random walk function
 Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL,SX=NULL,SY=NULL)
 {
@@ -125,8 +126,18 @@ Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL,SX=NULL,SY=NULL)
 	return(walk_map)
 }
 
-# Call the function
-RND_Walk <- Praise_Be_To_The_RNG(num,YesWalk)
+#Construct a walk class
+Take_A_Walk <- function(step_number = NA, details = NA)
+{
+	obj <- list(Num_Steps = step_number, Praise_Be_To_The_RNG(step_number,
+		details))
+	class(obj) <- 'walk'
+	return(obj)
+}
+
+#Call the object
+RND_Walk <- Take_A_Walk(10,1)
+
 # Print the result based on the output
 cep()
 cat('The result\n')
@@ -146,9 +157,9 @@ else
 {
 
 	cat('Final position (x,y): ')
-	cat(RND_Walk[1])
+	cat(RND_Walk[[1]])
 	cat(',')
-	cat(RND_Walk[2])
+	cat(RND_Walk[[2]])
 	cat('\n')
 	cep()
 }
