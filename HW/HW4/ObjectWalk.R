@@ -218,6 +218,29 @@ plot.walk <- function(object)
 		}
 	}
 }
+
+#Create the generic replacement method
+`start<-` <- function(x,...) UseMethod("start<-")
+#Create the class specific replacement method
+`start<-.walk` <- function(object,value)
+{
+#Again, check for proper function output
+	{
+	if(is.matrix(object[[2]]))
+	{
+		object[[2]][1,] <- object[[2]][1,] + value[1]
+		object[[2]][2,] <- object[[2]][2,] + value[2]
+		return(object)
+	}
+		else
+# If not a matrix, you only got final pos
+		{
+			object[[2]][1] <- object[[2]][1] + value[1]
+			object[[2]][2] <- object[[2]][2] + value[2]
+			return(object)
+		}
+	}
+}
 #Call the object
 RND_Walk <- rw(10,1)
 
@@ -227,14 +250,39 @@ cep()
 cat('Calling plot method\n')
 plot(RND_Walk)
 cep()
-cat('Calling the [ operator for the 2nd step')
+cat('Calling the [ operator for the 2nd step\n')
 cat(RND_Walk[2])
+cat('\n')
 cep()
 
 # Print the result based on the output
 cep()
 cat('The result\n')
 cep()
+{
+if(is.matrix(RND_Walk[[2]]))
+{
+	cat('X steps: ')
+	cat(RND_Walk[[2]][1,])
+	cat('\n')
+	cat('Y steps: ')
+	cat(RND_Walk[[2]][2,])
+	cat('\n')
+	cep()
+}
+else
+{
+
+	cat('Final position (x,y): ')
+	cat(RND_Walk[[1]][1])
+	cat(',')
+	cat(RND_Walk[[1]][2])
+	cat('\n')
+	cep()
+}
+}
+cat('Calling the start replacer\n')
+start(RND_Walk) <- c(3,4)
 {
 if(is.matrix(RND_Walk[[2]]))
 {
