@@ -46,18 +46,18 @@ for(j in seq(0,size,1000) )
 }
 
 pdf('ps4plots.pdf')
-plot(ivec,itimes1,xlab='Vector Size',ylab='Elapsed Time (s)', 
+plot(ivec,btimes5,xlab='Vector Size',ylab='Elapsed Time (s)', 
 	main='Time to Subset a Vector with Indicies',col=1)
 points(ivec,itimes3,col=2,pch=18)
 points(ivec,itimes5,col=3,pch=18)
 points(ivec,btimes1,col=4,pch=18)
 points(ivec,btimes3,col=5,pch=18)
-points(ivec,btimes5,col=6,pch=18)
-legend("topleft",c("Index 10% of Vector",
+points(ivec,itimes1,col=6,pch=18)
+legend("topleft",c("Bool 50% of Vector",
 	"Index 30% of Vector","Index 50% of Vector",
 	"Bool 10% of Vector", "Bool 30% of Vector",
-	"Bool 50% of Vector"),
-	pch=18, col=c(1,2,3,4,5,6))
+	"Index 10% of Vector"),
+	pch=c(16,18,18,18,18,18), col=c(1,2,3,4,5,6))
 graphics.off()
 cat('\n')
 

@@ -1,0 +1,763 @@
+\documentclass{article}
+%% begin.rcode setup, include=FALSE
+% library(knitr)
+% opts_chunk$set(fig.path='figure/latex-', cache.path='cache/latex-')
+%% end.rcode
+\usepackage{mdframed}
+\usepackage{graphicx}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\title{HW4 \\ {\small \date{\today}}}
+\author{Daniel Wooten}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+The key here to understanding the output of this function is understanding
+the '=' operator and the \verb!'{'! operator. The '=' operator behaves as we expect
+it to, it assigns the value on the right to the varible on the left. The
+interesting part is the \verb!'{'!, which returns the last expression evaluated. This
+means that that assignment of 1 into y \verb!( y <- 1 )! was evaluated, so y got its
+value of 1, but 2 was the last argument evaluated and as such, is what was
+given as the right-side argument to the '=' operator, giving x a value of 2.
+The next trick is why ' y = 0 ' in the function arguments did not overwrite the
+assignment of 1 into y from the x bracket operation. The answer here is lazy
+evaluation. In the body of the function when R goes to evaluate ' x + y ' there
+is no need for it to actualy evaluate the ' y = 0 ' argument because y has
+already been given a value, and so lazy evaluation saves the day, giving us
+a value of 3 for the output \verb!( x + y = 2 + 1 )!.
+
+\section{Problem 2}
+From the figure below we see that it is much faster to subset a vector based on a vector of indicies rather than booleans. In addition to the length of the vector being subset the number of items being subsetted from the vector is important in determining the run time, i.e. we see that as we request a higher percentage of the vector elements,the time to subset increases. Interestingly, this trend is only really seen with the indicie subsetting rather than the booleans which seem to take the same amount of time regardless of the number being asked for, they seem to only scale with the size of the vector being subset. As a bit of a surprise the time to subset the vector does not scale as n to the power of 2, rather, approximately, linearly.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{p2.png}
+\caption{Plot of vector subsetting times}
+\label{fig:subset}
+\end{figure}
+
+\section{Problem 3}
+\subsection{}
+First off, I apologize but I'm using R version 3.0.2. I attempted to update my
+version but Trusty Thar ran into issues as it could not find a public key for
+the various cran mirrors I tried. As such, you're stuck with what I 've got.
+We note from the output of the below code that after modifying one value
+in the fist column of the dataframe df1 a copy of all three columns was
+made. What is interesting to note is that no copy was made of the dataframe
+metadata such as the column names or the name of the dataframe itself. Another
+interesting point to note is that simply asking for a .Internal(inspect()) of a
+column in the dataframe seems to make a copy of the column as well, see the
+very last memory output of the below code and compare it to the first.
+% begin.rcode P3A, eval=FALSE, tidy=TRUE
+% ********************************************************** 
+% BEGIN EXECUTION 
+% The Data Frame 
+% ********************************************************** 
+%   X1 X2 X3
+% 1  1  4  7
+% 2  2  5  8
+% 3  3  6  9
+% ********************************************************** 
+% The output of .Internal(inspect(df1)) 
+% ********************************************************** 
+% @1618cc8 19 VECSXP g0c3 [OBJ,MARK,NAM(2),ATT] (len=3, tl=0)
+%   @1618c80 14 REALSXP g0c3 [MARK,NAM(2)] (len=3, tl=0) 1,2,3
+%   @1618c38 14 REALSXP g0c3 [MARK,NAM(2)] (len=3, tl=0) 4,5,6
+%   @161ced8 14 REALSXP g0c3 [MARK,NAM(2)] (len=3, tl=0) 7,8,9
+% ATTRIB:
+%   @104f4a0 02 LISTSXP g0c0 [MARK] 
+%     TAG: @751568 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "names" (has value)
+%     @1618b60 16 STRSXP g0c3 [MARK,NAM(2)] (len=3, tl=0)
+%       @bac9b8 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X1"
+%       @bac988 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X2"
+%       @bac958 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X3"
+%     TAG: @75b350 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "row.names" (has value)
+%     @de7ad8 13 INTSXP g0c1 [MARK,NAM(2)] (len=2, tl=0) -2147483648,-3
+%     TAG: @751a38 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "class" (has value)
+%     @de76e8 16 STRSXP g0c1 [MARK,NAM(2)] (len=1, tl=0)
+%       @a9a070 09 CHARSXP g1c2 [MARK,gp=0x61,ATT] [ASCII] [cached] "data.frame"
+% ********************************************************** 
+% ********************************************************** 
+% The output of .Internal(inspect(df1)) after modificaiton 
+% ********************************************************** 
+% @162fb40 19 VECSXP g0c3 [OBJ,MARK,NAM(2),ATT] (len=3, tl=0)
+%   @162faf8 14 REALSXP g0c3 [MARK] (len=3, tl=0) 10,2,3
+%   @162fab0 14 REALSXP g0c3 [MARK] (len=3, tl=0) 4,5,6
+%   @162fa68 14 REALSXP g0c3 [MARK] (len=3, tl=0) 7,8,9
+% ATTRIB:
+%   @105c418 02 LISTSXP g0c0 [MARK] 
+%     TAG: @751568 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "names" (has value)
+%     @162fa20 16 STRSXP g0c3 [MARK,NAM(2)] (len=3, tl=0)
+%       @bac9b8 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X1"
+%       @bac988 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X2"
+%       @bac958 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X3"
+%     TAG: @75b350 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "row.names" (has value)
+%     @8b98f8 13 INTSXP g0c1 [MARK] (len=2, tl=0) -2147483648,-3
+%     TAG: @751a38 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "class" (has value)
+%     @8b9808 16 STRSXP g0c1 [MARK,NAM(1)] (len=1, tl=0)
+%       @a9a070 09 CHARSXP g1c2 [MARK,gp=0x61,ATT] [ASCII] [cached] "data.frame"
+% ********************************************************** 
+% The output of .Internal(inspect(df1[1])) without other interference 
+% @97dd78 19 VECSXP g0c1 [OBJ,NAM(2),ATT] (len=1, tl=0)
+%   @1645fd8 14 REALSXP g0c3 [] (len=3, tl=0) 10,2,3
+% ATTRIB:
+%   @1105130 02 LISTSXP g0c0 [] 
+%     TAG: @751568 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "names" (has value)
+%     @97df28 16 STRSXP g0c1 [] (len=1, tl=0)
+%       @bac9b8 09 CHARSXP g0c1 [MARK,gp=0x61] [ASCII] [cached] "X1"
+%     TAG: @751a38 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "class" (has value)
+%     @97de98 16 STRSXP g0c1 [] (len=1, tl=0)
+%       @a9a070 09 CHARSXP g1c2 [MARK,gp=0x61,ATT] [ASCII] [cached] "data.frame"
+%     TAG: @75b350 01 SYMSXP g1c0 [MARK,LCK,gp=0x4000] "row.names" (has value)
+%     @980b58 13 INTSXP g0c1 [] (len=2, tl=0) -2147483648,-3
+% ********************************************************** 
+% END EXECUTION 
+%% end.rcode
+\subsection{}
+We note that, similar to the above (noting the code and output below) that
+when we modifiy just one value of one vector in the list, all the elements of
+the list are copied. However, differently from above, and this is strange (
+in that it is different), when we assess the memory location of one element
+in the list, it does not change, it resembles the last reported
+location for that element.
+% begin.rcode P3B, eval=FALSE, tidy=TRUE
+% ********************************************************** 
+% BEGIN EXECUTION 
+% The List 
+% ********************************************************** 
+% [[1]]
+% [1] 1 2 3
+% 
+% [[2]]
+% [1] 4 5 6
+% 
+% [[3]]
+% [1] 7 8 9
+% 
+% ********************************************************** 
+% The output of .Internal(inspect(df1)) 
+% ********************************************************** 
+% @247d768 19 VECSXP g0c3 [MARK,NAM(2)] (len=3, tl=0)
+%   @2480fe8 14 REALSXP g0c3 [MARK] (len=3, tl=0) 1,2,3
+%   @2480f58 14 REALSXP g0c3 [MARK] (len=3, tl=0) 4,5,6
+%   @2480ec8 14 REALSXP g0c3 [MARK] (len=3, tl=0) 7,8,9
+% ********************************************************** 
+% ********************************************************** 
+% The output of .Internal(inspect(df1)) after modificaiton 
+% ********************************************************** 
+% @3058638 19 VECSXP g0c3 [MARK,NAM(1)] (len=3, tl=0)
+%   @30585f0 14 REALSXP g0c3 [MARK] (len=3, tl=0) 10,2,3
+%   @30585a8 14 REALSXP g0c3 [MARK] (len=3, tl=0) 4,5,6
+%   @3058560 14 REALSXP g0c3 [MARK] (len=3, tl=0) 7,8,9
+% ********************************************************** 
+% The output of .Internal(inspect(df1[1])) without other interference 
+% @30585f0 14 REALSXP g0c3 [MARK,NAM(1)] (len=3, tl=0) 10,2,3
+% ********************************************************** 
+% END EXECUTION 
+% ********************************************************** 
+%% end.rcode
+
+\section{Problem 4}
+\subsection{}
+With regards to part A, please see the code below. The walkthrough of the code is provided in the comments. It is worth noting that, to my understanding, the entire operation of the random walk is vectorized. This ability is heavily faciliated by R's use of recycling; without this feature this method of vectorization would not work.
+% begin.rcode P4A, eval=FALSE, tidy=TRUE
+% #!/usr/bin/Rscript
+% #Creator: Daniel Wooten
+% #Class STATS243
+% #PS4
+% 
+% # A function to make prettier output
+% cep <- function()
+% {
+%   cat('********************************************************** \n')
+% }
+% 
+% cep()
+% cat('BEGIN EXECUTION \n')
+% 
+% #Collect the function arguments
+% cat('Enter the number of steps: \n')
+% num <- readLines(file("stdin"),1)
+% cat('Enter 1 for whole walk or 0 for just the end position\n')
+% YesWalk <- readLines(file('stdin'),1)
+% 
+% #Initialize the random walk function
+% Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL,SX=NULL,SY=NULL)
+% {
+% #Try to cast inpput as integer
+% 	n <- try(as.integer(N))
+% #If input can be cast as integer proceed
+% 	{
+% 	if(!class(n) == 'try-error')
+% 	{
+% #Check to make sure N is actually an integer
+% 		if(!is.integer(n) | n <= 0 | is.na(n) )
+% 		{
+% #If N is not an integer, bork and exit with message
+% 			cat('ERROR!!: First argument n must
+% 				be of type positive and 
+% 				non-zero integer\n')
+% 			exit_code <- '# steps not positive integer'
+% 			return(exit_code)
+% 		}
+% 	}
+% 	else
+% 	{
+% 		cat('ERROR!!: Step-number input could
+% 			not be cast as integer.\n')
+% 		exit_code <- 'Step input unable to cast as integer'
+% 		return(exit_code)
+% 	}
+% 	}
+% #Check if WholeWalk was given
+% 	{
+% 	if(is.null(WholeWalk))
+% 	{
+% #If whole walk was not give, set default vale of no walk
+% #output
+% 		WholeWalk=0
+% 	}
+% #If wholewalk was given, check for correct value. If not,
+% # fail.
+% 	else
+% 	{
+% # Convert WholeWalk to integer just to be sure it passes check
+% 		WholeWalk <- try(as.integer(WholeWalk))
+% #If WholeWalk is not needed input, error and bork
+% 		{
+% 		if(!class(WholeWalk) == 'try-error')
+% 		{	
+% 			if(WholeWalk != 0 & WholeWalk != 1)
+% 			{
+% 				cat('ERROR!!: Input to select
+% 					output of entire
+% 					walk must be of form
+% 					0 (no walk) or
+% 					1 (whole walk)\n')
+% 				exit_code <- 'Walk select not 0 or 1 or blank'
+% 				return(exit_code)
+% 			}
+% 		}
+% 		else
+% 		{
+% 			cat('ERROR!!: Input for walk-output form
+% 				could not be cast as a 0 or 1 
+% 				integer (required form)')
+% 			exit_code <- 'Walk select could not be cast as 0 or 1'
+% 			return(exit_code)
+% 		}
+% 		}	
+% 	}
+% 	}
+% #These are the possible x steps we can take
+% 	xsteps <- c(-1,1,0,0)
+% #These are the possible y steps we can take
+% 	ysteps <- c(0,0,-1,1)
+% #This vector represents the steps (or their correlation
+% # to our steps vectors) that we will take
+% 	steps <- sample(1:4,n,replace=T)
+% #Start positions for the x and y coords
+% 	sx <- 0
+% 	sy <- 0
+% # This if statement lets us reset the start if we'd like
+% 	if(!is.null(SX)) sx <- SX
+% 	if(!is.null(SY)) sy <- SY
+% #These next two lines will create vectors of the new
+% # x and y position at each step
+% 	posx <- c(0,cumsum(xsteps[steps]))
+% 	posy <- c(0,cumsum(ysteps[steps]))
+% #Shift the steps taken by their start value
+% 	shifted_xsteps <- posx + sx
+% 	shifted_ysteps <- posy + sy
+% #This if statement will handle the two cases
+% #whole walk, or just the final position
+% 	{
+% 	if(WholeWalk == 1)
+% 	{
+% 		walk_map <- matrix(ncol = n + 1, nrow = 2 )
+% 		walk_map[1,] <- shifted_xsteps 
+% 		walk_map[2,] <- shifted_ysteps 
+% 	}
+% 	else
+% 	{
+% 		walk_map <- vector('numeric',2)
+% 		walk_map[1] <- shifted_xsteps[n+1]
+% 		walk_map[2] <- shifted_ysteps[n+1]
+% 	}
+% 	}
+% 	return(walk_map)
+% }
+% 
+% # Call the function
+% RND_Walk <- Praise_Be_To_The_RNG(num,YesWalk)
+% # Print the result based on the output
+% cep()
+% cat('The result\n')
+% cep()
+% {
+% if(is.matrix(RND_Walk))
+% {
+% 	cat('X steps: ')
+% 	cat(RND_Walk[1,])
+% 	cat('\n')
+% 	cat('Y steps: ')
+% 	cat(RND_Walk[2,])
+% 	cat('\n')
+% 	cep()
+% }
+% else
+% {
+% 
+% 	cat('Final position (x,y): ')
+% 	cat(RND_Walk[1])
+% 	cat(',')
+% 	cat(RND_Walk[2])
+% 	cat('\n')
+% 	cep()
+% }
+% }
+% cat('\n')
+% cep()
+% 		
+% cat('END EXECUTION \n')
+% cep()
+%% end.rcode
+\subsection{}
+With regards to part B, please, again, see the code below. The walkthrough is provided in the comments. The only big difference here is that the function is now packaged up in an object class which has been given methods to expand its functionality.
+%begin.rcode P4B, eval=FALSE, tidy=TRUE
+% #!/usr/bin/Rscript
+% #Creator: Daniel Wooten
+% #Class STATS243
+% #PS4
+% 
+% # A function to make prettier output
+% cep <- function()
+% {
+%   cat('********************************************************** \n')
+% }
+% 
+% cep()
+% cat('BEGIN EXECUTION \n')
+% 
+% #Collect the function arguments
+% #cat('Enter the number of steps: \n')
+% #num <- readLines(file("stdin"),1)
+% #cat('Enter 1 for whole walk or 0 for just the end position\n')
+% #YesWalk <- readLines(file('stdin'),1)
+% 
+% 	
+% #Initialize the random walk function
+% Praise_Be_To_The_RNG <- function(N,WholeWalk=NULL,SX=NULL,SY=NULL)
+% {
+% #Try to cast inpput as integer
+% 	n <- try(as.integer(N))
+% #If input can be cast as integer proceed
+% 	{
+% 	if(!class(n) == 'try-error')
+% 	{
+% #Check to make sure N is actually an integer
+% 		if(!is.integer(n) | n <= 0 | is.na(n) )
+% 		{
+% #If N is not an integer, bork and exit with message
+% 			cat('ERROR!!: First argument n must
+% 				be of type positive and 
+% 				non-zero integer\n')
+% 			exit_code <- '# steps not positive integer'
+% 			return(exit_code)
+% 		}
+% 	}
+% 	else
+% 	{
+% 		cat('ERROR!!: Step-number input could
+% 			not be cast as integer.\n')
+% 		exit_code <- 'Step input unable to cast as integer'
+% 		return(exit_code)
+% 	}
+% 	}
+% #Check if WholeWalk was given
+% 	{
+% 	if(is.null(WholeWalk))
+% 	{
+% #If whole walk was not give, set default vale of no walk
+% #output
+% 		WholeWalk=0
+% 	}
+% #If wholewalk was given, check for correct value. If not,
+% # fail.
+% 	else
+% 	{
+% # Convert WholeWalk to integer just to be sure it passes check
+% 		WholeWalk <- try(as.integer(WholeWalk))
+% #If WholeWalk is not needed input, error and bork
+% 		{
+% 		if(!class(WholeWalk) == 'try-error')
+% 		{	
+% 			if(WholeWalk != 0 & WholeWalk != 1)
+% 			{
+% 				cat('ERROR!!: Input to select
+% 					output of entire
+% 					walk must be of form
+% 					0 (no walk) or
+% 					1 (whole walk)\n')
+% 				exit_code <- 'Walk select not 0 or 1 or blank'
+% 				return(exit_code)
+% 			}
+% 		}
+% 		else
+% 		{
+% 			cat('ERROR!!: Input for walk-output form
+% 				could not be cast as a 0 or 1 
+% 				integer (required form)')
+% 			exit_code <- 'Walk select could not be cast as 0 or 1'
+% 			return(exit_code)
+% 		}
+% 		}	
+% 	}
+% 	}
+% #These are the possible x steps we can take
+% 	xsteps <- c(-1,1,0,0)
+% #These are the possible y steps we can take
+% 	ysteps <- c(0,0,-1,1)
+% #This vector represents the steps (or their correlation
+% # to our steps vectors) that we will take
+% 	steps <- sample(1:4,n,replace=T)
+% #Start positions for the x and y coords
+% 	sx <- 0
+% 	sy <- 0
+% # This if statement lets us reset the start if we'd like
+% 	if(!is.null(SX)) sx <- SX
+% 	if(!is.null(SY)) sy <- SY
+% #These next two lines will create vectors of the new
+% # x and y position at each step
+% 	posx <- c(0,cumsum(xsteps[steps]))
+% 	posy <- c(0,cumsum(ysteps[steps]))
+% #Shift the steps taken by their start value
+% 	shifted_xsteps <- posx + sx
+% 	shifted_ysteps <- posy + sy
+% #This if statement will handle the two cases
+% #whole walk, or just the final position
+% 	{
+% 	if(WholeWalk == 1)
+% 	{
+% 		walk_map <- matrix(ncol = n + 1, nrow = 2 )
+% 		walk_map[1,] <- shifted_xsteps 
+% 		walk_map[2,] <- shifted_ysteps 
+% 	}
+% 	else
+% 	{
+% 		walk_map <- vector('numeric',2)
+% 		walk_map[1] <- shifted_xsteps[n+1]
+% 		walk_map[2] <- shifted_ysteps[n+1]
+% 	}
+% 	}
+% 	return(walk_map)
+% }
+% 
+% #Construct a walk class
+% rw <- function(step_number = NA, details = NA)
+% {
+% 	obj <- list(Num_Steps = step_number, Praise_Be_To_The_RNG(step_number,
+% 		details))
+% 	class(obj) <- 'walk'
+% 	return(obj)
+% }
+% 
+% #Create the print method for rw
+% print.walk <- function(object){
+% 
+% #This if statement is necessary to handle the dual nature
+% # of the function output, namely, a matrix or a vector
+% #, to extract the proper final position
+% 	{
+% 	if(is.matrix(object[[2]]))
+% 	{
+% 		final_pos_x <- object[[2]][1,object[[1]]+1]
+% 		final_pos_y <- object[[2]][2,object[[1]]+1]
+% 	}
+% 	else
+% 	{
+% 		final_pos_x <- object[[2]][1]
+% 		final_pos_y <- object[[2]][2]
+% 	}
+% 	}
+% #Create the output string
+% 	out_string <- paste("The number of steps taken was ",
+% 			object[[1]]," and the final position is (",
+% 			final_pos_x, ",",final_pos_y,')\n',sep='')
+% #Return the output string
+% 	return(with(object, cat(out_string)))
+% }
+% 
+% #Create the plot method
+% plot.walk <- function(object) 
+% {	
+% 	{
+% # again, check output of function for full matrix. If so, plot it, duh
+% 	if(is.matrix(object[[2]]))
+% 	{
+% 		pdf('ps4p6plot.pdf')
+% 		plot(0,type="n",xlab="Dim 1",ylab="Dim 2",
+% 			main="Random Walk in Dim 1 and Dim 2",
+% 			xlim=range(object[[2]][1,]),
+% 			ylim=range(object[[2]][2,]))
+% 		segments(head(object[[2]][1,],-1),head(object[[2]][2,],-1),
+% 			tail(object[[2]][1,],-1),tail(object[[2]][2,],
+% 			-1),col='blue')
+% 		dev.off()
+% 	}
+% 		else
+% # If not a matrix, you only got final pos, bork
+% 		{
+% 			cat('ERROR!!: Object of type, class = walk
+% 				, was not called with option to
+% 				produce full walk, only final 
+% 				position\n')
+% 			exit_code <- "Object called without full
+% 					path requested\n"
+% 			return(exit_code)
+% 		}
+% 	}
+% }	
+% 
+% #Add functionality to the [ operator for our object
+% `[.walk` <- function(object,incr)
+% {
+% #Again, check for proper function output
+% 	{
+% 	if(is.matrix(object[[2]]))
+% 	{
+% #Pull the incr step desired
+% 		x_pos <- object[[2]][1,incr]
+% 		y_pos <- object[[2]][2,incr]
+% 		pos <- c(x_pos,y_pos)
+% 		return(pos)
+% 	}
+% 		else
+% # If not a matrix, you only got final pos, bork
+% 		{
+% 			cat('ERROR!!: Object of type, class = walk
+% 				, was not called with option to
+% 				produce full walk, only final 
+% 				position\n')
+% 			exit_code <- "Object called without full
+% 					path requested\n"
+% 			return(exit_code)
+% 		}
+% 	}
+% }
+% 
+% #Create the generic replacement method
+% `start<-` <- function(x,...) UseMethod("start<-")
+% #Create the class specific replacement method
+% `start<-.walk` <- function(object,value)
+% {
+% #Again, check for proper function output
+% 	{
+% 	if(is.matrix(object[[2]]))
+% 	{
+% 		object[[2]][1,] <- object[[2]][1,] + value[1]
+% 		object[[2]][2,] <- object[[2]][2,] + value[2]
+% 		return(object)
+% 	}
+% 		else
+% # If not a matrix, you only got final pos
+% 		{
+% 			object[[2]][1] <- object[[2]][1] + value[1]
+% 			object[[2]][2] <- object[[2]][2] + value[2]
+% 			return(object)
+% 		}
+% 	}
+% }
+% #Call the object
+% RND_Walk <- rw(10,1)
+% 
+% cep()
+% print(RND_Walk)
+% cep()
+% cat('Calling plot method\n')
+% plot(RND_Walk)
+% cep()
+% cat('Calling the [ operator for the 2nd step\n')
+% cat(RND_Walk[2])
+% cat('\n')
+% cep()
+% 
+% # Print the result based on the output
+% cep()
+% cat('The result\n')
+% cep()
+% {
+% if(is.matrix(RND_Walk[[2]]))
+% {
+% 	cat('X steps: ')
+% 	cat(RND_Walk[[2]][1,])
+% 	cat('\n')
+% 	cat('Y steps: ')
+% 	cat(RND_Walk[[2]][2,])
+% 	cat('\n')
+% 	cep()
+% }
+% else
+% {
+% 
+% 	cat('Final position (x,y): ')
+% 	cat(RND_Walk[[1]][1])
+% 	cat(',')
+% 	cat(RND_Walk[[1]][2])
+% 	cat('\n')
+% 	cep()
+% }
+% }
+% cat('Calling the start replacer\n')
+% start(RND_Walk) <- c(3,4)
+% {
+% if(is.matrix(RND_Walk[[2]]))
+% {
+% 	cat('X steps: ')
+% 	cat(RND_Walk[[2]][1,])
+% 	cat('\n')
+% 	cat('Y steps: ')
+% 	cat(RND_Walk[[2]][2,])
+% 	cat('\n')
+% 	cep()
+% }
+% else
+% {
+% 
+% 	cat('Final position (x,y): ')
+% 	cat(RND_Walk[[1]][1])
+% 	cat(',')
+% 	cat(RND_Walk[[1]][2])
+% 	cat('\n')
+% 	cep()
+% }
+% }
+% cat('\n')
+% cep()
+% 		
+% cat('END EXECUTION \n')
+% cep()
+%% end.rcode
+
+\section{Problem 5}
+Please see the output of the Rprofmem function below. In the hashed comments I explain the output.
+\begin{verbatim}
+320040 :80040 :240048 :320040 :80040 :240048 :40000040 :"fastcount" 
+# Above are a series of numbers that Rprofmem outputs with each file.
+# Their meaning is unclear, even to the creator of Rprofmem
+# see reference https://stat.ethz.ch/pipermail/r-devel/2011-May/061021.html
+# As for the memory usage in the sample code, we note that the maximum memory
+# used is about 80Mb as seen in the second and sixth call to memory.
+# Below we see all the calls to malloc that were made 
+# by the R code and as such, all the memory that was used.
+# We have included small calls to memory (though not asked for)
+# out of completness rather than ignorance of Rprofmem's threshold argument.
+40000040 :"fastcount" 
+80000040 :"fastcount" 
+40000040 :"fastcount" 
+40000040 :"fastcount" 
+3717824 :"fastcount" 
+80000040 :"fastcount" 
+40000040 :"fastcount" 
+40000040 :"fastcount" 
+3717824 :"fastcount" 
+40000040 :"fastcount" 
+40000040 :"fastcount" 
+208 :"numeric" "fastcount" 
+208 :"numeric" "fastcount" 
+1128 :"fastcount" 
+4376 :"fastcount" 
+4376 :"fastcount" 
+1064 :"fastcount" 
+280 :"fastcount" 
+720 :"fastcount" 
+1392 :"fastcount" 
+456 :"fastcount" 
+40000040 :"dummyFun" "fastcount" 
+40000040 :"dummyFun" "fastcount" 
+40000040 :"dummyFun" "fastcount" 
+40000040 :"<Anonymous>" "dummyFun" "fastcount" 
+40000040 :"<Anonymous>" "dummyFun" "fastcount" 
+40000040 :"<Anonymous>" "dummyFun" "fastcount" 
+208 :"which" "fastcount" 
+896 :"fastcount" 
+3856 :"fastcount" 
+3856 :"fastcount" 
+1064 :"fastcount" 
+744 :"fastcount" 
+1440 :"fastcount" 
+344 :"fastcount" 
+200 :"colnames<-" "fastcount" 
+400 :"colnames<-" "fastcount" 
+400 :"colnames<-" "fastcount" 
+1064 :"colnames<-" "fastcount" 
+320040 :80040 :240048 :320040 :80040 :240048 :
+\end{verbatim}
+
+\section{Problem 6}
+With regards to speeding up the given code, we first note that unaltered run time on my machine was 125.05 seconds while the reduced time, following the modifications seen below, was 2.6 seconds. Not quite as fast as Dr. Paciorek, but same OOM at least. The key, as Dr. Paciorek suggested,
+was eliminating some of the for loops. This was accomplished by using R's outer function which allowed us to vectorize much of the math done for q. Additionally, a loop that only depended on Z and \verb!q[,,Z]! was brought inside of the calculation looop to speed things up further. Had I had more time I would have liked to restructure, entirely, the data formats used. Ideally I would have liked for theta.old to be a tensor of rank 3 copied twice such that q could have been computed immediately with a syntax such as \verb!q=to*to1/T!. I fooled around with trying to coherece R into doing this for some time and while the array function was able to generate tensors from matricies, coppying the matrix across different dimensions of the tensor proved too challenging. For the final sped up code, please see below.
+
+%begin.rcode P6, eval=FALSE, tidy=TRUE
+% #!/usr/bin/Rscript
+% #Creator: Daniel Wooten
+% #Class STATS243
+% #PS4
+% 
+% # A function to make prettier output
+% cep <- function()
+% {
+%   cat('********************************************************** \n')
+% }
+% 
+% cep()
+% cat('BEGIN EXECUTION!!!')
+% load("ps4prob6.Rda") 
+% 
+% ll <- function(Theta, A) {
+%   sum.ind <- which(A==1, arr.ind=T)
+%   logLik <- sum(log(Theta[sum.ind])) - sum(Theta)
+%   return(logLik)
+% }
+% 
+% oneUpdate <- function(A, n, K, theta.old, thresh = 0.1) { 
+%   theta.old1 <- theta.old
+%   Theta.old <- theta.old %*% t(theta.old)
+%   L.old <- ll(Theta.old, A)
+%   q <- array(0, dim = c(n, n, K))
+% #We move this statment up here so we can condense the two z loops
+%   theta.new <- theta.old
+% #We need these two statements to elimate two of the loops and
+% # vectorize using outer 
+% 	i <- c(1:n)
+% 	j <- c(1:n) 
+%       for (z in 1:K) 
+% 	{
+% 		q[,,z] <- outer(theta.old[i,z],theta.old[j,z])/Theta.old
+% #Additionally we move the other z loop inside
+%     		theta.new[,z] <- rowSums(A*q[,,z])/sqrt(sum(A*q[,,z]))
+% 	}
+%   Theta.new <- theta.new %*% t(theta.new)
+%   L.new <- ll(Theta.new, A)
+%       converge.check <- abs(L.new - L.old) < thresh
+%   theta.new <- theta.new/rowSums(theta.new)
+%   return(list(theta = theta.new, loglik = L.new,
+%               converged = converge.check)) 
+% }
+% 
+% # initialize the parameters at random starting values
+% temp <- matrix(runif(n*K), n, K)
+% theta.init <- temp/rowSums(temp)
+% 
+% # do single update
+% system.time(
+% {
+% out <- oneUpdate(A,n,K,theta.init)
+% })
+% 
+% cat('END EXECUTION!!')
+% cep()
+%%end.rcode
+\end{document}
