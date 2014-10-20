@@ -11,7 +11,7 @@ cep <- function()
 
 cep()
 cat('BEGIN EXECUTION!!!')
-load("ps4prob6.Rda") 
+load("data.Rda") 
 
 cat('END EXECUTION!!')
 cep()
