@@ -1,0 +1,155 @@
+\documentclass{article}
+%% begin.rcode setup, include=FALSE
+% library(knitr)
+% opts_chunk$set(fig.path='figure/latex-', cache.path='cache/latex-')
+%% end.rcode
+\usepackage{mdframed}
+\usepackage{graphicx}
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\title{HW5 \\ {\small \date{\today}}}
+\author{Daniel Wooten}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem 1}
+Duplicating the results we see...
+% begin.rcode P1.1, eval=TRUE, tidy=TRUE
+%# Load the data
+% load('data.Rda')
+%# determine p[i]
+% p1 <- crossprod(t(X),beta)
+%# finish determining p[i]
+% p <- exp(p1)/(1+exp(p1))
+%# Compute the lilelihood while keeping thigs
+%# seperate so we can eval them later
+% bivec <- dbinom(y,n,p)
+% likelihood <- prod(bivec)
+% likelihood
+% p1[0:5]
+% p[0:5]
+% bivec[0:5]
+%% end.rcode
+
+From which we certainly see that we do, indeed, get 0. We diagnose this problem as bivec is composed of many small decimal numbers for which the product would be incredibly small, probably close to zero. To fix this we can take the log of bivec and its sum to get the log-likelihood; a handy tool of statistics.
+% begin.rcode P1.2, eval=TRUE, tidy=TRUE
+%# Load the data
+% load('data.Rda')
+%# determine p[i]
+% p1 <- crossprod(t(X),beta)
+%# finish determining p[i]
+% p <- exp(p1)/(1+exp(p1))
+%# Compute the lilelihood while keeping thigs
+%# seperate so we can eval them later
+% bivec <- log(dbinom(y,n,p))
+% loglikelihood <- sum(bivec)
+% loglikelihood
+% p1[0:5]
+% p[0:5]
+% bivec[0:5]
+%% end.rcode
+
+We now see that, by taking the log of our small values and appropriately summing our logs, we get a real number for our log-likelihood.
+
+\section{Problem 2}
+\subsection{}
+At most we can expect 15 digits of accuracy following the decimal (for a number which is smaller than 10 in base 10).
+\subsection{}
+% begin.rcode P2.1, eval=TRUE, tidy=TRUE
+%# Ensure we get the display that we need
+% options(digits = 22)
+%# Create the vector
+% x <- c(1,rep(1*10^-16,10000))
+%# Sum the vector
+% x_sum <- sum(x)
+% x_sum
+%% end.rcode
+
+As we can see, using sum provides the correct answer up to the extent to represent base 2 numbers in base 10.
+\subsection{}
+% begin.rcode p2.2, eval=TRUE, engine='python', tidy=TRUE
+%# Import numpy
+%import numpy as np
+%# Create the vector
+%vec = np.array([1e-16]*(10001))
+%# make the first element 1
+%vec[0] = 1
+%# sum the vector
+%vec_sum = sum(vec)
+%print('%.22f' % vec_sum)
+%% end.rcode
+
+As we can see, python (much to my dismay) does not provide the correct answer.
+
+\subsection{}
+Using a for loop with 1 as the first number
+% begin.rcode P2.3, eval=TRUE, tidy=TRUE
+%# Create the vector
+% x <- c(1,rep(1*10^-16,10000))
+%# Initialize x_sum
+% x_sum <- 0
+%# Run the for loop
+%for(i in 1:10001)
+%{
+%    x_sum <- x_sum + x[i]
+%}
+%x_sum
+%% end.rcode
+We note that the correct answer is not provided.\\
+Using a for loop with 1 as the last number...
+% begin.rcode P2.4, eval=TRUE, tidy=TRUE
+%# Create the vector
+% x <- c(rep(1*10^-16,10000),1)
+%# Initialize x_sum
+% x_sum <- 0
+%# Run the for loop
+%for(i in 1:10001)
+%{
+%    x_sum <- x_sum + x[i]
+%}
+%x_sum
+%% end.rcode
+We note that, within machine episilon, the correct
+number is provided.\\
+Using a python loop with 1 as the first number...
+% begin.rcode p2.5, eval=TRUE, engine='python', tidy=TRUE
+%# Import numpy
+%import numpy as np
+%# Create the vector
+%vec = np.array([1e-16]*(10001))
+%# make the first element 1
+%vec[0] = 1
+%# Initilize vec_sum
+%vec_sum = 0
+%#Do the sum with a for loop
+%for i in range(10001):
+%     vec_sum = vec_sum + vec[i]
+%# print out the result
+%print('%.22f' % vec_sum)
+%% end.rcode
+We note that the correct answer is not provided. \\
+Using a python loop with 1 as the last number...
+% begin.rcode p2.6, eval=TRUE, engine='python', tidy=TRUE
+%# Import numpy
+%import numpy as np
+%# Create the vector
+%vec = np.array([1e-16]*(10001))
+%# make the last element 1
+%vec[10000] = 1
+%# Initilize vec_sum
+%vec_sum = 0
+%#Do the sum with a for loop
+%for i in range(10001):
+%     vec_sum = vec_sum + vec[i]
+%# print out the result
+%print('%.22f' % vec_sum)
+%% end.rcode
+We note that, to within machine epsilon, the correct answer is provided.
+In terms of the wrong answers (seen above) the number
+of digits of accuracy is either 1, for the 1 that was properly added, or 11 past the decimal, right before the 1 that is supposed to be in the 12th decimal place. It depends on what you define as "accuracy".
+\subsection{}
+These results suggest that R's sum function is not simply summing the numbers from left to right unless it is performing some augmented number storage algorithm (Fun trivia, this is what MathCad does, it actually uses it's down significands and excesses to store numbers. These significands and excesses are then given to the computer to store as it would any other number). R's sum function is clearly doing something special to get the right answer.
+\subsection{}
+As for what R's sum function is doing, the documentation notes that "Where possible extended-precision accumulators are used, but this is platform-dependant". So...when R's sum function can, it clearly does used advanced stroage techniques. Looking at the C code (found in summary.c of the R source code) do.summary seems to be doing some kind of loop with integers bounded by the largest an smallest numbers in the vector.
+\end{document}
